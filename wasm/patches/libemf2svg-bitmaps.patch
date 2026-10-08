@@ -1,0 +1,148 @@
+diff -ru a/inc/emf2svg_private.h b/inc/emf2svg_private.h
+--- a/inc/emf2svg_private.h	2026-10-08 23:34:43.144817100 +0100
++++ b/inc/emf2svg_private.h	2026-10-08 23:44:06.763489800 +0100
+@@ -303,6 +303,12 @@
+     double imgWidth;
+     // flag if there is an opened transformation
+     bool transform_open;
++    // colour that the bitmap being drawn should treat as transparent, emulating
++    // its raster operation: 0 none, 1 black (SRCPAINT), 2 white (SRCAND)
++    int ropTransparentKey;
++    // the file carries EMF+ records, so its plain EMF records are a GDI+
++    // generated fallback whose clip paths are unreliable
++    bool hasEmfPlus;
+     // current cursor position
+     double cur_x;
+     double cur_y;
+diff -ru a/src/lib/emf2svg_rec_bitmap.c b/src/lib/emf2svg_rec_bitmap.c
+--- a/src/lib/emf2svg_rec_bitmap.c	2026-10-08 23:34:44.578276300 +0100
++++ b/src/lib/emf2svg_rec_bitmap.c	2026-10-08 23:44:06.783015500 +0100
+@@ -8,10 +8,53 @@
+ #include "emf2svg_img_utils.h"
+ #include "emf2svg_private.h"
+ #include "emf2svg_print.h"
++#include <math.h>
+ #include <png.h>
+ #include <stdio.h>
+ #include <stdlib.h>
+ 
++// Bitmaps drawn with SRCPAINT (OR) leave black areas untouched and those drawn
++// with SRCAND (AND) leave white areas untouched. Stencils use the pair to draw
++// masked, transparent images; emulate it by making that colour transparent.
++#define E2S_ROP_SRCAND 0x008800C6u
++#define E2S_ROP_SRCPAINT 0x00EE0086u
++static int rop_transparent_key(uint32_t rop) {
++    if (rop == E2S_ROP_SRCPAINT)
++        return 1;
++    if (rop == E2S_ROP_SRCAND)
++        return 2;
++    return 0;
++}
++
++// Fraction of the bitmap rectangle covered by the current clip's bounding box.
++static double clip_coverage(drawingStates *states, POINT_D position, POINT_D size) {
++    PATH *path = states->currentDeviceContext.clipRGN;
++    if (!states->currentDeviceContext.clipID || path == NULL)
++        return 1.0;
++    double x0 = 1e300, y0 = 1e300, x1 = -1e300, y1 = -1e300;
++    for (PATH *seg = path; seg != NULL; seg = seg->next) {
++        int n = seg->section.type == SEG_BEZIER ? 3 : (seg->section.type == SEG_MOVE || seg->section.type == SEG_LINE) ? 1 : 0;
++        POINT_D *pts = seg->section.points;
++        if (seg->section.type == SEG_ARC) {
++            pts = seg->section.points + 1; // [0] holds the radii
++            n = 1;
++        }
++        for (int i = 0; i < n; i++) {
++            x0 = fmin(x0, pts[i].x);
++            y0 = fmin(y0, pts[i].y);
++            x1 = fmax(x1, pts[i].x);
++            y1 = fmax(y1, pts[i].y);
++        }
++    }
++    double bx0 = fmin(position.x, position.x + size.x), bx1 = fmax(position.x, position.x + size.x);
++    double by0 = fmin(position.y, position.y + size.y), by1 = fmax(position.y, position.y + size.y);
++    double area = (bx1 - bx0) * (by1 - by0);
++    if (area <= 0 || x1 < x0)
++        return 1.0;
++    double w = fmin(x1, bx1) - fmax(x0, bx0), h = fmin(y1, by1) - fmax(y0, by0);
++    return (w > 0 && h > 0) ? (w * h) / area : 0.0;
++}
++
+ void U_EMRALPHABLEND_draw(const char *contents, FILE *out,
+                           drawingStates *states) {
+     FLAG_PARTIAL;
+@@ -116,13 +159,16 @@
+         point_cal(states, (double)pEmr->Dest.x, (double)pEmr->Dest.y);
+     fprintf(out, "<image width=\"%.4f\" height=\"%.4f\" x=\"%.4f\" y=\"%.4f\" ",
+             size.x, size.y, position.x, position.y);
+-    clipset_draw(states, out);
++    if (!states->hasEmfPlus && clip_coverage(states, position, size) >= 0.05)
++        clipset_draw(states, out);
+ 
+     // float alpha = (float)pEmr->Blend.Global / 255.0;
+     // fprintf(out, " fill-opacity=\"%.4f\" ", alpha);
+ 
++    states->ropTransparentKey = rop_transparent_key(pEmr->dwRop);
+     dib_img_writer(contents, out, states, BmiSrc, BmpSrc,
+                    (size_t)pEmr->cbBitsSrc, false);
++    states->ropTransparentKey = 0;
+     fprintf(out, "/>\n");
+ }
+ void U_EMRMASKBLT_draw(const char *contents, FILE *out, drawingStates *states) {
+@@ -175,10 +221,13 @@
+         point_cal(states, (double)pEmr->Dest.x, (double)pEmr->Dest.y);
+     fprintf(out, "<image width=\"%.4f\" height=\"%.4f\" x=\"%.4f\" y=\"%.4f\" ",
+             size.x, size.y, position.x, position.y);
+-    clipset_draw(states, out);
++    if (!states->hasEmfPlus && clip_coverage(states, position, size) >= 0.05)
++        clipset_draw(states, out);
+ 
++    states->ropTransparentKey = rop_transparent_key(pEmr->dwRop);
+     dib_img_writer(contents, out, states, BmiSrc, BmpSrc,
+                    (size_t)pEmr->cbBitsSrc, false);
++    states->ropTransparentKey = 0;
+     fprintf(out, "/>\n");
+ }
+ void U_EMRSTRETCHDIBITS_draw(const char *contents, FILE *out,
+@@ -210,10 +259,13 @@
+         point_cal(states, (double)pEmr->Dest.x, (double)pEmr->Dest.y);
+     fprintf(out, "<image width=\"%.4f\" height=\"%.4f\" x=\"%.4f\" y=\"%.4f\" ",
+             size.x, size.y, position.x, position.y);
+-    clipset_draw(states, out);
++    if (!states->hasEmfPlus && clip_coverage(states, position, size) >= 0.05)
++        clipset_draw(states, out);
+ 
++    states->ropTransparentKey = rop_transparent_key(pEmr->dwRop);
+     dib_img_writer(contents, out, states, BmiSrc, BmpSrc,
+                    (size_t)pEmr->cbBitsSrc, false);
++    states->ropTransparentKey = 0;
+     fprintf(out, "/>\n");
+ }
+ void U_EMRTRANSPARENTBLT_draw(const char *contents, FILE *out,
+@@ -324,6 +376,15 @@
+     DIB_to_RGBA(in, ct, numCt, &rgba_px, width, height, colortype, numCt,
+                 invert);
+ 
++    if (rgba_px != NULL && states->ropTransparentKey) {
++        uint8_t key = states->ropTransparentKey == 1 ? 0x00 : 0xFF;
++        RGBAPixel *px = (RGBAPixel *)rgba_px;
++        for (size_t i = 0; i < (size_t)width * height; i++) {
++            bool transparent = px[i].red == key && px[i].green == key && px[i].blue == key;
++            px[i].alpha = transparent ? 0 : 0xFF;
++        }
++    }
++
+     if (rgba_px != NULL) {
+         convert_inpng.size = width * 4 * height;
+         convert_inpng.width = width;
+diff -ru a/src/lib/emf2svg_rec_comment.c b/src/lib/emf2svg_rec_comment.c
+--- a/src/lib/emf2svg_rec_comment.c	2026-10-08 23:34:44.613338700 +0100
++++ b/src/lib/emf2svg_rec_comment.c	2026-10-08 23:44:06.769996000 +0100
+@@ -73,6 +73,7 @@
+             cbData -= 8;
+         } else if (cIdent == U_EMR_COMMENT_EMFPLUSRECORD) {
+             PU_EMRCOMMENT_EMFPLUS pEmrpl = (PU_EMRCOMMENT_EMFPLUS)pEmr;
++            states->hasEmfPlus = true;
+             src = (char *)&(pEmrpl->Data);
+             if (states->emfplus) {
+                 loff = 16; /* Header size of the header part of an EMF+ comment

@@ -134,7 +134,11 @@ bool replaceEmfImage(xmlNode *image, const char *href, Stats &stats) {
     options.nameSpace = NULL;
     options.verbose = false;
     options.emfplus = true;
-    options.svgDelimiter = false;
+    // With svgDelimiter, emf2svg wraps its output in an <svg> sized to the image
+    // and shifts the drawing by the EMF's bounds origin; without it that shift
+    // is skipped, so EMFs whose bounds don't start at (0,0) land off-target.
+    // The nested <svg> also clips the drawing to the picture frame, as Visio does.
+    options.svgDelimiter = true;
     options.imgWidth = width;
     options.imgHeight = height;
 
@@ -146,13 +150,9 @@ bool replaceEmfImage(xmlNode *image, const char *href, Stats &stats) {
         return false;
     }
 
-    // emf2svg emits a list of sibling elements (no root), and its clip-path ids
-    // restart for every blob, so wrap the fragment and make its ids unique.
+    // emf2svg's clip-path ids restart for every blob; make them unique.
     std::string prefix = "emf" + std::to_string(++stats.blobCounter) + "_";
-    std::string fragment = "<g xmlns=\"http://www.w3.org/2000/svg\" "
-                           "xmlns:xlink=\"http://www.w3.org/1999/xlink\">";
-    fragment += prefixIds(std::string(svgOut, svgLen), prefix);
-    fragment += "</g>";
+    std::string fragment = prefixIds(std::string(svgOut, svgLen), prefix);
     free(svgOut);
 
     xmlDocPtr blob = xmlReadMemory(fragment.data(), (int)fragment.size(), NULL, NULL,
@@ -163,6 +163,22 @@ bool replaceEmfImage(xmlNode *image, const char *href, Stats &stats) {
         if (blob)
             xmlFreeDoc(blob);
         return false;
+    }
+
+    // emf2svg keeps the EMF's own aspect ratio and shrinks one side to fit; Visio
+    // stretches the picture to fill its box. Keep emf2svg's size as the viewBox
+    // and stretch it to the full image box.
+    double drawnWidth = attrDouble(blobRoot, "width");
+    double drawnHeight = attrDouble(blobRoot, "height");
+    if (drawnWidth > 0 && drawnHeight > 0 && width > 0 && height > 0) {
+        char buf[128];
+        snprintf(buf, sizeof buf, "0 0 %f %f", drawnWidth, drawnHeight);
+        xmlSetProp(blobRoot, (const xmlChar *)"viewBox", (const xmlChar *)buf);
+        xmlSetProp(blobRoot, (const xmlChar *)"preserveAspectRatio", (const xmlChar *)"none");
+        snprintf(buf, sizeof buf, "%f", width);
+        xmlSetProp(blobRoot, (const xmlChar *)"width", (const xmlChar *)buf);
+        snprintf(buf, sizeof buf, "%f", height);
+        xmlSetProp(blobRoot, (const xmlChar *)"height", (const xmlChar *)buf);
     }
 
     // <g> carrying the image's attributes, translated to the image position.

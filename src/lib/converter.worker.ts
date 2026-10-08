@@ -4,9 +4,10 @@
 // master, one stencil at a time. After each stencil it waits for the page to
 // acknowledge it, so a 150-stencil pack never sits in memory all at once.
 
-import { unzipSync } from 'fflate';
+import { unzipSync, zipSync } from 'fflate';
 import { readMasterMeta, type MasterMeta } from './vsdxMeta';
 import type { RawShape, RawStencil } from './types';
+import { toggleVariants } from './viewToggles';
 
 interface Visio2SvgModule {
   convert(bytes: Uint8Array, stencil: boolean): {
@@ -124,17 +125,69 @@ function convertOne(mod: Visio2SvgModule, name: string, bytes: Uint8Array): RawS
   if (s?.wmfSkipped) warnings.push(`${s.wmfSkipped} embedded WMF image(s) are not supported and were left out`);
 
   let meta: MasterMeta[] = [];
+  let parts: Record<string, Uint8Array> | null = null;
   if (isZip(bytes)) {
     try {
-      const parts = unzipSync(bytes, {
-        filter: (f) => (f.name.startsWith('visio/masters/') && f.name.endsWith('.xml')) || f.name.endsWith('masters.xml.rels'),
-      });
+      parts = unzipSync(bytes);
       meta = readMasterMeta(parts);
     } catch {
       // Metadata is optional; the SVG is what matters.
     }
   }
-  return { fileName, shapes: matchMetadata(result.shapes, meta), warnings };
+  const shapes = matchMetadata(result.shapes, meta);
+  if (!parts || !result.ok) return { fileName, shapes, warnings };
+  try {
+    return { fileName, shapes: withViewVariants(mod, parts, meta, shapes), warnings };
+  } catch {
+    // Alternate views are a bonus; keep the default views if anything goes wrong.
+    return { fileName, shapes, warnings };
+  }
+}
+
+/**
+ * Adds "<name> (Back)"-style shapes for masters whose other side is hidden
+ * behind a shape option (see viewToggles.ts). Each option label needs one
+ * extra conversion of the package with those masters switched over.
+ */
+function withViewVariants(mod: Visio2SvgModule, parts: Record<string, Uint8Array>, meta: MasterMeta[], shapes: RawShape[]): RawShape[] {
+  const decoder = new TextDecoder();
+  const encoder = new TextEncoder();
+  const byLabel = new Map<string, { overrides: Record<string, Uint8Array>; masters: MasterMeta[] }>();
+  for (const m of meta) {
+    if (!m.path || !parts[m.path]) continue;
+    for (const variant of toggleVariants(decoder.decode(parts[m.path]))) {
+      if (!byLabel.has(variant.label)) byLabel.set(variant.label, { overrides: {}, masters: [] });
+      const entry = byLabel.get(variant.label)!;
+      entry.overrides[m.path] = encoder.encode(variant.xml);
+      entry.masters.push(m);
+    }
+  }
+  if (!byLabel.size) return shapes;
+
+  const extra = new Map<string, RawShape[]>(); // original master name -> its variants
+  for (const [label, { overrides, masters }] of byLabel) {
+    const converted = mod.convert(zipSync({ ...parts, ...overrides }, { level: 0 }), true);
+    if (!converted.ok) continue;
+    const used = new Set<number>();
+    for (const m of masters) {
+      const index = converted.shapes.findIndex((s, i) => !used.has(i) && (s.name === m.name || s.name === m.nameU));
+      if (index < 0) continue;
+      used.add(index);
+      const variant: RawShape = {
+        name: `${m.name} (${label})`,
+        svg: converted.shapes[index].svg,
+        prompt: m.prompt,
+        widthIn: m.widthIn,
+        heightIn: m.heightIn,
+        scale: m.scale,
+        hidden: m.hidden,
+      };
+      if (!extra.has(m.name)) extra.set(m.name, []);
+      extra.get(m.name)!.push(variant);
+    }
+  }
+  // Each variant goes straight after the shape it is another side of.
+  return shapes.flatMap((s) => [s, ...(extra.get(s.name)?.splice(0) ?? [])]);
 }
 
 self.onmessage = async (e: MessageEvent<WorkerRequest>) => {

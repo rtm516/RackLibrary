@@ -1,5 +1,5 @@
 import DOMPurify from 'dompurify';
-import type { RawShape, ShapeView } from './types';
+import type { RawShape, ShapeView, SizeSource } from './types';
 
 export const RACK_UNIT_IN = 1.75;
 const PT_PER_IN = 72;
@@ -38,6 +38,35 @@ function measure(svg: SVGSVGElement): DOMRect | null {
   const node = document.importNode(svg, true);
   measureHost.appendChild(node);
   try {
+    // getBBox() ignores clipping. Each embedded EMF is a nested <svg> that
+    // clips its drawing to the picture frame (as Visio does), so swap each one
+    // for a rectangle covering just its visible area before measuring.
+    for (const inner of node.querySelectorAll<SVGSVGElement>('svg')) {
+      if (!inner.isConnected) continue;
+      // The visible area is the viewBox (or the viewport when there is none),
+      // in the nested svg's own units; scale it back into the parent's units.
+      const width = inner.width.baseVal.value;
+      const height = inner.height.baseVal.value;
+      const vb = inner.viewBox.baseVal;
+      const view = vb && vb.width > 0 && vb.height > 0 ? vb : { x: 0, y: 0, width, height };
+      const sx = width / view.width;
+      const sy = height / view.height;
+      const b = inner.getBBox();
+      const x0 = Math.max(b.x, view.x);
+      const y0 = Math.max(b.y, view.y);
+      const x1 = Math.min(b.x + b.width, view.x + view.width);
+      const y1 = Math.min(b.y + b.height, view.y + view.height);
+      if (x1 <= x0 || y1 <= y0) {
+        inner.remove();
+        continue;
+      }
+      const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      rect.setAttribute('x', String(inner.x.baseVal.value + (x0 - view.x) * sx));
+      rect.setAttribute('y', String(inner.y.baseVal.value + (y0 - view.y) * sy));
+      rect.setAttribute('width', String((x1 - x0) * sx));
+      rect.setAttribute('height', String((y1 - y0) * sy));
+      inner.replaceWith(rect);
+    }
     const box = node.getBBox();
     return box.width > 0 && box.height > 0 ? box : null;
   } catch {
@@ -73,7 +102,8 @@ export function detectRackUnits(name: string, prompt: string | undefined, widthI
   const rounded = Math.round(u);
   // 19" rack gear is ~17.2" without ears and 19" with; half-width units are ~8.5".
   const fitsRack = (widthIn >= 16 && widthIn <= 19.5) || (widthIn >= 8 && widthIn <= 9.75);
-  if (fitsRack && rounded >= 1 && rounded <= 58 && Math.abs(u - rounded) <= 0.12) return rounded;
+  // Drawings often include a bezel lip or feet, so allow up to 0.2U (0.35") of slack.
+  if (fitsRack && rounded >= 1 && rounded <= 58 && Math.abs(u - rounded) <= 0.2) return rounded;
   return undefined;
 }
 
@@ -83,11 +113,11 @@ export interface NormalizedShape {
   vbHeight: number;
   widthIn: number;
   heightIn: number;
-  sizeSource: 'stencil' | 'drawing';
+  sizeSource: SizeSource;
   rackUnits?: number;
   view: ShapeView;
-  /** The size was multiplied by 10 to undo an unrecorded 1:10 drawing scale. */
-  scaledUp: boolean;
+  /** Factor the drawn size was multiplied by to undo an unrecorded drawing scale (1 if none). */
+  scaleFactor: number;
 }
 
 /**
@@ -115,7 +145,7 @@ export function normalizeShape(raw: RawShape): NormalizedShape {
   // otherwise scale the drawing by the master's drawing scale (e.g. 1:10).
   let widthIn = box.width / PT_PER_IN;
   let heightIn = box.height / PT_PER_IN;
-  let sizeSource: 'stencil' | 'drawing' = 'drawing';
+  let sizeSource: SizeSource = 'drawing';
   if (raw.widthIn && raw.heightIn && Math.abs(box.width / box.height / (raw.widthIn / raw.heightIn) - 1) < 0.15) {
     widthIn = raw.widthIn;
     heightIn = raw.heightIn;
@@ -125,21 +155,19 @@ export function normalizeShape(raw: RawShape): NormalizedShape {
     heightIn *= raw.scale;
     sizeSource = 'stencil';
   }
-  // Rack stencils are conventionally drawn at 1:10, but some masters lose that
-  // scale (binary .vss files, or vendors that shrink shapes without setting a
-  // drawing scale), e.g. a 19" x 3.5" 2U box stored as 1.9" x 0.35". Undo that
-  // only when the x10 reading is unmistakably rack gear: rack width and a whole
-  // number of U.
+  // Rack stencils are usually drawn at a reduced scale (1:10, 1:12, ...), but
+  // some masters lose it: binary .vss/.vsd files don't expose it, and some
+  // vendors shrink shapes without setting one (a 19" x 3.5" 2U box stored as
+  // 1.9" x 0.35"). Restore it only when it makes the shape unmistakably rack gear.
   let trusted = sizeSource === 'stencil';
-  let scaledUp = false;
-  if (widthIn * 10 >= 16 && widthIn * 10 <= 19.5) {
-    const u = (heightIn * 10) / RACK_UNIT_IN;
-    if (u >= 0.94 && Math.abs(u - Math.round(u)) <= 0.06) {
-      widthIn *= 10;
-      heightIn *= 10;
-      trusted = true;
-      scaledUp = true;
-    }
+  let scaleFactor = 1;
+  const factor = rackScale(widthIn, heightIn);
+  if (factor) {
+    widthIn *= factor;
+    heightIn *= factor;
+    trusted = true;
+    scaleFactor = factor;
+    if (sizeSource === 'drawing') sizeSource = 'estimated';
   }
 
   return {
@@ -151,14 +179,38 @@ export function normalizeShape(raw: RawShape): NormalizedShape {
     sizeSource,
     rackUnits: detectRackUnits(raw.name, raw.prompt, widthIn, heightIn, trusted),
     view: detectView(raw.name, raw.prompt),
-    scaledUp,
+    scaleFactor,
   };
 }
 
+/** Drawing scales commonly used for equipment stencils (real units per drawn unit). */
+const COMMON_SCALES = [10, 12, 16, 20, 24, 48];
+
 /**
- * If a stencil's rack masters clearly needed the x10 correction, its other small
- * masters (desktop units, modules) were almost certainly drawn at 1:10 as well.
- * Applies the same correction to them, per drawing-scale group. Mutates in place.
+ * The drawing scale that turns a shape into 19" rack gear (16-19.6" wide, a
+ * whole number of U tall), if exactly that is what one of the common scales does.
+ */
+function rackScale(widthIn: number, heightIn: number): number | undefined {
+  let best: number | undefined;
+  let bestError = Infinity;
+  for (const f of COMMON_SCALES) {
+    const width = widthIn * f;
+    const u = (heightIn * f) / RACK_UNIT_IN;
+    if (width < 16 || width > 19.6 || u < 0.94) continue;
+    const error = Math.abs(u - Math.round(u));
+    if (error <= 0.06 && error < bestError) {
+      best = f;
+      bestError = error;
+    }
+  }
+  return best;
+}
+
+/**
+ * If a stencil's rack masters clearly needed a scale correction, its other
+ * masters (desktop units, modules) were almost certainly drawn at that scale
+ * too. Applies the most common correction to the rest, per drawing-scale group.
+ * Mutates in place.
  */
 export function harmonizeScale(items: { raw: RawShape; n: NormalizedShape }[]) {
   const groups = new Map<string, typeof items>();
@@ -168,13 +220,16 @@ export function harmonizeScale(items: { raw: RawShape; n: NormalizedShape }[]) {
     groups.get(key)!.push(it);
   }
   for (const group of groups.values()) {
-    const fixed = group.filter((it) => it.n.scaledUp).length;
+    const counts = new Map<number, number>();
+    for (const it of group) if (it.n.scaleFactor > 1) counts.set(it.n.scaleFactor, (counts.get(it.n.scaleFactor) ?? 0) + 1);
+    const [factor, fixed] = [...counts.entries()].sort((a, b) => b[1] - a[1])[0] ?? [1, 0];
     if (fixed < 2 || fixed / group.length < 0.25) continue;
     for (const it of group) {
-      if (it.n.scaledUp || it.n.widthIn * 10 > 40) continue;
-      it.n.widthIn *= 10;
-      it.n.heightIn *= 10;
-      it.n.scaledUp = true;
+      if (it.n.scaleFactor > 1 || it.n.widthIn * factor > 40) continue;
+      it.n.widthIn *= factor;
+      it.n.heightIn *= factor;
+      it.n.scaleFactor = factor;
+      if (it.n.sizeSource === 'drawing') it.n.sizeSource = 'estimated';
       it.n.rackUnits = detectRackUnits(it.raw.name, it.raw.prompt, it.n.widthIn, it.n.heightIn, true);
     }
   }

@@ -26,6 +26,8 @@ export interface Stencil {
 
 export type ShapeView = 'front' | 'rear' | 'top' | 'side' | 'other';
 
+export type SizeSource = 'stencil' | 'estimated' | 'drawing';
+
 /** Metadata for one master shape. The SVG markup and thumbnail live in separate stores. */
 export interface Shape {
   id: string;
@@ -41,7 +43,8 @@ export interface Shape {
   /** Real-world size in inches when known from the stencil, else estimated from the drawing. */
   widthIn: number;
   heightIn: number;
-  sizeSource: 'stencil' | 'drawing';
+  /** Where widthIn/heightIn came from: the stencil's data, an inferred drawing scale, or the raw drawing. */
+  sizeSource: SizeSource;
   rackUnits?: number;
   view: ShapeView;
   hidden?: boolean;

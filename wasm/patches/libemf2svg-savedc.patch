@@ -28,6 +28,21 @@ index 3409841..6e8346d 100644
      struct dc_stack *previous;
  } EMF_DEVICE_CONTEXT_STACK;
  
+diff --git a/src/lib/emf2svg_rec_state_record.c b/src/lib/emf2svg_rec_state_record.c
+index 45192e7..d87ece0 100644
+--- a/src/lib/emf2svg_rec_state_record.c
++++ b/src/lib/emf2svg_rec_state_record.c
+@@ -50,6 +50,10 @@ void U_EMRRESTOREDC_draw(const char *contents, FILE *out,
+     }
+     PU_EMRSETMAPMODE pEmr = (PU_EMRSETMAPMODE)(contents);
+     restoreDeviceContext(states, pEmr->iMode);
++    // The restored context may carry a different world transform; start a new
++    // transform group so the drawing that follows uses it.
++    if (states->transform_open)
++        transform_draw(states, out);
+ }
+ void U_EMRSAVEDC_draw(const char *contents, FILE *out, drawingStates *states) {
+     FLAG_SUPPORTED;
 diff --git a/src/lib/emf2svg_utils.c b/src/lib/emf2svg_utils.c
 index 5aba05d..592de8a 100644
 --- a/src/lib/emf2svg_utils.c

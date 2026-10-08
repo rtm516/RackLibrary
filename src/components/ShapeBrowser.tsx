@@ -11,6 +11,12 @@ type SortKey = 'library' | 'name' | 'height';
 
 const PAGE = 240;
 
+const SIZE_SOURCE_TITLE: Record<Shape['sizeSource'], string> = {
+  stencil: 'Real-world size from the stencil',
+  estimated: 'Real-world size estimated from a standard rack width',
+  drawing: 'Size as drawn in the stencil (scale unknown)',
+};
+
 interface Props {
   title: string;
   subtitle?: ReactNode;
@@ -181,7 +187,7 @@ export function ShapeBrowser({ title, subtitle, actions, shapes, library, showSt
                     <div className="flex min-w-0 flex-wrap items-center gap-1">
                       {s.rackUnits ? <span className={badge('accent')}>{s.rackUnits}U</span> : null}
                       {viewLabel(s.view) ? <span className={badge()}>{viewLabel(s.view)}</span> : null}
-                      <span className="truncate text-xs text-fg-subtle" title={s.sizeSource === 'stencil' ? 'Real-world size from the stencil' : 'Size as drawn in the stencil'}>
+                      <span className="truncate text-xs text-fg-subtle" title={SIZE_SOURCE_TITLE[s.sizeSource]}>
                         {formatDims(s)}
                       </span>
                     </div>

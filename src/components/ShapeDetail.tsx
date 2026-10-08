@@ -109,12 +109,12 @@ export function ShapeDetail({ shape, list, library, options, onOptionsChange, on
             <dt>Size</dt>
             <dd>
               {formatDims(shape)} ({formatDims(shape, 'mm')}){' '}
-              <span className="text-fg-subtle">{shape.sizeSource === 'stencil' ? '· from the stencil' : '· as drawn (stencil scale unknown)'}</span>
+              <span className="text-fg-subtle">{shape.sizeSource === 'stencil' ? '· from the stencil' : shape.sizeSource === 'estimated' ? '· estimated from a standard rack width' : '· as drawn (stencil scale unknown)'}</span>
             </dd>
             <dt>Rack units</dt>
             <dd>
               {shape.rackUnits ? `${shape.rackUnits}U` : '—'}
-              {shape.sizeSource === 'stencil' && !shape.rackUnits ? <span className="text-fg-subtle"> ({(shape.heightIn / RACK_UNIT_IN).toFixed(2)} × 1.75″)</span> : null}
+              {shape.sizeSource !== 'drawing' && !shape.rackUnits ? <span className="text-fg-subtle"> ({(shape.heightIn / RACK_UNIT_IN).toFixed(2)} × 1.75″)</span> : null}
             </dd>
             {viewLabel(shape.view) && (
               <>

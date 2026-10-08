@@ -14,6 +14,8 @@ export interface MasterMeta {
   heightIn?: number;
   /** Real-world units per page unit (DrawingScale / PageScale), e.g. 10 for 1:10. */
   scale?: number;
+  /** Package path of the master's contents part, e.g. visio/masters/master3.xml. */
+  path?: string;
 }
 
 const decoder = new TextDecoder();
@@ -79,7 +81,8 @@ export function readMasterMeta(files: Record<string, Uint8Array>): MasterMeta[] 
 
     const target = rels.get(child(master, 'Rel')?.attributes['r:id'] ?? '');
     if (target) {
-      const content = files[target.startsWith('/') ? target.slice(1) : `visio/masters/${target}`];
+      meta.path = target.startsWith('/') ? target.slice(1) : `visio/masters/${target}`;
+      const content = files[meta.path];
       if (content) Object.assign(meta, masterSize(parseXml(content)));
     }
     return meta;

@@ -36,10 +36,16 @@ export const prettyName = (fileName: string) =>
     .replace(/\s+/g, ' ')
     .trim();
 
-/** Bump when conversion output changes, so older imports can be flagged for re-import. */
-export const CONVERTER_VERSION = 2;
+/**
+ * Bump when conversion output changes, so older imports can be flagged for
+ * re-import. At most once per commit: compare with the committed value first.
+ */
+export const CONVERTER_VERSION = 3;
 
 const uuid = () => crypto.randomUUID();
+
+/** Masters that only explain how to use the stencil, e.g. F5's "Stencil Instructions - Drop on page…". */
+const isInstructions = (s: RawShape) => /\binstructions?\b/i.test(`${s.name} ${s.prompt ?? ''}`);
 
 async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T, i: number) => Promise<R>): Promise<R[]> {
   const out = new Array<R>(items.length);
@@ -150,6 +156,7 @@ export async function importFile(src: ImportSource, onProgress: (p: ImportProgre
     for (let i = 0; i < rs.shapes.length; i++) {
       // Measuring runs on the main thread; yield now and then to keep the UI responsive.
       if (i % 25 === 24) await new Promise((r) => setTimeout(r));
+      if (isInstructions(rs.shapes[i])) continue;
       try {
         ok.push({ raw: rs.shapes[i], n: normalizeShape(rs.shapes[i]) });
       } catch (err) {
