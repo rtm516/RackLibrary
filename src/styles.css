@@ -1,0 +1,173 @@
+@import 'tailwindcss';
+
+/* Colour tokens. Light by default; dark follows the system unless the theme
+   toggle forces one (data-theme on <html>). Exposed to Tailwind below. */
+:root {
+  --c-canvas: #f5f6f8;
+  --c-surface: #ffffff;
+  --c-surface-2: #eef0f3;
+  --c-surface-3: #e2e6eb;
+  --c-line: #d9dde3;
+  --c-line-strong: #bfc5ce;
+  --c-fg: #16191d;
+  --c-fg-muted: #4a525d;
+  --c-fg-subtle: #6f7782;
+  --c-accent: #1f6feb;
+  --c-accent-hover: #1a5fd0;
+  --c-accent-soft: #e3edfd;
+  --c-on-accent: #ffffff;
+  --c-ok: #1a7f37;
+  --c-ok-soft: #dcf3e2;
+  --c-warn: #9a6700;
+  --c-warn-soft: #fff4d4;
+  --c-danger: #cf222e;
+  --c-checker-a: #ffffff;
+  --c-checker-b: #eceff3;
+  --sh-card: 0 1px 2px rgb(16 24 40 / 0.06), 0 1px 3px rgb(16 24 40 / 0.1);
+  --sh-pop: 0 12px 32px rgb(16 24 40 / 0.18), 0 2px 6px rgb(16 24 40 / 0.08);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --c-canvas: #0f1216;
+    --c-surface: #171b21;
+    --c-surface-2: #1e232b;
+    --c-surface-3: #272d36;
+    --c-line: #2c333d;
+    --c-line-strong: #3b4450;
+    --c-fg: #e8ebef;
+    --c-fg-muted: #b4bcc6;
+    --c-fg-subtle: #8a939e;
+    --c-accent: #4c8dff;
+    --c-accent-hover: #6aa0ff;
+    --c-accent-soft: #1a2a45;
+    --c-on-accent: #0b1220;
+    --c-ok: #3fb950;
+    --c-ok-soft: #14301d;
+    --c-warn: #d29922;
+    --c-warn-soft: #33290f;
+    --c-danger: #f85149;
+    --c-checker-a: #242a32;
+    --c-checker-b: #1d2229;
+    --sh-card: 0 1px 2px rgb(0 0 0 / 0.4);
+    --sh-pop: 0 12px 32px rgb(0 0 0 / 0.5);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --c-canvas: #0f1216;
+  --c-surface: #171b21;
+  --c-surface-2: #1e232b;
+  --c-surface-3: #272d36;
+  --c-line: #2c333d;
+  --c-line-strong: #3b4450;
+  --c-fg: #e8ebef;
+  --c-fg-muted: #b4bcc6;
+  --c-fg-subtle: #8a939e;
+  --c-accent: #4c8dff;
+  --c-accent-hover: #6aa0ff;
+  --c-accent-soft: #1a2a45;
+  --c-on-accent: #0b1220;
+  --c-ok: #3fb950;
+  --c-ok-soft: #14301d;
+  --c-warn: #d29922;
+  --c-warn-soft: #33290f;
+  --c-danger: #f85149;
+  --c-checker-a: #242a32;
+  --c-checker-b: #1d2229;
+  --sh-card: 0 1px 2px rgb(0 0 0 / 0.4);
+  --sh-pop: 0 12px 32px rgb(0 0 0 / 0.5);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-canvas: var(--c-canvas);
+  --color-surface: var(--c-surface);
+  --color-surface-2: var(--c-surface-2);
+  --color-surface-3: var(--c-surface-3);
+  --color-line: var(--c-line);
+  --color-line-strong: var(--c-line-strong);
+  --color-fg: var(--c-fg);
+  --color-fg-muted: var(--c-fg-muted);
+  --color-fg-subtle: var(--c-fg-subtle);
+  --color-accent: var(--c-accent);
+  --color-accent-hover: var(--c-accent-hover);
+  --color-accent-soft: var(--c-accent-soft);
+  --color-on-accent: var(--c-on-accent);
+  --color-ok: var(--c-ok);
+  --color-ok-soft: var(--c-ok-soft);
+  --color-warn: var(--c-warn);
+  --color-warn-soft: var(--c-warn-soft);
+  --color-danger: var(--c-danger);
+  --shadow-card: var(--sh-card);
+  --shadow-pop: var(--sh-pop);
+}
+
+@theme {
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, monospace;
+  --animate-fade: fade 0.15s ease-out;
+  --animate-slide-in: slide-in 0.18s ease-out;
+  --animate-indeterminate: indeterminate 1.2s ease-in-out infinite;
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+  }
+  @keyframes slide-in {
+    from {
+      transform: translateX(24px);
+      opacity: 0;
+    }
+  }
+  @keyframes indeterminate {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(300%);
+    }
+  }
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    background: var(--c-canvas);
+    color: var(--c-fg);
+    font-size: 14px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+  }
+  a {
+    color: var(--c-accent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--c-accent);
+    outline-offset: 2px;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+/* Transparency checkerboard behind previews and the "transparent" swatch. */
+@utility checker {
+  background-color: var(--c-checker-a);
+  background-image:
+    linear-gradient(45deg, var(--c-checker-b) 25%, transparent 25%), linear-gradient(-45deg, var(--c-checker-b) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--c-checker-b) 75%), linear-gradient(-45deg, transparent 75%, var(--c-checker-b) 75%);
+  background-size: 16px 16px;
+  background-position:
+    0 0,
+    0 8px,
+    8px -8px,
+    -8px 0;
+}

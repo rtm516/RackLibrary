@@ -1,0 +1,1595 @@
+[
+  {
+    "vendor": "Allied Telesis",
+    "name": "AR3050S/AR4050S",
+    "description": "AR3050S/AR4050S next-gen firewalls/routers",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/ngfw.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 485316,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "AR4050S-5G",
+    "description": "AR4050S-5G router (.vssx)",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/AR4050S-5G-vssx.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 80099,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "ARX200S",
+    "description": "AR-series ARX200S routers",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/AT-ARx200S.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 118370,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "DC2552XS/L3",
+    "description": "AT-DC2552XS/L3 data center switch",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/at-dc2552xs_l3.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 325603,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "GS950 Series",
+    "description": "GS950 smart switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/at-gs950_10_16_48ps.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 481294,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "GS970M Series",
+    "description": "GS970M managed switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/at-gs970m_series.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 586711,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "GS980MX Series",
+    "description": "GS980MX managed switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/at-gs980mx_xx.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 645372,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "RPS3000",
+    "description": "RPS3000 redundant power supply",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/at-rps3000.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 138215,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "SwitchBlade x8100",
+    "description": "SBx8100 chassis switch",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/sbx8100_series_reva.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 1385780,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "SwitchBlade x908 GEN2",
+    "description": "SBx908 GEN2 modular switch",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2021/06/sbx908_gen2-vss.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 1366147,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x220 Series",
+    "description": "x220 switches (.vssx)",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2021/06/x220_series-vssx.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 455728,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x230 Series",
+    "description": "x230 L3 edge switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/x230_series_revb.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 611636,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x250 Series",
+    "description": "x250 switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2024/11/ati-x250-18-28-series-vss.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 621875,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x320 Series",
+    "description": "x320 switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/x320-series.vss_.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 280854,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x330 Series",
+    "description": "x330 switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/ati-x330-series-visio.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 486166,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x510 Series",
+    "description": "x510 stackable switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/x510_series.vss_.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 2213427,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x530 Series",
+    "description": "x530 L3 access switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/x530-series-visio.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 1659631,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x530DP Series",
+    "description": "x530DP dual-PSU switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/x530dp-series-visio.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 1492598,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x530L Series",
+    "description": "x530L switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2022/08/x530L-series-vss.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 958176,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x540L Series",
+    "description": "x540L multi-gig switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/ati-x540l-28xs-28xtm-vss.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 315498,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x550 Series",
+    "description": "x550 10G switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/at-x550.vss_.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 461083,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x560-28YSQ",
+    "description": "x560 25G switch",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/08/AT-x560-28YSQ-vss.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 290353,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x610 Series",
+    "description": "x610 switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/x610.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 3738659,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x900 Series and XEM Modules",
+    "description": "x900 switches and XEM modules",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/x900_series_and_xem_modules.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 765528,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x930 Series",
+    "description": "x930 stackable L3 switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/at-x930series.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/resource_basic/visio-stencils-x930-series/",
+    "sizeBytes": 972893,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x950 Series",
+    "description": "x950 stackable 10G/40G/100G switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/x950-series-visio.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 1562398,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "x980 Series",
+    "description": "x980-32CQ/DQ 100G/400G switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/07/x980-32CQ-DQ-visio-stencils.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 569635,
+    "cors": false
+  },
+  {
+    "vendor": "Allied Telesis",
+    "name": "XS900MX",
+    "description": "XS900MX 10G switches",
+    "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/at-xs900mx.zip",
+    "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
+    "sizeBytes": 255686,
+    "cors": false
+  },
+  {
+    "vendor": "APC / Schneider Electric",
+    "name": "NetShelter SX AR3100",
+    "description": "NetShelter SX 42U 600x1070 enclosure with sides (per-product stencil)",
+    "url": "https://download.schneider-electric.com/files?p_enDocType=CAD&p_File_Name=AR3100_-_NetShelter_SX_42U_600mm_Wide_x_1070mm_Deep_Enclosure_w-_Sides.vss&p_Doc_Ref=SPD_SCUA-8UCKY3_EN",
+    "homepage": "https://www.se.com/us/en/product/AR3100/",
+    "sizeBytes": 1007104,
+    "cors": true
+  },
+  {
+    "vendor": "APC / Schneider Electric",
+    "name": "NetShelter SX AR3300",
+    "description": "NetShelter SX 42U 600x1200 enclosure (per-product stencil)",
+    "url": "https://download.schneider-electric.com/files?p_enDocType=CAD&p_File_Name=AR3300_-_NetShelter_SX_42U_600mm_Wide_x_1200mm_Deep_Enclosure.vss&p_Doc_Ref=SPD_VBUH-8DERAG_EN",
+    "homepage": "https://www.se.com/us/en/product/AR3300/",
+    "sizeBytes": 998400,
+    "cors": true
+  },
+  {
+    "vendor": "Cisco",
+    "name": "ASA 5500 Series",
+    "description": "ASA 55xx firewalls",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/products_visio_icon0900aecd8050a7d7.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 7970806,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "ASR 1000 Routers",
+    "description": "ASR 1000 routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Routers_Cisco_ASR_1000_11_08.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 10775946,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "ASR 900 Routers",
+    "description": "ASR 900 routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routeres-asr900.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 11746936,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "ASR 9000 Routers",
+    "description": "ASR 9000 chassis and line cards",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Routers-Cisco_ASR_9000_11_15_13.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 20424272,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "ASR 920 Routers",
+    "description": "ASR 920 routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers-asr920.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 3566194,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Catalyst 1000 Switches",
+    "description": "Catalyst 1000 series access switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches-catalyst-1000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 2476495,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Catalyst 2960 Switches",
+    "description": "Catalyst 2960 access switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/products_visio_icon0900aecd80395a84.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 10205315,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Catalyst 3650 Switches",
+    "description": "Catalyst 3650 switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches_catalyst3650.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 1859772,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Catalyst 3750 Switches",
+    "description": "Catalyst 3750 switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd8009b2de.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 4488291,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Catalyst 3850 Switches",
+    "description": "Catalyst 3850 stackable switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Switches_Catalyst_3850_051013.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 8764211,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Catalyst 4500-X Switches",
+    "description": "Catalyst 4500-X fixed aggregation switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches_catalyst_4500-X.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 2397177,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Catalyst 6500 Switches",
+    "description": "Catalyst 6500 chassis and modules",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches_catalyst_6500.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 14842580,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Catalyst 6800 Switches",
+    "description": "Catalyst 6800 chassis and modules",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches_catalyst-6800.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 6756731,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Catalyst 8000 Routers",
+    "description": "Catalyst 8000 family edge routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers-catalyst-8000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 3674265,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Catalyst 8300 Edge",
+    "description": "Catalyst 8300 edge platforms",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/catalyst-8300-v2.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 3400057,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Catalyst 8500 Edge",
+    "description": "Catalyst 8500 edge platforms",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/catalyst-8500.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 929736,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Catalyst 9000 Switches",
+    "description": "Catalyst 9200/9300/9400/9500/9600 switch front/rear shapes (.vss + .vssx)",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches-catalyst-9000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 67836200,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Cisco 1900 Routers",
+    "description": "ISR G2 1900 routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Routers-Cisco_1900_11-09.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 586975,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Cisco 2900 Routers",
+    "description": "ISR G2 2900 routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Routers-Cisco_2900_11-09.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 2731312,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Cisco 3900 Routers",
+    "description": "ISR G2 3900 routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Routers-Cisco_3900_11-09.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 4432798,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Cisco 8000 Routers",
+    "description": "Cisco 8000 series SP routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers-cisco8000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 30923561,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "ENCS 5400",
+    "description": "Enterprise Network Compute System 5400",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/enterprise-network-compute-system-encs-5400-series.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 336248,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Firepower",
+    "description": "Cisco Firepower appliances (Security-Cisco Firepower)",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/security-firepower.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 5143956,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Firepower 4100/9300",
+    "description": "Firepower 4100 and 9300 chassis",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/security-cisco-firepower.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 1505971,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Industrial Ethernet 5000",
+    "description": "IE 5000 rack-mount industrial switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches-ie-5000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 1127613,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "ISR 1100 Routers",
+    "description": "ISR 1100 routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers-isr-1100.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 3692021,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "ISR 4000 Routers",
+    "description": "ISR 4000 branch routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers-isr-4000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 5876965,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "MDS 9000 Storage Networking",
+    "description": "MDS 9000 Fibre Channel switches/directors",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd800d1dc0.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 22503158,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Meraki",
+    "description": "Cisco Meraki MX/MS/MR etc. (single .vss)",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/security-cisco-meraki.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 7269370,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "NCS 540 Routers",
+    "description": "Network Convergence System 540",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers-cisco-ncs-540.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 8139445,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "NCS 5500 Routers",
+    "description": "Network Convergence System 5500",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers-ncs-5500.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 45445327,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Nexus 2000 Fabric Extenders",
+    "description": "Nexus 2000 FEX",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Switches_Cisco_Nexus_2000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 12036037,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Nexus 3000 Switches",
+    "description": "Nexus 3000 switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches_cisco_nexus_3000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 9497076,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Nexus 5000 Switches",
+    "description": "Nexus 5000/5500/5600 switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Switches_Cisco_Nexus_5000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 11245758,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Nexus 7000 Switches",
+    "description": "Nexus 7000/7700 chassis and modules",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Switches_Cisco_Nexus_7000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 31633752,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Nexus 9000 Switches",
+    "description": "Nexus 9000 data center switches (fixed and modular)",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches_cisco_nexus_9000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 80643436,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Power Distribution Units",
+    "description": "Cisco rack PDUs",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/cisco_power_distribution_units.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 238168,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "R Series Racks",
+    "description": "Cisco R42610 racks",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/racks-cisco-r-series.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 6292242,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "RPS 2300",
+    "description": "Redundant Power System 2300",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Power_System_2300-06-08.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 127563,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Secure Firewall 1200",
+    "description": "Secure Firewall 1200 series",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/cisco-secure-firewall-1200-series.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 2540505,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Secure Firewall 200",
+    "description": "Secure Firewall 200 series",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/cisco-secure-firewall-200-series.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 1413503,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Secure Firewall 3100",
+    "description": "Secure Firewall 3100 series",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/secure-firewall-3100-series.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 9399833,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Secure Firewall 4200",
+    "description": "Secure Firewall 4200 series",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/secure-firewall-4200-series.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 4478090,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Secure Firewall 6100",
+    "description": "Secure Firewall 6100 series",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/secure-firewall-6100-series.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 3179563,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Small Business 200-500 Switches",
+    "description": "Cisco Small Business 200/300/500 series switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/cisco_small_business_300_500_series_switches_06_1_12.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 4434188,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "UCS / HyperFlex",
+    "description": "Unified Computing System servers, fabric interconnects, HyperFlex",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/unified-computing-system-hyperflex-systems.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 151745922,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Wireless",
+    "description": "Wireless LAN controllers and access points",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/wireless.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 30437872,
+    "cors": false
+  },
+  {
+    "vendor": "Eaton",
+    "name": "ePDU G3 Advanced Monitored/Managed",
+    "description": "Eaton G3 managed/advanced monitored rack PDUs",
+    "url": "https://www.eaton.com/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/power-distribution-for-it-equipment/eaton-managed-pdu/eaton-pdu-g3-advanced-monitored-managed-pdu-visio-stencil.vss",
+    "homepage": "https://www.eaton.com/us/en-us/skuPage.EMAT09-10.html",
+    "sizeBytes": 1632256,
+    "cors": false
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "4000 Series",
+    "description": "Extreme 4000 series switches",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/b1d11b6e007e474dbe5e27c3427f1dd1?v=7263d303",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 384279,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "5320 Series",
+    "description": "5320 universal switches",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/a91ff07559984be7a224254046e7b9b1?v=a615c2cd",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 166384,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "5420 Series",
+    "description": "5420 universal switches",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/6ec3d2df0fee4da3ae6fc62fb3351618?v=b1c8eb17",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 618163,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "5520 Series",
+    "description": "5520 universal switches",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/de1381a2c47f4c26a8721cf8325ba53b?v=a4752faf",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 393068,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "5720 Series",
+    "description": "5720 universal switches",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/18c23a05310249008beb6782cae6ef59?v=4e86ccb0",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 226574,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "7520 Series",
+    "description": "7520 data center switches",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/d40c9cec879945f5837ee3e74aaf51c6?v=441f3660",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 564009,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "7720 Series",
+    "description": "7720 data center switches",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/e9ec6b9bb5754460b61ab2cca9f908e0?v=21812729",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 132402,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "7830 Series",
+    "description": "7830-32CE-8DE switch",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/cdb530da63b24dfb9768a32e04260a01?v=fabb4e59",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 287965,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "8720 Series",
+    "description": "8720 data center switches",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/859c5c9d9cbc45b2ae205ee9ed78cf37?v=f0a49880",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 132836,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "9920",
+    "description": "9920 network packet broker",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/3d7d5eb49fbb4b43b3b27fac78086d7b?v=1de0a85c",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 54160,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "Brocade NetIron MLXe Chassis",
+    "description": "MLXe chassis (Brocade heritage)",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/c64ec829a8c34864b51e1d5f0ac71680?v=f5e7f2c8",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 252702,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "ERS 4900",
+    "description": "Ethernet Routing Switch 4900",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/2603e0b9565447c5885915d7b599b76f?v=fe908a95",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 203306,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "ERS 5900",
+    "description": "Ethernet Routing Switch 5900",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/811d3d8ea44f4c4ca5c41fe97f484fac?v=0ac1bb5f",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 402948,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "ExtremeCloud Appliance",
+    "description": "ExtremeCloud appliance",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/781459129d4546ddb97f7611c45015b6?v=b0eee005",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 111754,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "SLX 9030/9640",
+    "description": "SLX 9030 and 9640 routers",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/592998ca3a2a4c9285a0b3ce7ccc9f10?v=e79f6d58",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 415793,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "SLX 9140/9240/9540",
+    "description": "SLX 9140, 9240, 9540 switches",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/ac1576b408ae4baea77f1a60df7e0c0c?v=7007e6d7",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 340983,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "SLX 9150",
+    "description": "SLX 9150 (Brocade heritage) DC switches",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/32c2ea74c2c34aa68e3b84db3605c6f0?v=7f409de0",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 214625,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "SLX 9250",
+    "description": "SLX 9250 DC switches",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/8de58f1ae71c438dadbedc38864976ee?v=107225cb",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 133742,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "SLX 9740",
+    "description": "SLX 9740 routers",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/a085611883ee43a09e28652ed802abe5?v=60bd10da",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 436626,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "SLX 9850",
+    "description": "SLX 9850 chassis router",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/b04dd9cacb3b47ee96a5e99e818f4034?v=d83410ad",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 591202,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "VSP 4900",
+    "description": "VSP 4900 fabric switches",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/f6a099df7a1440dc8dcaae08216be9a7?v=71a7f8d5",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 279009,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "VSP 7200",
+    "description": "VSP 7200 series",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/5d0507fa0316493f8dcc10d6163adca0?v=bfb10184",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 168552,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "VSP 7400",
+    "description": "VSP 7400 series",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/584908799ac9497bba7f6af86206559c?v=275b10ef",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 208268,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "VSP 8400",
+    "description": "VSP 8400 series",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/cea0e71c98a44cd2abd8cf773e310b4a?v=f67bf38c",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 260236,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "VSP 8600",
+    "description": "VSP 8600 chassis",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/dbc4a0ac374b4326a764697bfb561eb7?v=6766368f",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 392014,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "WiFi Controllers",
+    "description": "Extreme wireless controllers",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/cb510095c0a8405d8de54ea104966483?v=22062ca9",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 175185,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "X435 Series",
+    "description": "ExtremeSwitching X435",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/4be1ad2708ad4fbc9cccffce98cd325a?v=25b9e5ae",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 113879,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "X440-G2",
+    "description": "ExtremeSwitching X440-G2",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/6d80fe66e4bf4d8f90e38d21e2a0fbd0?v=0321c1dc",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 3169306,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "X450-G2",
+    "description": "ExtremeSwitching X450-G2",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/85abb56a05e24c79b4cef2b59c630b8c?v=b6961116",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 2486307,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "X460-G2",
+    "description": "ExtremeSwitching X460-G2",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/3aed221575e54105a6b6764f8281fba4?v=afee89bc",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 1521920,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "X465",
+    "description": "ExtremeSwitching X465",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/31f8b52d19404bcfb9716e8d448c6121?v=1c4558ce",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 482076,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "X590",
+    "description": "ExtremeSwitching X590",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/eccf7c7b87e049bdaa9bd99c4a0aaf91?v=909db9d8",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 125507,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "X620",
+    "description": "ExtremeSwitching X620",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/226fd52b70784ea5beb59207448df2da?v=47265977",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 1003426,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "X670-G2",
+    "description": "ExtremeSwitching X670-G2",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/81532f010d674156937ce8f0b942f6ad?v=32322eb8",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 1976306,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "X690",
+    "description": "ExtremeSwitching X690",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/e90a28f669564f7a815221d32ed5a8eb?v=e27ecc62",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 887375,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "X695",
+    "description": "ExtremeSwitching X695",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/7c9098bb0f534dbe9e793d27d8330cb3?v=3e688a14",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 126458,
+    "cors": true
+  },
+  {
+    "vendor": "Extreme Networks",
+    "name": "X870",
+    "description": "ExtremeSwitching X870",
+    "url": "https://extr-p-001.sitecorecontenthub.cloud/api/public/content/9cb7e52feffe4e888ac85779f0e7ced1?v=16135d3d",
+    "homepage": "https://www.extremenetworks.com/support/visio-stencils/",
+    "sizeBytes": 1084410,
+    "cors": true
+  },
+  {
+    "vendor": "F5",
+    "name": "BIG-IP and VIPRION",
+    "description": "BIG-IP and VIPRION platforms (.vsd)",
+    "url": "https://cdn.studio.f5.com/files/k6fem79d/production/7ec820669dd320ef5a5b60209162fc94d00aec6a.vsd",
+    "homepage": "https://www.f5.com/resources/visio-stencils",
+    "sizeBytes": 19974656,
+    "cors": false
+  },
+  {
+    "vendor": "F5",
+    "name": "BIG-IP iSeries",
+    "description": "BIG-IP iSeries platforms (.vsd drawing file, not a stencil)",
+    "url": "https://cdn.studio.f5.com/files/k6fem79d/production/9d158c975bbd6055a66fadd64d8a35774b7f7fb6.vsd",
+    "homepage": "https://www.f5.com/resources/visio-stencils",
+    "sizeBytes": 20856832,
+    "cors": false
+  },
+  {
+    "vendor": "F5",
+    "name": "rSeries and VELOS",
+    "description": "F5 rSeries appliances and VELOS chassis (F5 Stencils v2.3)",
+    "url": "https://cdn.studio.f5.com/files/k6fem79d/production/8a40f3dd8430053be9523ae24fa7549de70afb07.vssx",
+    "homepage": "https://www.f5.com/resources/visio-stencils",
+    "sizeBytes": 25084008,
+    "cors": false
+  },
+  {
+    "vendor": "Fortinet",
+    "name": "Fortinet Visio Stencils",
+    "description": "FortiGate, FortiSwitch, FortiAP, FortiAnalyzer/Manager, FortiSandbox and other Fortinet appliances, plus icons",
+    "url": "https://www.fortinet.com/content/dam/fortinet/assets/downloads/Fortinet%20Visio%20Stencil.zip",
+    "homepage": "https://www.fortinet.com/resources/icon-library",
+    "sizeBytes": 9307626,
+    "cors": false
+  },
+  {
+    "vendor": "Gigamon",
+    "name": "G-TAP",
+    "description": "G-TAP network taps",
+    "url": "https://www.gigamon.com/content/dam/resource-library/english/visio/ms-vs-gigamon-g-tap-stencils.vss",
+    "homepage": "https://www.gigamon.com/company/brand.html",
+    "sizeBytes": 3919872,
+    "cors": false
+  },
+  {
+    "vendor": "Gigamon",
+    "name": "GigaVUE GSA",
+    "description": "GigaSECURE/GSA appliances",
+    "url": "https://www.gigamon.com/content/dam/resource-library/english/visio/ms-vs-gigamon-gigavue-gsa-stencils.vss",
+    "homepage": "https://www.gigamon.com/company/brand.html",
+    "sizeBytes": 508928,
+    "cors": false
+  },
+  {
+    "vendor": "Gigamon",
+    "name": "GigaVUE HC Series",
+    "description": "GigaVUE-HC visibility nodes",
+    "url": "https://www.gigamon.com/content/dam/resource-library/english/visio/ms-vs-gigamon-gigavue-hc-series-stencils.vss",
+    "homepage": "https://www.gigamon.com/company/brand.html",
+    "sizeBytes": 9303552,
+    "cors": false
+  },
+  {
+    "vendor": "Gigamon",
+    "name": "GigaVUE TA Series",
+    "description": "GigaVUE-TA traffic aggregation nodes",
+    "url": "https://www.gigamon.com/content/dam/resource-library/english/visio/ms-vs-gigamon-gigavue-ta-series-stencils.vss",
+    "homepage": "https://www.gigamon.com/company/brand.html",
+    "sizeBytes": 5480448,
+    "cors": false
+  },
+  {
+    "vendor": "Gigamon",
+    "name": "GigaVUE-FM",
+    "description": "GigaVUE-FM fabric manager appliance",
+    "url": "https://www.gigamon.com/content/dam/resource-library/english/visio/ms-vs-gigamon-gigavue-fm-stencils.vss",
+    "homepage": "https://www.gigamon.com/company/brand.html",
+    "sizeBytes": 271360,
+    "cors": false
+  },
+  {
+    "vendor": "iXsystems TrueNAS",
+    "name": "TrueNAS Full Stencil Pack",
+    "description": "All TrueNAS storage systems and expansion shelves (Mini, R, M, F, H, X, ES)",
+    "url": "https://www.truenas.com/docs/files/truenasfullstencilpack.vssx",
+    "homepage": "https://www.truenas.com/docs/hardware/",
+    "sizeBytes": 3541499,
+    "cors": true
+  },
+  {
+    "vendor": "Juniper Networks",
+    "name": "ACX Series",
+    "description": "ACX cell-site/metro routers",
+    "url": "https://www.juniper.net/content/dam/www/assets/images/us/en/company/image-library/juniper-acx-series-icons.zip",
+    "homepage": "https://www.juniper.net/us/en/products/icons-and-stencils.html",
+    "sizeBytes": 49071726,
+    "cors": true
+  },
+  {
+    "vendor": "Juniper Networks",
+    "name": "Branch SRX Series",
+    "description": "Branch SRX firewalls",
+    "url": "https://www.juniper.net/content/dam/www/assets/images/us/en/company/image-library/juniper-branch-srx-series-icons.zip",
+    "homepage": "https://www.juniper.net/us/en/products/icons-and-stencils.html",
+    "sizeBytes": 5046786,
+    "cors": true
+  },
+  {
+    "vendor": "Juniper Networks",
+    "name": "EX Series",
+    "description": "EX switches (.vss + .vssx + index PDF)",
+    "url": "https://www.juniper.net/content/dam/www/assets/images/us/en/company/image-library/juniper-ex-series-icons.zip",
+    "homepage": "https://www.juniper.net/us/en/products/icons-and-stencils.html",
+    "sizeBytes": 81161904,
+    "cors": true
+  },
+  {
+    "vendor": "Juniper Networks",
+    "name": "General Networking Icons",
+    "description": "Generic Juniper topology icons (.vss + .vssx)",
+    "url": "https://www.juniper.net/content/dam/www/assets/images/us/en/company/image-library/juniper-generic-visio.zip",
+    "homepage": "https://www.juniper.net/us/en/products/icons-and-stencils.html",
+    "sizeBytes": 319304,
+    "cors": true
+  },
+  {
+    "vendor": "Juniper Networks",
+    "name": "JSA Series",
+    "description": "JSA security analytics appliances",
+    "url": "https://www.juniper.net/content/dam/www/assets/images/us/en/company/image-library/juniper-jsa-series-icons.zip",
+    "homepage": "https://www.juniper.net/us/en/products/icons-and-stencils.html",
+    "sizeBytes": 4519878,
+    "cors": true
+  },
+  {
+    "vendor": "Juniper Networks",
+    "name": "MX Series",
+    "description": "MX routers (.vss)",
+    "url": "https://www.juniper.net/content/dam/www/assets/images/us/en/company/image-library/juniper-mx-series-icons.zip",
+    "homepage": "https://www.juniper.net/us/en/products/icons-and-stencils.html",
+    "sizeBytes": 69964792,
+    "cors": true
+  },
+  {
+    "vendor": "Juniper Networks",
+    "name": "NFX Series",
+    "description": "NFX network services platforms",
+    "url": "https://www.juniper.net/content/dam/www/assets/images/us/en/company/image-library/juniper-nfx-series-icons.zip",
+    "homepage": "https://www.juniper.net/us/en/products/icons-and-stencils.html",
+    "sizeBytes": 293283,
+    "cors": true
+  },
+  {
+    "vendor": "Juniper Networks",
+    "name": "PTX Series",
+    "description": "PTX packet transport routers",
+    "url": "https://www.juniper.net/content/dam/www/assets/images/us/en/company/image-library/juniper-ptx-series-icons.zip",
+    "homepage": "https://www.juniper.net/us/en/products/icons-and-stencils.html",
+    "sizeBytes": 65908828,
+    "cors": true
+  },
+  {
+    "vendor": "Juniper Networks",
+    "name": "QFX Series",
+    "description": "QFX data center switches (.vss + .vssx)",
+    "url": "https://www.juniper.net/content/dam/www/assets/images/us/en/company/image-library/juniper-qfx-series-icons.zip",
+    "homepage": "https://www.juniper.net/us/en/products/icons-and-stencils.html",
+    "sizeBytes": 102701093,
+    "cors": true
+  },
+  {
+    "vendor": "Juniper Networks",
+    "name": "Session Smart Routers",
+    "description": "SSR / SD-WAN appliances",
+    "url": "https://www.juniper.net/content/dam/www/assets/images/us/en/company/image-library/juniper-session-smart-routers-icons.zip",
+    "homepage": "https://www.juniper.net/us/en/products/icons-and-stencils.html",
+    "sizeBytes": 2955441,
+    "cors": true
+  },
+  {
+    "vendor": "Juniper Networks",
+    "name": "SRX Series",
+    "description": "SRX data center/high-end firewalls (SRX1000/3000/4000/5000 lines)",
+    "url": "https://www.juniper.net/content/dam/www/assets/images/us/en/company/image-library/juniper-srx-series-icons.zip",
+    "homepage": "https://www.juniper.net/us/en/products/icons-and-stencils.html",
+    "sizeBytes": 47605220,
+    "cors": true
+  },
+  {
+    "vendor": "MikroTik",
+    "name": "MikroTik Visio and SVG files",
+    "description": "Per-device drawings for CCR, CRS, CSS, routers, wireless, LTE, ROSE (68 .vsdx + 68 .svg; drawings, not .vss stencils)",
+    "url": "https://box.mikrotik.com/d/4f29ebec5bbf4d5ab88d/files/?p=%2FVisio%20and%20SVG%20files%20for%20homepage%20Compressed.zip&dl=1",
+    "homepage": "https://box.mikrotik.com/d/4f29ebec5bbf4d5ab88d/",
+    "sizeBytes": 284761991,
+    "cors": true
+  },
+  {
+    "vendor": "Opengear",
+    "name": "CM8116",
+    "description": "CM8100 console manager, 16-port",
+    "url": "https://ftp.opengear.com/download/stencils/CM8100/CM8116.vssx",
+    "homepage": "https://ftp.opengear.com/download/stencils/",
+    "sizeBytes": 88649,
+    "cors": false
+  },
+  {
+    "vendor": "Opengear",
+    "name": "CM8132",
+    "description": "CM8100 console manager, 32-port",
+    "url": "https://ftp.opengear.com/download/stencils/CM8100/CM8132.vssx",
+    "homepage": "https://ftp.opengear.com/download/stencils/",
+    "sizeBytes": 96736,
+    "cors": false
+  },
+  {
+    "vendor": "Opengear",
+    "name": "CM8148",
+    "description": "CM8100 console manager, 48-port",
+    "url": "https://ftp.opengear.com/download/stencils/CM8100/CM8148.vssx",
+    "homepage": "https://ftp.opengear.com/download/stencils/",
+    "sizeBytes": 107759,
+    "cors": false
+  },
+  {
+    "vendor": "Opengear",
+    "name": "OM1208-8E",
+    "description": "Operations Manager OM1208-8E",
+    "url": "https://ftp.opengear.com/download/stencils/OM/OM1208-8E.vssx",
+    "homepage": "https://ftp.opengear.com/download/stencils/OM/",
+    "sizeBytes": 99034,
+    "cors": false
+  },
+  {
+    "vendor": "Opengear",
+    "name": "OM2248",
+    "description": "Operations Manager OM2248 (the OM/ folder has 22 per-model .vssx, e.g. OM1204/OM1208/OM2216/OM2224/OM2232/OM2248 variants)",
+    "url": "https://ftp.opengear.com/download/stencils/OM/OM2248.vssx",
+    "homepage": "https://ftp.opengear.com/download/stencils/OM/",
+    "sizeBytes": 134651,
+    "cors": false
+  },
+  {
+    "vendor": "Opengear",
+    "name": "Opengear (legacy families)",
+    "description": "Console servers and older Opengear product families",
+    "url": "https://ftp.opengear.com/download/stencils/other_families/Opengear.vss",
+    "homepage": "https://ftp.opengear.com/download/stencils/",
+    "sizeBytes": 1037312,
+    "cors": false
+  },
+  {
+    "vendor": "Opengear",
+    "name": "Opengear Visio (alt set)",
+    "description": "Second Opengear legacy-family stencil",
+    "url": "https://ftp.opengear.com/download/stencils/other_families/OpengearVisio.vss",
+    "homepage": "https://ftp.opengear.com/download/stencils/",
+    "sizeBytes": 1332224,
+    "cors": false
+  },
+  {
+    "vendor": "Palo Alto Networks",
+    "name": "PAN Hardware Stencils (VSS)",
+    "description": "Same set, legacy .vss",
+    "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/corporate/panw-vss.vss",
+    "homepage": "https://www.paloaltonetworks.com/company/press-kit",
+    "sizeBytes": 47565312,
+    "cors": false
+  },
+  {
+    "vendor": "Palo Alto Networks",
+    "name": "PAN Hardware Stencils (VSSX)",
+    "description": "Palo Alto Networks physical firewall appliances",
+    "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/corporate/panw-vssx.vssx",
+    "homepage": "https://www.paloaltonetworks.com/company/press-kit",
+    "sizeBytes": 25072904,
+    "cors": false
+  },
+  {
+    "vendor": "Panduit",
+    "name": "Panduit Stand-Alone Shape Catalog",
+    "description": "143 .vss: FlexFusion/Net-Access/Net-SERV cabinets, containment, racks, cable management, patch panels, PDUs, pathways",
+    "url": "https://www.panduit.com/content/dam/panduit/en/website/support/tools1/visio/documents/visio-stand-alone-shape-catalog.zip",
+    "homepage": "https://www.panduit.com/latam/en/support/tools/visio.html",
+    "sizeBytes": 170279770,
+    "cors": true
+  },
+  {
+    "vendor": "Perle",
+    "name": "IOLAN SCR Console Servers",
+    "description": "IOLAN SCR, SCRC and SCR-D console servers: front, console-side and rear views",
+    "url": "https://www.perle.com/downloads/iolan/IOLAN-SCR-all-models.vssx",
+    "homepage": "https://www.perle.com/downloads/iolan-scr.shtml",
+    "sizeBytes": 532918,
+    "cors": false
+  },
+  {
+    "vendor": "Raritan (Legrand)",
+    "name": "BCM2 Branch Circuit Monitor",
+    "description": "BCM2 branch circuit monitor",
+    "url": "https://www.raritan.com/assets/ram/resources/visio_stencils/raritan-bcm2-stencils.vss",
+    "homepage": "https://www.raritan.com/resources/visio-stencils",
+    "sizeBytes": 258560,
+    "cors": false
+  },
+  {
+    "vendor": "Raritan (Legrand)",
+    "name": "Dominion KX III",
+    "description": "Dominion KX III KVM switches",
+    "url": "https://www.raritan.com/assets/ram/resources/visio_stencils/raritan-vs-DKX3.vss",
+    "homepage": "https://www.raritan.com/resources/visio-stencils",
+    "sizeBytes": 287744,
+    "cors": false
+  },
+  {
+    "vendor": "Raritan (Legrand)",
+    "name": "Dominion KX IV-101",
+    "description": "Dominion KX IV-101 KVM-over-IP",
+    "url": "https://www.raritan.com/assets/ram/resources/visio_stencils/DKX4-101.zip",
+    "homepage": "https://www.raritan.com/resources/visio-stencils",
+    "sizeBytes": 54766,
+    "cors": false
+  },
+  {
+    "vendor": "Raritan (Legrand)",
+    "name": "Dominion KX IV-UST",
+    "description": "Dominion KX IV-UST KVM",
+    "url": "https://www.raritan.com/assets/ram/resources/visio_stencils/DKX4-UST.zip",
+    "homepage": "https://www.raritan.com/resources/visio-stencils",
+    "sizeBytes": 53663,
+    "cors": false
+  },
+  {
+    "vendor": "Raritan (Legrand)",
+    "name": "Dominion SX II",
+    "description": "Dominion SX II serial console servers",
+    "url": "https://www.raritan.com/assets/ram/resources/visio_stencils/raritan-dsx2-n.vss",
+    "homepage": "https://www.raritan.com/resources/visio-stencils",
+    "sizeBytes": 628224,
+    "cors": false
+  },
+  {
+    "vendor": "Raritan (Legrand)",
+    "name": "EMX Environment Monitoring",
+    "description": "EMX rack environmental controller",
+    "url": "https://www.raritan.com/assets/ram/resources/visio_stencils/raritan-emx-stencils.vss",
+    "homepage": "https://www.raritan.com/resources/visio-stencils",
+    "sizeBytes": 98816,
+    "cors": false
+  },
+  {
+    "vendor": "Raritan (Legrand)",
+    "name": "PX (original) PDUs",
+    "description": "Raritan original PX PDUs",
+    "url": "https://www.raritan.com/assets/ram/resources/visio_stencils/raritan-vs-PX.vss",
+    "homepage": "https://www.raritan.com/resources/visio-stencils",
+    "sizeBytes": 5254144,
+    "cors": false
+  },
+  {
+    "vendor": "Raritan (Legrand)",
+    "name": "PX2 Rack PDUs",
+    "description": "Raritan PX2 PDUs",
+    "url": "https://www.raritan.com/assets/ram/resources/visio_stencils/raritan-px2-stencils.vss",
+    "homepage": "https://www.raritan.com/resources/visio-stencils",
+    "sizeBytes": 4490240,
+    "cors": false
+  },
+  {
+    "vendor": "Raritan (Legrand)",
+    "name": "PX3 Rack PDUs",
+    "description": "Raritan PX3 intelligent PDUs",
+    "url": "https://www.raritan.com/assets/ram/resources/visio_stencils/raritan-px3-stencils.vss",
+    "homepage": "https://www.raritan.com/resources/visio-stencils",
+    "sizeBytes": 7343104,
+    "cors": false
+  },
+  {
+    "vendor": "Raritan (Legrand)",
+    "name": "PX4 Rack PDUs",
+    "description": "Raritan PX4 intelligent PDUs",
+    "url": "https://www.raritan.com/assets/ram/resources/visio_stencils/raritan-px4-stencils.VSS",
+    "homepage": "https://www.raritan.com/resources/visio-stencils",
+    "sizeBytes": 1294336,
+    "cors": false
+  },
+  {
+    "vendor": "Raritan (Legrand)",
+    "name": "Sensors",
+    "description": "Raritan environmental sensors",
+    "url": "https://www.raritan.com/assets/ram/resources/visio_stencils/raritan-sensors-stencils.VSS",
+    "homepage": "https://www.raritan.com/resources/visio-stencils",
+    "sizeBytes": 251904,
+    "cors": false
+  },
+  {
+    "vendor": "Raritan (Legrand)",
+    "name": "SRC Smart Rack Controller",
+    "description": "Smart Rack Controller",
+    "url": "https://www.raritan.com/assets/ram/resources/visio_stencils/raritan-src-stencils.VSS",
+    "homepage": "https://www.raritan.com/resources/visio-stencils",
+    "sizeBytes": 87552,
+    "cors": false
+  },
+  {
+    "vendor": "Raritan (Legrand)",
+    "name": "Transfer Switch",
+    "description": "Raritan rack transfer switches",
+    "url": "https://www.raritan.com/assets/ram/resources/visio_stencils/transferswitch.vss",
+    "homepage": "https://www.raritan.com/resources/visio-stencils",
+    "sizeBytes": 453632,
+    "cors": false
+  },
+  {
+    "vendor": "SonicWall",
+    "name": "SonicWall Devices",
+    "description": "Firewalls, Email Security, Capture appliance, switches, APs (single .vssx v2.0.8)",
+    "url": "https://assets-cms.sonicwall.com/v3/assets/blt281ecbfc2563bf9b/bltb2bcb84de07d7612/SonicWall-Stencils-Devices.zip",
+    "homepage": "https://www.sonicwall.com/support/knowledge-base/where-can-i-download-sonicwall-stencils/kA1VN0000000EJC0A2",
+    "sizeBytes": 20824869,
+    "cors": false
+  },
+  {
+    "vendor": "TP-Link",
+    "name": "TP-Link Visio Stencil",
+    "description": "TP-Link/Omada switches, routers, APs (single .vss)",
+    "url": "https://static.tp-link.com/TP-Link_Visio_Stencil.zip",
+    "homepage": "https://www.tp-link.com/us/support/faq/1520/",
+    "sizeBytes": 3996552,
+    "cors": true
+  },
+  {
+    "vendor": "Tripp Lite (Eaton)",
+    "name": "3-Phase PDUs",
+    "description": "3-phase rack PDUs",
+    "url": "https://assets.tripplite.com/visio-stencil/tripp-lite-3-phase-power-distribution-units.zip",
+    "homepage": "https://tripplite.eaton.com/support/visio-stencils",
+    "sizeBytes": 21098357,
+    "cors": false
+  },
+  {
+    "vendor": "Tripp Lite (Eaton)",
+    "name": "3-Phase UPS Systems",
+    "description": "3-phase UPS",
+    "url": "https://assets.tripplite.com/visio-stencil/tripp-lite-3-phase-ups-systems.zip",
+    "homepage": "https://tripplite.eaton.com/support/visio-stencils",
+    "sizeBytes": 41681724,
+    "cors": false
+  },
+  {
+    "vendor": "Tripp Lite (Eaton)",
+    "name": "KVM Switches & Consoles",
+    "description": "KVM switches and rack consoles",
+    "url": "https://assets.tripplite.com/visio-stencil/tripp-lite-kvm-switches-and-consoles.zip",
+    "homepage": "https://tripplite.eaton.com/support/visio-stencils",
+    "sizeBytes": 4236592,
+    "cors": false
+  },
+  {
+    "vendor": "Tripp Lite (Eaton)",
+    "name": "Network Switches & Media Converters",
+    "description": "Network switches and media converters",
+    "url": "https://assets.tripplite.com/visio-stencil/tripp-lite-network-switches-and-media-converters.zip",
+    "homepage": "https://tripplite.eaton.com/support/visio-stencils",
+    "sizeBytes": 5621543,
+    "cors": false
+  },
+  {
+    "vendor": "Tripp Lite (Eaton)",
+    "name": "Patch Panels",
+    "description": "Copper/fiber patch panels",
+    "url": "https://assets.tripplite.com/visio-stencil/tripp-lite-patch-panels.zip",
+    "homepage": "https://tripplite.eaton.com/support/visio-stencils",
+    "sizeBytes": 2844916,
+    "cors": false
+  },
+  {
+    "vendor": "Tripp Lite (Eaton)",
+    "name": "Rack Cooling",
+    "description": "Rack cooling AC units",
+    "url": "https://assets.tripplite.com/visio-stencil/tripp-lite-rack-cooling.zip",
+    "homepage": "https://tripplite.eaton.com/support/visio-stencils",
+    "sizeBytes": 4662604,
+    "cors": false
+  },
+  {
+    "vendor": "Tripp Lite (Eaton)",
+    "name": "Rackmount Power Strips & Surge",
+    "description": "Rackmount power strips and surge suppressors",
+    "url": "https://assets.tripplite.com/visio-stencil/tripp-lite-rack-mount-power-strips-surge-suppressors.zip",
+    "homepage": "https://tripplite.eaton.com/support/visio-stencils",
+    "sizeBytes": 477879,
+    "cors": false
+  },
+  {
+    "vendor": "Tripp Lite (Eaton)",
+    "name": "Single-Phase PDUs",
+    "description": "Single-phase rack PDUs (.vssx)",
+    "url": "https://assets.tripplite.com/visio-stencil/tripp_lite_single-phase_power_distribution_units_pdus.zip",
+    "homepage": "https://tripplite.eaton.com/support/visio-stencils",
+    "sizeBytes": 8460801,
+    "cors": false
+  },
+  {
+    "vendor": "Tripp Lite (Eaton)",
+    "name": "Single-Phase UPS Systems",
+    "description": "Single-phase rack/tower UPS",
+    "url": "https://assets.tripplite.com/visio-stencil/tripp-lite-single-phase-ups-systems.zip",
+    "homepage": "https://tripplite.eaton.com/support/visio-stencils",
+    "sizeBytes": 35651079,
+    "cors": false
+  },
+  {
+    "vendor": "Tripp Lite (Eaton)",
+    "name": "SmartRack Accessories",
+    "description": "Cable management and portable AC",
+    "url": "https://assets.tripplite.com/visio-stencil/tripp-lite-smartrack-accessories.zip",
+    "homepage": "https://tripplite.eaton.com/support/visio-stencils",
+    "sizeBytes": 1672659,
+    "cors": false
+  },
+  {
+    "vendor": "Tripp Lite (Eaton)",
+    "name": "SmartRack Enclosures",
+    "description": "Server rack enclosures (.vss + .vssx)",
+    "url": "https://assets.tripplite.com/visio-stencil/tripp-lite-smartrack-enclosures.zip",
+    "homepage": "https://tripplite.eaton.com/support/visio-stencils",
+    "sizeBytes": 74975702,
+    "cors": false
+  },
+  {
+    "vendor": "Tripp Lite (Eaton)",
+    "name": "SmartRack Open-Frame Racks",
+    "description": "2-post/4-post open-frame racks",
+    "url": "https://assets.tripplite.com/visio-stencil/tripp-lite-smartrack-racks.zip",
+    "homepage": "https://tripplite.eaton.com/support/visio-stencils",
+    "sizeBytes": 993442,
+    "cors": false
+  },
+  {
+    "vendor": "Tripp Lite (Eaton)",
+    "name": "UPS Accessories",
+    "description": "UPS accessories (bypass, network cards, etc.)",
+    "url": "https://assets.tripplite.com/visio-stencil/tripp-lite-ups-accessories.zip",
+    "homepage": "https://tripplite.eaton.com/support/visio-stencils",
+    "sizeBytes": 5541684,
+    "cors": false
+  },
+  {
+    "vendor": "Tripp Lite (Eaton)",
+    "name": "UPS Battery Packs",
+    "description": "External UPS battery packs",
+    "url": "https://assets.tripplite.com/visio-stencil/tripp-lite-ups-battery-packs.zip",
+    "homepage": "https://tripplite.eaton.com/support/visio-stencils",
+    "sizeBytes": 9081772,
+    "cors": false
+  }
+]

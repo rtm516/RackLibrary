@@ -1,0 +1,2766 @@
+[
+  {
+    "vendor": "Actifio",
+    "page": "https://www.visiocafe.com/actifio.htm",
+    "packs": [
+      {
+        "name": "Actifio_Icons_2016.vssx Actifio_Icons_2016.vss",
+        "description": "Visio Icons of Actifio products in Visio 2013/2016 format, and in Visio 2003 to 2010 format",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/actifio/Actifio_Icons_2016.vssx.zip",
+        "sizeBytes": 2759000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Aerohive",
+    "page": "https://www.visiocafe.com/aerohive.htm",
+    "packs": [
+      {
+        "name": "AerohiveVisioStencil_2012",
+        "description": "Full set of Aerohive Networks Stencils",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/aerohive/AerohiveVisioStencil_2012.zip",
+        "sizeBytes": 665000,
+        "updated": "26-Mar-2012"
+      }
+    ]
+  },
+  {
+    "vendor": "Alcatel-Lucent Enterprise",
+    "page": "https://www.visiocafe.com/alcatel.htm",
+    "packs": [
+      {
+        "name": "Alcatel-Lucent-OA740",
+        "description": "Stencils for Alcatel-Lucent OA740 Products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OA740.zip",
+        "sizeBytes": 522000,
+        "updated": "19-Jan-2018"
+      },
+      {
+        "name": "Alcatel-Lucent-OA5510",
+        "description": "Stencils for Alcatel-Lucent OA5510 Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OA5510.zip",
+        "sizeBytes": 411000,
+        "updated": "19-Jan-2018"
+      },
+      {
+        "name": "Alcatel-Lucent-OA-ESR",
+        "description": "Stencils for Alcatel-Lucent OA ESR Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OA-ESR.zip",
+        "sizeBytes": 885000,
+        "updated": "18-Apr-2016"
+      },
+      {
+        "name": "Alcatel-Lucent-OA-WLAN",
+        "description": "Stencils for Alcatel-Lucent OA WLAN Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OA-WLAN.zip",
+        "sizeBytes": 4134000,
+        "updated": "19-Jan-2018"
+      },
+      {
+        "name": "Alcatel-Lucent-OS10K",
+        "description": "Stencils for Alcatel-Lucent OS10K Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OS10K.zip",
+        "sizeBytes": 1894000,
+        "updated": "19-Jan-2018"
+      },
+      {
+        "name": "Alcatel-Lucent-OS6250",
+        "description": "Stencils for Alcatel-Lucent OS6250 Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OS6250.zip",
+        "sizeBytes": 871000,
+        "updated": "22-Apr-2015"
+      },
+      {
+        "name": "Alcatel-Lucent-OS6350",
+        "description": "Stencils for Alcatel-Lucent OS6350 Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OS6350.zip",
+        "sizeBytes": 593000,
+        "updated": "19-Jan-2018"
+      },
+      {
+        "name": "Alcatel-Lucent-OS6400",
+        "description": "Stencils for Alcatel-Lucent OS6400 Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OS6400.zip",
+        "sizeBytes": 1141000,
+        "updated": "22-Apr-2015"
+      },
+      {
+        "name": "Alcatel-Lucent-OS6450",
+        "description": "Stencils for Alcatel-Lucent OS6450 Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OS6450.zip",
+        "sizeBytes": 2718000,
+        "updated": "19-Jan-2018"
+      },
+      {
+        "name": "Alcatel-Lucent-OS6560",
+        "description": "Stencils for Alcatel-Lucent OS6560 Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OS6560.zip",
+        "sizeBytes": 731000,
+        "updated": "19-Jan-2018"
+      },
+      {
+        "name": "Alcatel-Lucent-OS6850E",
+        "description": "Stencils for Alcatel-Lucent OS6850E Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OS6850E.zip",
+        "sizeBytes": 1513000,
+        "updated": "19-Jan-2018"
+      },
+      {
+        "name": "Alcatel-Lucent-OS6855",
+        "description": "Stencils for Alcatel-Lucent OS6855 Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OS6855.zip",
+        "sizeBytes": 29466000,
+        "updated": "19-Jan-2018"
+      },
+      {
+        "name": "Alcatel-Lucent-OS6860",
+        "description": "Stencils for Alcatel-Lucent OS6860 Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OS6860.zip",
+        "sizeBytes": 3688000,
+        "updated": "19-Jan-2018"
+      },
+      {
+        "name": "Alcatel-Lucent-OS6865",
+        "description": "Stencils for Alcatel-Lucent OS6865 Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OS6865.zip",
+        "sizeBytes": 1026000,
+        "updated": "19-Jan-2018"
+      },
+      {
+        "name": "Alcatel-Lucent-OS6900",
+        "description": "Stencils for Alcatel-Lucent OS6900 Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OS6900.zip",
+        "sizeBytes": 1263000,
+        "updated": "19-Jan-2018"
+      },
+      {
+        "name": "Alcatel-Lucent-OS6900_Q32",
+        "description": "Stencils for Alcatel-Lucent OS6900 Q32 Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OS6900_Q32.zip",
+        "sizeBytes": 1202000,
+        "updated": "22-Apr-2015"
+      },
+      {
+        "name": "Alcatel-Lucent-OS6900_X72",
+        "description": "Stencils for Alcatel-Lucent OS6900 X72 Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OS6900_X72.zip",
+        "sizeBytes": 2752000,
+        "updated": "19-Jan-2018"
+      },
+      {
+        "name": "Alcatel-Lucent-OS9000E",
+        "description": "Stencils for Alcatel-Lucent OS9000E Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OS9000E.zip",
+        "sizeBytes": 1886000,
+        "updated": "05-May-2016"
+      },
+      {
+        "name": "Alcatel-Lucent-OS9900",
+        "description": "Stencils for Alcatel-Lucent OS9900 Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-OS9900.zip",
+        "sizeBytes": 2576000,
+        "updated": "19-Jan-2018"
+      },
+      {
+        "name": "Alcatel-Lucent-Racks",
+        "description": "Stencils for Alcatel-Lucent Racks",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/alcatel/Alcatel-Lucent-Racks.zip",
+        "sizeBytes": 1037000,
+        "updated": "19-Jan-2018"
+      }
+    ]
+  },
+  {
+    "vendor": "AlienVault",
+    "page": "https://www.visiocafe.com/alienvault.htm",
+    "packs": [
+      {
+        "name": "AlienVault",
+        "description": "Front and rear views of AlienVault products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/alienvault/AlienVault.zip",
+        "sizeBytes": 571000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Atlantis Computing",
+    "page": "https://www.visiocafe.com/atlantis.htm",
+    "packs": [
+      {
+        "name": "Atlantis-Visio-Stencil-set",
+        "description": "Atlantis Computing products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/atlantis/Atlantis-Visio-Stencil-set.zip",
+        "sizeBytes": 1144000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Avere Systems",
+    "page": "https://www.visiocafe.com/avere.htm",
+    "packs": [
+      {
+        "name": "Avere-FXT",
+        "description": "Full set of Avere Systems FXT Stencils",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/avere/Avere-FXT.zip",
+        "sizeBytes": 2690000,
+        "updated": "12-Aug-2016"
+      }
+    ]
+  },
+  {
+    "vendor": "Bosch Security",
+    "page": "https://www.visiocafe.com/bosch.htm",
+    "packs": [
+      {
+        "name": "Bosch Security Systems - BlueDesign",
+        "description": "3D views of Bosch Security Systems BlueDesign products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/bosch/Bosch Security Systems - BlueDesign.zip",
+        "sizeBytes": 12061000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Check Point",
+    "page": "https://www.visiocafe.com/checkpoint.htm",
+    "packs": [
+      {
+        "name": "CheckPoint_Appliances",
+        "description": "CheckPoint Appliances",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/checkpoint/CheckPoint_Appliances.zip",
+        "sizeBytes": 19057000,
+        "updated": ""
+      },
+      {
+        "name": "CheckPoint_Icons",
+        "description": "CheckPoint Icons",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/checkpoint/CheckPoint_Icons.zip",
+        "sizeBytes": 1065000,
+        "updated": ""
+      },
+      {
+        "name": "CheckPoint_Related_Shapes",
+        "description": "CheckPoint Related_Shapes",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/checkpoint/CheckPoint_Related_Shapes.zip",
+        "sizeBytes": 941000,
+        "updated": ""
+      },
+      {
+        "name": "CheckPoint_SDP",
+        "description": "CheckPoint SDP",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/checkpoint/CheckPoint_SDP.zip",
+        "sizeBytes": 2285000,
+        "updated": ""
+      },
+      {
+        "name": "CheckPoint_Software_Blades",
+        "description": "CheckPoint Software Blades",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/checkpoint/CheckPoint_Software_Blades.zip",
+        "sizeBytes": 6031000,
+        "updated": ""
+      },
+      {
+        "name": "Amazon_AWS_Shapes_v2.0",
+        "description": "Amazon AWS Shapes v2.0",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/checkpoint/Amazon_AWS_Shapes_v2.0.zip",
+        "sizeBytes": 1350000,
+        "updated": "14-Nov-2012"
+      },
+      {
+        "name": "Cisco_Generic_Icons",
+        "description": "Cisco Generic Icons",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/checkpoint/Cisco_Generic_Icons.zip",
+        "sizeBytes": 245000,
+        "updated": "27-Oct-2009"
+      },
+      {
+        "name": "NGX_Stencil",
+        "description": "NGX Stencil",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/checkpoint/NGX_Stencil.zip",
+        "sizeBytes": 2604000,
+        "updated": "16-Mar-2009"
+      },
+      {
+        "name": "Nokia_Enterprise_Solutions",
+        "description": "Nokia Enterprise Solutions",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/checkpoint/Nokia_Enterprise_Solutions.zip",
+        "sizeBytes": 2588000,
+        "updated": "15-Oct-2009"
+      }
+    ]
+  },
+  {
+    "vendor": "Cloudian",
+    "page": "https://www.visiocafe.com/cloudian.htm",
+    "packs": [
+      {
+        "name": "Cloudian",
+        "description": "Front and rear views of Cloudian HyperFile and HyperStore Storage Solutions",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/cloudian/Cloudian.zip",
+        "sizeBytes": 7348000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Cohesity",
+    "page": "https://www.visiocafe.com/cohesity.htm",
+    "packs": [
+      {
+        "name": "Cohesity_12.2021",
+        "description": "Front and rear views of Cohesity Storage Solutions",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/cohesity/Cohesity_12.2021.zip",
+        "sizeBytes": 6785000,
+        "updated": "27-Dec-2021"
+      }
+    ]
+  },
+  {
+    "vendor": "Coho Data",
+    "page": "https://www.visiocafe.com/coho.htm",
+    "packs": [
+      {
+        "name": "Coho_Data_DataStream",
+        "description": "2D front and rear views of the DataStream 800h, 1000h and 2000f series",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/coho/Coho_Data_DataStream.zip",
+        "sizeBytes": 1080000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Coraid",
+    "page": "https://www.visiocafe.com/coraid.htm",
+    "packs": [
+      {
+        "name": "Coraid-EtherCloud",
+        "description": "Coraid EtherCloud products including EtherCloud GM, EtherCloud EM, and EtherCloud Storage Manager (ESM)",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/coraid/Coraid-EtherCloud.zip",
+        "sizeBytes": 3866000,
+        "updated": ""
+      },
+      {
+        "name": "Coraid-EtherDrive-EX",
+        "description": "Front and rear views of EtherDrive EX unified storage products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/coraid/Coraid-EtherDrive-EX.zip",
+        "sizeBytes": 1544000,
+        "updated": ""
+      },
+      {
+        "name": "Coraid-EtherDrive-SRX",
+        "description": "Front and rear views of EtherDrive SRX scalable block storage products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/coraid/Coraid-EtherDrive-SRX.zip",
+        "sizeBytes": 19161000,
+        "updated": ""
+      },
+      {
+        "name": "Coraid-EtherDrive-ZX",
+        "description": "Front and rear views of EtherDrive ZX high-performance file storage products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/coraid/Coraid-EtherDrive-ZX.zip",
+        "sizeBytes": 12606000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Cumulus Networks",
+    "page": "https://www.visiocafe.com/cumulus.htm",
+    "packs": [
+      {
+        "name": "Cumulus Networks Stencils.vdx",
+        "description": "Symbolic Visio shapes for Cumulus Networks",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/cumulus/Cumulus Networks Stencils.vdx.zip",
+        "sizeBytes": 2422000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "DataCore",
+    "page": "https://www.visiocafe.com/datacore.htm",
+    "packs": [
+      {
+        "name": "DataCore-Software-Defined-Storage",
+        "description": "Comprehensive icon set to illustrate configurations",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/datacore/DataCore-Software-Defined-Storage.zip",
+        "sizeBytes": 7892000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "DataGravity",
+    "page": "https://www.visiocafe.com/datagravity.htm",
+    "packs": [
+      {
+        "name": "DataGravity Discovery Series",
+        "description": "2D front and rear views for DataGravity Discovery Series",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/datagravity/DataGravity Discovery Series.zip",
+        "sizeBytes": 3389000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Datrium",
+    "page": "https://www.visiocafe.com/datrium.htm",
+    "packs": [
+      {
+        "name": "Datrium-DVX",
+        "description": "2D front and rear views of DVX Compute and Data Nodes",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/datrium/Datrium-DVX.zip",
+        "sizeBytes": 1546000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Dell",
+    "page": "https://www.visiocafe.com/dell.htm",
+    "packs": [
+      {
+        "name": "Dell-DSS",
+        "description": "Dell Datacenter Scalable Solutions (DSS 1500, 2500, 7000, 9000)",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-DSS.zip",
+        "sizeBytes": 3784000,
+        "updated": "19-Jun-2018"
+      },
+      {
+        "name": "Dell-EMC",
+        "description": "Dell/EMC Storage System Stencils",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-EMC.zip",
+        "sizeBytes": 2646000,
+        "updated": "10-Nov-2010"
+      },
+      {
+        "name": "Dell-KMM-KVM",
+        "description": "Dell KMM and KVM Stencil (1082DS, 2162DS, 4322DS, 17FP and FPM185)",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-KMM-KVM.zip",
+        "sizeBytes": 402000,
+        "updated": "11-Dec-2012"
+      },
+      {
+        "name": "Dell-ModularInfrastructure",
+        "description": "Dell Modular Infrastructure Stencils (PowerEdge FX, MX and VRTX Servers)",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-ModularInfrastructure.zip",
+        "sizeBytes": 5951000,
+        "updated": "08-May-2023"
+      },
+      {
+        "name": "Dell-Networking",
+        "description": "Dell Networking Switches, SonicWALL, VEP and Wireless Solution Stencils",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-Networking.zip",
+        "sizeBytes": 24616000,
+        "updated": "07-May-2025"
+      },
+      {
+        "name": "Dell-PDU",
+        "description": "Dell Power Distribution Unit (PDU) Stencils (Basic, Metered incl. files from APC)",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-PDU.zip",
+        "sizeBytes": 4848000,
+        "updated": "10-Jul-2012"
+      },
+      {
+        "name": "Dell-PowerEdge-BladeServers",
+        "description": "Dell PowerEdge BladeServer Stencils (M1000e)",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-PowerEdge-BladeServers.zip",
+        "sizeBytes": 3307000,
+        "updated": "06-Nov-2017"
+      },
+      {
+        "name": "Dell-PowerEdge-RackServers",
+        "description": "Dell PowerEdge Rack Server Stencils and Rugged XR Series",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-PowerEdge-RackServers.zip",
+        "sizeBytes": 43916000,
+        "updated": "07-May-2025"
+      },
+      {
+        "name": "Dell-PowerEdge-TowerServers",
+        "description": "Dell PowerEdge Tower Server Stencils",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-PowerEdge-TowerServers.zip",
+        "sizeBytes": 8980000,
+        "updated": "09-Jun-2023"
+      },
+      {
+        "name": "Dell-Racks",
+        "description": "Dell 4820, 4220 and 2420 Rack Frames and Rack Components",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-Racks.zip",
+        "sizeBytes": 910000,
+        "updated": "02-Sep-2011"
+      },
+      {
+        "name": "Dell-Storage-Disk",
+        "description": "Dell Storage and PowerVault Stencils (DL, DR, MD and NX Series)",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-Storage-Disk.zip",
+        "sizeBytes": 7213000,
+        "updated": "26-Apr-2016"
+      },
+      {
+        "name": "Dell-Storage-PowerScale",
+        "description": "Dell EMC PowerScale Series Stencil",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-Storage-PowerScale.zip",
+        "sizeBytes": 3315000,
+        "updated": "13-Mar-2024"
+      },
+      {
+        "name": "Dell-Storage-PS-Series",
+        "description": "Dell Storage PS Series Stencils (incl. EqualLogic FS76x0)",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-Storage-PS-Series.zip",
+        "sizeBytes": 3567000,
+        "updated": "26-Apr-2016"
+      },
+      {
+        "name": "Dell-Storage-SC-Series",
+        "description": "Dell Storage SC Series Stencils (incl. Compellent FS8600)",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-Storage-SC-Series.zip",
+        "sizeBytes": 5312000,
+        "updated": "07-Sep-2016"
+      },
+      {
+        "name": "Dell-Storage-Tape",
+        "description": "Dell PowerVault Tape systems Stencils",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-Storage-Tape.zip",
+        "sizeBytes": 1172000,
+        "updated": "15-Sep-2014"
+      },
+      {
+        "name": "Dell-UPS",
+        "description": "Dell Tower and Rack UPS Stencils",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-UPS.zip",
+        "sizeBytes": 3061000,
+        "updated": "18-Dec-2012"
+      },
+      {
+        "name": "Dell-Workstations",
+        "description": "Dell Precision Workstation Stencils",
+        "collection": "Dell Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-Workstations.zip",
+        "sizeBytes": 1702000,
+        "updated": "28-Jan-2019"
+      },
+      {
+        "name": "Dell-Classic-Servers",
+        "description": "Classic Dell Server Stencil Files (Rack and Tower Servers)",
+        "collection": "Dell Classic Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-Classic-Servers.zip",
+        "sizeBytes": 30585000,
+        "updated": "21-Mar-2025"
+      },
+      {
+        "name": "Dell-Classic-Storage",
+        "description": "Classic Dell Storage Stencil Files (Compellent, EqualLogic & PowerVault)",
+        "collection": "Dell Classic Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell-Classic-Storage.zip",
+        "sizeBytes": 8417000,
+        "updated": "06-May-2015"
+      },
+      {
+        "name": "DellEMC_ME4_Series",
+        "description": "Dell EMC PowerVault ME4 Series Storage Stencil",
+        "collection": "Dell Classic Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/DellEMC_ME4_Series.zip",
+        "sizeBytes": 3094000,
+        "updated": "25-Feb-2019"
+      },
+      {
+        "name": "DellEMC_ML3_Series",
+        "description": "Dell EMC ML3 Series Tape Library Stencil",
+        "collection": "Dell EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/DellEMC_ML3_Series.zip",
+        "sizeBytes": 1829000,
+        "updated": "25-Feb-2019"
+      },
+      {
+        "name": "DellEMC_SC_Series",
+        "description": "Dell EMC SC Series Storage Stencil",
+        "collection": "Dell EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/DellEMC_SC_Series.zip",
+        "sizeBytes": 7658000,
+        "updated": "15-Mar-2018"
+      },
+      {
+        "name": "DellEMC_Unity",
+        "description": "Dell EMC Unity All-Flash Storage Stencil",
+        "collection": "Dell EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/DellEMC_Unity.zip",
+        "sizeBytes": 1168000,
+        "updated": "15-Mar-2018"
+      },
+      {
+        "name": "DellEMC_VxRail",
+        "description": "Dell EMC VxRail Appliance Stencil",
+        "collection": "Dell EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/DellEMC_VxRail.zip",
+        "sizeBytes": 6251000,
+        "updated": "16-Jul-2018"
+      },
+      {
+        "name": "Dell_PowerConnect_J-Series",
+        "description": "Dell PowerConnect J-EX and J-SRX Series Switches (Created by Visimation)",
+        "collection": "Dell EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell_PowerConnect_J-Series.zip",
+        "sizeBytes": 5152000,
+        "updated": "11-Jan-2011"
+      },
+      {
+        "name": "Dell_2006_Collection",
+        "description": "Old Dell PowerEdge, PowerVault, PowerConnect and Dell/EMC Stencils",
+        "collection": "Contributed Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell_2006_Collection.zip",
+        "sizeBytes": 15601000,
+        "updated": "27-Sep-2006"
+      },
+      {
+        "name": "Dell_Nov1999_MS",
+        "description": "Old Dell Classic Stencils by Microsoft *read the Microsoft EULA for this set",
+        "collection": "Contributed Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/dell/Dell_Nov1999_MS.zip",
+        "sizeBytes": 391000,
+        "updated": "18-Nov-1999"
+      }
+    ]
+  },
+  {
+    "vendor": "DriveScale",
+    "page": "https://www.visiocafe.com/drivescale.htm",
+    "packs": [
+      {
+        "name": "DriveScale_DSA_VisioStencils",
+        "description": "Front and rear views of DriveScale DSA",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/drivescale/DriveScale_DSA_VisioStencils.zip",
+        "sizeBytes": 204000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Eaton",
+    "page": "https://www.visiocafe.com/eaton.htm",
+    "packs": [
+      {
+        "name": "Eaton-Racks",
+        "description": "Eaton Rack Infrastructure Products (HDNR, RP-Series, RS-Series & S-Series Racks)",
+        "collection": "Full Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/eaton/Eaton-Racks.zip",
+        "sizeBytes": 4681000,
+        "updated": "27-Aug-2019"
+      },
+      {
+        "name": "Eaton-UPS",
+        "description": "Eaton UPS Products (3S, 3105, 5P, 5PX, 5S, 5SC, 51xx, 9PX, 9PXM, 9SX, 93E, 93PM, 9130, 9135, 93xx, BPM)",
+        "collection": "Full Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/eaton/Eaton-UPS.zip",
+        "sizeBytes": 80180000,
+        "updated": "03-Feb-2022"
+      },
+      {
+        "name": "Eaton-UPS-BladeUPS",
+        "description": "Eaton BladeUPS Product Line (UPS, EBM, RPM, MBM, Wireways)",
+        "collection": "Full Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/eaton/Eaton-UPS-BladeUPS.zip",
+        "sizeBytes": 1761000,
+        "updated": "24-Jan-2011"
+      },
+      {
+        "name": "Eaton-UPS-Pulsar",
+        "description": "Eaton Pulsar UPS Products (Evolution, Evolution S, EX, EX RT, MX, Nova)",
+        "collection": "Full Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/eaton/Eaton-UPS-Pulsar.zip",
+        "sizeBytes": 6005000,
+        "updated": "09-Nov-2009"
+      }
+    ]
+  },
+  {
+    "vendor": "Dell EMC",
+    "page": "https://www.visiocafe.com/emc.htm",
+    "packs": [
+      {
+        "name": "EMC-Centera",
+        "description": "Centera Disk System Physical Views",
+        "collection": "EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/emc/EMC-Centera.zip",
+        "sizeBytes": 737000,
+        "updated": "10-Apr-06"
+      },
+      {
+        "name": "EMC-CLARiiON",
+        "description": "CLARiiON Disk System Physical Views",
+        "collection": "EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/emc/EMC-CLARiiON.zip",
+        "sizeBytes": 6291000,
+        "updated": "08-Sep-08"
+      },
+      {
+        "name": "EMC-DataDomain-GDA",
+        "description": "Data Domain Global Deduplication Array",
+        "collection": "EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/emc/EMC-DataDomain-GDA.zip",
+        "sizeBytes": 2779000,
+        "updated": "18-Jan-11"
+      },
+      {
+        "name": "EMC-DataDomain-General",
+        "description": "Data Domain racks and accessories",
+        "collection": "EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/emc/EMC-DataDomain-General.zip",
+        "sizeBytes": 91000,
+        "updated": "19-Feb-08"
+      },
+      {
+        "name": "EMC-DataDomain-Storage",
+        "description": "Data Domain Storage Products",
+        "collection": "EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/emc/EMC-DataDomain-Storage.zip",
+        "sizeBytes": 4740000,
+        "updated": "18-Jan-11"
+      },
+      {
+        "name": "EMC-Isilon",
+        "description": "Isilon product stencils, front and rear views",
+        "collection": "EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/emc/EMC-Isilon.zip",
+        "sizeBytes": 15863000,
+        "updated": "21-May-12"
+      },
+      {
+        "name": "EMC-Isilon-3D",
+        "description": "Isilon's product stencils, 3D isometric views",
+        "collection": "EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/emc/EMC-Isilon-3D.zip",
+        "sizeBytes": 672000,
+        "updated": "21-May-12"
+      },
+      {
+        "name": "EMC-Misc",
+        "description": "Misc Logos, connectors, etc",
+        "collection": "EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/emc/EMC-Misc.zip",
+        "sizeBytes": 190000,
+        "updated": "06-Jan-06"
+      },
+      {
+        "name": "EMC-NAS",
+        "description": "NAS Servers Physical Views",
+        "collection": "EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/emc/EMC-NAS.zip",
+        "sizeBytes": 183000,
+        "updated": "06-Jan-06"
+      },
+      {
+        "name": "EMC-Racks",
+        "description": "Racks Physical Views",
+        "collection": "EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/emc/EMC-Racks.zip",
+        "sizeBytes": 934000,
+        "updated": "08-Sep-08"
+      },
+      {
+        "name": "EMC-Symmetrix",
+        "description": "Symmetrix Disk System Physical Views",
+        "collection": "EMC Stencils",
+        "url": "https://www.visiocafe.com/downloads/emc/EMC-Symmetrix.zip",
+        "sizeBytes": 10336000,
+        "updated": "10-Apr-06"
+      }
+    ]
+  },
+  {
+    "vendor": "EMCOR",
+    "page": "https://www.visiocafe.com/emcor.htm",
+    "packs": [
+      {
+        "name": "Emcor_Enclosures_Visio_Shape_Library",
+        "description": "Full set of Emcor Enclosures' Stencils",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/emcor/Emcor_Enclosures_Visio_Shape_Library.zip",
+        "sizeBytes": 4033000,
+        "updated": "28-Aug-2007"
+      }
+    ]
+  },
+  {
+    "vendor": "Endace",
+    "page": "https://www.visiocafe.com/endace.htm",
+    "packs": [
+      {
+        "name": "Endace-Systems",
+        "description": "Physical front and rear views of Endace Systems, as well as IO cards",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/endace/Endace-Systems.zip",
+        "sizeBytes": 1099000,
+        "updated": ""
+      },
+      {
+        "name": "Endace-3D",
+        "description": "3D views of Endace Probe and Management Server",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/endace/Endace-3D.zip",
+        "sizeBytes": 6863000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Enlogic",
+    "page": "https://www.visiocafe.com/enlogic.htm",
+    "packs": [
+      {
+        "name": "Enlogic-PDU-EN1xxx",
+        "description": "Enlogic Power Distribution - EN1xxx Series",
+        "collection": "Full Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/enlogic/Enlogic-PDU-EN1xxx.zip",
+        "sizeBytes": 2261000,
+        "updated": "31-Oct-2012"
+      },
+      {
+        "name": "Enlogic-PDU-EN2xxx",
+        "description": "Enlogic Power Distribution - EN2xxx Series",
+        "collection": "Full Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/enlogic/Enlogic-PDU-EN2xxx.zip",
+        "sizeBytes": 2416000,
+        "updated": "31-Oct-2012"
+      },
+      {
+        "name": "Enlogic-PDU-EN5xxx",
+        "description": "Enlogic Power Distribution - EN5xxx Series",
+        "collection": "Full Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/enlogic/Enlogic-PDU-EN5xxx.zip",
+        "sizeBytes": 2190000,
+        "updated": "31-Oct-2012"
+      },
+      {
+        "name": "Enlogic-PDU-EN6xxx",
+        "description": "Enlogic Power Distribution - EN6xxx Series",
+        "collection": "Full Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/enlogic/Enlogic-PDU-EN6xxx.zip",
+        "sizeBytes": 2418000,
+        "updated": "31-Oct-2012"
+      }
+    ]
+  },
+  {
+    "vendor": "EVS",
+    "page": "https://www.visiocafe.com/evs.htm",
+    "packs": [
+      {
+        "name": "EVS_Shapes2015",
+        "description": "2015 set of EVS's Visio Stencils",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/evs/EVS_Shapes2015.zip",
+        "sizeBytes": 5464000,
+        "updated": "06-May-2015"
+      },
+      {
+        "name": "EVS_Shapes2014",
+        "description": "2014 set of EVS's Visio Stencils",
+        "collection": "Full Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/evs/EVS_Shapes2014.zip",
+        "sizeBytes": 8143000,
+        "updated": "29-Aug-14"
+      },
+      {
+        "name": "EVS_Shapes2013",
+        "description": "2013 set of EVS's Visio Stencils",
+        "collection": "Full Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/evs/EVS_Shapes2013.zip",
+        "sizeBytes": 8236000,
+        "updated": "16-Sep-13"
+      },
+      {
+        "name": "EVS_Shapes2012",
+        "description": "2012 set of EVS's Visio Stencils",
+        "collection": "Full Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/evs/EVS_Shapes2012.zip",
+        "sizeBytes": 4521000,
+        "updated": "18-Sep-12"
+      },
+      {
+        "name": "EVS_objects_2011",
+        "description": "2011 set of EVS's Visio Stencils",
+        "collection": "Full Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/evs/EVS_objects_2011.zip",
+        "sizeBytes": 1314000,
+        "updated": "22-Jun-11"
+      },
+      {
+        "name": "EVS_objects_2010",
+        "description": "2010 set of EVS's Visio Stencils",
+        "collection": "Full Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/evs/EVS_objects_2010.zip",
+        "sizeBytes": 4131000,
+        "updated": "22-Jan-10"
+      }
+    ]
+  },
+  {
+    "vendor": "ExaGrid",
+    "page": "https://www.visiocafe.com/exagrid.htm",
+    "packs": [
+      {
+        "name": "ExaGrid-EX-Series",
+        "description": "Full set of ExaGrid Stencils",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/exagrid/ExaGrid-EX-Series.zip",
+        "sizeBytes": 665000,
+        "updated": "11-Jun-2012"
+      }
+    ]
+  },
+  {
+    "vendor": "FalconStor",
+    "page": "https://www.visiocafe.com/falconstor.htm",
+    "packs": [
+      {
+        "name": "FalconStor_Visio_Stencils_2012",
+        "description": "Current FalconStor Storage hardware shapes",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/falconstor/FalconStor_Visio_Stencils_2012.zip",
+        "sizeBytes": 6245000,
+        "updated": "18-Dec-2012"
+      },
+      {
+        "name": "FalconStor_Visio_Stencils_2010",
+        "description": "Older FalconStor shapes",
+        "collection": "Full Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/falconstor/FalconStor_Visio_Stencils_2010.zip",
+        "sizeBytes": 2169000,
+        "updated": "16-Apr-2010"
+      }
+    ]
+  },
+  {
+    "vendor": "Fujitsu",
+    "page": "https://www.visiocafe.com/fts.htm",
+    "packs": [
+      {
+        "name": "FUJITSU_M10_Visio_Stencil",
+        "description": "Fujitsu Current Visio shapes for FUJITSU M10",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/fts/FUJITSU_M10_Visio_Stencil.zip",
+        "sizeBytes": 2928000,
+        "updated": "21-Sep-2020"
+      },
+      {
+        "name": "FUJITSU_Server_PRIMERGY_PRIMEQUEST",
+        "description": "Fujitsu Current Visio shapes for PRIMERGY and PRIMEQUEST Servers",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/fts/FUJITSU_Server_PRIMERGY_PRIMEQUEST.zip",
+        "sizeBytes": 67599000,
+        "updated": "08-Apr-2019"
+      },
+      {
+        "name": "FUJITSU_SPARC_M12_Visio_Stencil",
+        "description": "Fujitsu Current Visio shapes for FUJITSU SPARC M12",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/fts/FUJITSU_SPARC_M12_Visio_Stencil.zip",
+        "sizeBytes": 3914000,
+        "updated": "21-Sep-2020"
+      },
+      {
+        "name": "FTS-Archive-Visio-2018",
+        "description": "FTS 2018 Archived Visio shapes",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/fts/FTS-Archive-Visio-2018.zip",
+        "sizeBytes": 108646000,
+        "updated": "16-Mar-2018"
+      },
+      {
+        "name": "FTS-Archive-Visio-2016",
+        "description": "FTS 2016 Archived Visio shapes",
+        "collection": "Classic Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/fts/FTS-Archive-Visio-2016.zip",
+        "sizeBytes": 97792000,
+        "updated": "06-Sep-2016"
+      },
+      {
+        "name": "FTS-Archive-Visio-2014",
+        "description": "FTS 2014 Archived Visio shapes",
+        "collection": "Classic Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/fts/FTS-Archive-Visio-2014.zip",
+        "sizeBytes": 6437000,
+        "updated": "27-Feb-2014"
+      },
+      {
+        "name": "FTS-Classic-Nov1999-MS",
+        "description": "Old FTS Visio's from Microsoft *read the Microsoft EULA for this set.",
+        "collection": "Classic Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/fts/FTS-Classic-Nov1999-MS.zip",
+        "sizeBytes": 550000,
+        "updated": "03-Nov-1999"
+      }
+    ]
+  },
+  {
+    "vendor": "Fusion-io",
+    "page": "https://www.visiocafe.com/fusion-io.htm",
+    "packs": [
+      {
+        "name": "Fusion-io_ioControl",
+        "description": "Front and rear views of Fusion-io ioControl products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/fusionio/Fusion-io_ioControl.zip",
+        "sizeBytes": 3765000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Gridstore",
+    "page": "https://www.visiocafe.com/gridstore.htm",
+    "packs": [
+      {
+        "name": "Gridstore",
+        "description": "Front and rear views of Gridstore",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/gridstore/Gridstore.zip",
+        "sizeBytes": 1295000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Hitachi Vantara",
+    "page": "https://www.visiocafe.com/hitachi.htm",
+    "packs": [
+      {
+        "name": "Hitachi-Advanced-Server",
+        "description": "Hitachi Advanced Server DS120/220/240/225",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-Advanced-Server.zip",
+        "sizeBytes": 1456000,
+        "updated": "29-Oct-2018"
+      },
+      {
+        "name": "Hitachi-HCP_Series",
+        "description": "Hitachi Content Platform (HCP) series",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-HCP_Series.zip",
+        "sizeBytes": 5712000,
+        "updated": "06-Jun-2018"
+      },
+      {
+        "name": "Hitachi-HNAS-4000_Series",
+        "description": "Hitachi HNAS 4000 Series",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-HNAS-4000_Series.zip",
+        "sizeBytes": 5119000,
+        "updated": "04-Feb-2014"
+      },
+      {
+        "name": "Hitachi-VSP-One",
+        "description": "Hitachi Virtual Storage Platform (VSP) One Block, One File and One Object models",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-VSP-One.zip",
+        "sizeBytes": 4781000,
+        "updated": "04-May-2026"
+      },
+      {
+        "name": "Hitachi-VSP-One-BHE",
+        "description": "Hitachi Virtual Storage Platform (VSP) One Block High End",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-VSP-One-BHE.zip",
+        "sizeBytes": 1788000,
+        "updated": "18-Nov-2025"
+      },
+      {
+        "name": "Hitachi-VSP-5000",
+        "description": "Hitachi Virtual Storage Platform (VSP) 5000 model",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-VSP-5000.zip",
+        "sizeBytes": 6737000,
+        "updated": "15-Nov-2023"
+      },
+      {
+        "name": "Hitachi-VSP-E590-E790",
+        "description": "Hitachi Virtual Storage Platform (VSP) E590 and E790 models",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-VSP-E590-E790.zip",
+        "sizeBytes": 1499000,
+        "updated": "15-Nov-2023"
+      },
+      {
+        "name": "Hitachi-VSP-E1090",
+        "description": "Hitachi Virtual Storage Platform (VSP) E1090 model",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-VSP-E1090.zip",
+        "sizeBytes": 2439000,
+        "updated": "08-Jun-2023"
+      },
+      {
+        "name": "Hitachi-VSP_E990",
+        "description": "Hitachi Virtual Storage Platform (VSP) E990 model",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-VSP_E990.zip",
+        "sizeBytes": 14560000,
+        "updated": "24-May-2021"
+      },
+      {
+        "name": "Hitachi-VSP-F1500",
+        "description": "Hitachi Virtual Storage Platform (VSP) F1500 model",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-VSP-F1500.zip",
+        "sizeBytes": 26303000,
+        "updated": "02-Apr-2018"
+      },
+      {
+        "name": "Hitachi-VSP-G1500",
+        "description": "Hitachi Virtual Storage Platform (VSP) G1500 model",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-VSP-G1500.zip",
+        "sizeBytes": 26303000,
+        "updated": "02-Apr-2018"
+      },
+      {
+        "name": "Hitachi-VSP-Fxxx-Series",
+        "description": "Hitachi Virtual Storage Platform (VSP) F350, F370, F400, F600, F700, F800 and F900 models",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-VSP-Fxxx-Series.zip",
+        "sizeBytes": 6880000,
+        "updated": "09-May-2018"
+      },
+      {
+        "name": "Hitachi-VSP-Gxxx-Series",
+        "description": "Hitachi Virtual Storage Platform (VSP) G200, G350, G370, G400, G600,GF700, G800 and G900 models",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-VSP-Gxxx-Series.zip",
+        "sizeBytes": 6881000,
+        "updated": "09-May-2018"
+      },
+      {
+        "name": "Hitachi-ComputeBlade2000",
+        "description": "Hitachi Compute Blade 2000",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-ComputeBlade2000.zip",
+        "sizeBytes": 4415000,
+        "updated": "05-Sep-2012"
+      },
+      {
+        "name": "Hitachi-ComputeBlade2500",
+        "description": "Hitachi Compute Blade 2500",
+        "collection": "Classic Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-ComputeBlade2500.zip",
+        "sizeBytes": 2432000,
+        "updated": "11-Dec-2015"
+      },
+      {
+        "name": "Hitachi-ComputeRack-Servers",
+        "description": "Hitachi Compute Rack Servers",
+        "collection": "Classic Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-ComputeRack-Servers.zip",
+        "sizeBytes": 767000,
+        "updated": "11-Dec-2015"
+      },
+      {
+        "name": "Hitachi-HUS-VM_Series",
+        "description": "Hitachi Unified Storage VM Family",
+        "collection": "Classic Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-HUS-VM_Series.zip",
+        "sizeBytes": 3862000,
+        "updated": "03-Oct-2012"
+      },
+      {
+        "name": "Hitachi-HUS100_Series",
+        "description": "Hitachi Unified Storage 100 Family",
+        "collection": "Classic Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-HUS100_Series.zip",
+        "sizeBytes": 6339000,
+        "updated": "14-Nov-2012"
+      },
+      {
+        "name": "Hitachi-VSP_5000_Classic",
+        "description": "Hitachi Virtual Storage Platform (VSP) 5000 model",
+        "collection": "Classic Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-VSP_5000_Classic.zip",
+        "sizeBytes": 16159000,
+        "updated": "09-Dec-2019"
+      },
+      {
+        "name": "Hitachi-VSP_E590_E790_Classic",
+        "description": "Hitachi Virtual Storage Platform (VSP) E590 and E790 models",
+        "collection": "Classic Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-VSP_E590_E790_Classic.zip",
+        "sizeBytes": 2683000,
+        "updated": "24-May-2021"
+      },
+      {
+        "name": "Hitachi-VSP-G1000_Classic",
+        "description": "Hitachi Virtual Storage Platform G1000",
+        "collection": "Classic Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/hitachi/Hitachi-VSP-G1000_Classic.zip",
+        "sizeBytes": 26301000,
+        "updated": "09-Jul-2014"
+      },
+      {
+        "name": "BlueArc",
+        "description": "BlueArc Mercury Series and older products",
+        "collection": "Classic Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/hitachi/BlueArc.zip",
+        "sizeBytes": 7887000,
+        "updated": "07-Jul-2009"
+      }
+    ]
+  },
+  {
+    "vendor": "HPE",
+    "page": "https://www.visiocafe.com/hpe.htm",
+    "packs": [
+      {
+        "name": "HPE-Aruba-Networking",
+        "description": "Aruba Networking Switches and Wireless",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Aruba-Networking.zip",
+        "sizeBytes": 78205000,
+        "updated": "24-Jul-2026"
+      },
+      {
+        "name": "HPE-Aruba-Symbols",
+        "description": "Aruba Networking symbolic shapes",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Aruba-Symbols.zip",
+        "sizeBytes": 1206000,
+        "updated": "17-Oct-2016"
+      },
+      {
+        "name": "HPE-Blades",
+        "description": "Blades C-Class and Integrity",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Blades.zip",
+        "sizeBytes": 3765000,
+        "updated": "18-Nov-2020"
+      },
+      {
+        "name": "HPE-Common",
+        "description": "Racks, UPS's, IO Cards, PDU's, Floor Layouts and rack accessories",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Common.zip",
+        "sizeBytes": 42091000,
+        "updated": "18-Mar-2026"
+      },
+      {
+        "name": "HPE-Disk",
+        "description": "Alletra, Primera, 3PAR StoreServ, StoreVirtual, MSA, XP, VMA",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Disk.zip",
+        "sizeBytes": 56685000,
+        "updated": "10-Jul-2024"
+      },
+      {
+        "name": "HPE-Integrity-MC",
+        "description": "Integrity RackServers, Blades, NonStop and Superdome",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Integrity-MC.zip",
+        "sizeBytes": 13055000,
+        "updated": "18-Nov-2020"
+      },
+      {
+        "name": "HPE-Networking",
+        "description": "Networking Switches, Routers and Wireless including NVIDIA",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Networking.zip",
+        "sizeBytes": 49678000,
+        "updated": "21-Sep-2026"
+      },
+      {
+        "name": "HPE-Nimble-Storage",
+        "description": "HPE Nimble Storage physical shapes",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Nimble-Storage.zip",
+        "sizeBytes": 9479000,
+        "updated": "19-Jun-2019"
+      },
+      {
+        "name": "HPE-ProLiant",
+        "description": "ProLiant DL, ML, RL, XD and MicroServer",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-ProLiant.zip",
+        "sizeBytes": 48556000,
+        "updated": "14-May-2026"
+      },
+      {
+        "name": "HPE-SAN",
+        "description": "SAN B-Series, C-Series, H-Series, M-Series and Cisco brand SAN and Nexus",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-SAN.zip",
+        "sizeBytes": 38949000,
+        "updated": "10-Jun-2026"
+      },
+      {
+        "name": "HPE-Scalable-Systems",
+        "description": "AI, Apollo, Compute Scale-up, Cray, Cloudline, Edgeline, Moonshot and Slingshot",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Scalable-Systems.zip",
+        "sizeBytes": 74511000,
+        "updated": "21-Sep-2026"
+      },
+      {
+        "name": "HPE-StorageServer",
+        "description": "Nutanix DX Series, Simplivity, StoreEasy, StoreAll, and StoreOnce",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-StorageServer.zip",
+        "sizeBytes": 27520000,
+        "updated": "27-Jan-2023"
+      },
+      {
+        "name": "HPE-Synergy",
+        "description": "Synergy 12000 Chassis, I/O Modules, etc",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Synergy.zip",
+        "sizeBytes": 3038000,
+        "updated": "24-Jul-2026"
+      },
+      {
+        "name": "HPE-Tape",
+        "description": "Tape Drives and Tape Libraries",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Tape.zip",
+        "sizeBytes": 9316000,
+        "updated": "24-Feb-2022"
+      },
+      {
+        "name": "HPE-Classic-Aruba",
+        "description": "Classic Aruba Networking",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Classic-Aruba.zip",
+        "sizeBytes": 4374000,
+        "updated": "09-Apr-2024"
+      },
+      {
+        "name": "HPE-Classic-Blades",
+        "description": "Classic Blade Servers",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Classic-Blades.zip",
+        "sizeBytes": 6351000,
+        "updated": "18-Nov-2020"
+      },
+      {
+        "name": "HPE-Classic-Common",
+        "description": "Classic Racks, Telecom, UPS's and Workstations",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Classic-Common.zip",
+        "sizeBytes": 13837000,
+        "updated": "30-Mar-2018"
+      },
+      {
+        "name": "HPE-Classic-Disk",
+        "description": "Classic Disk and NAS products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Classic-Disk.zip",
+        "sizeBytes": 40041000,
+        "updated": "18-Nov-2020"
+      },
+      {
+        "name": "HPE-Classic-Networking",
+        "description": "Classic Networking including 3COM, ProCurve, and AdvanceStack",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Classic-Networking.zip",
+        "sizeBytes": 45428000,
+        "updated": "25-Jun-2018"
+      },
+      {
+        "name": "HPE-Classic-ProLiant",
+        "description": "Classic ProLiant DL and ML servers",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Classic-ProLiant.zip",
+        "sizeBytes": 56041000,
+        "updated": "03-Apr-2025"
+      },
+      {
+        "name": "HPE-Classic-SAN",
+        "description": "Classic SAN products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Classic-SAN.zip",
+        "sizeBytes": 4316000,
+        "updated": "19-Feb-2018"
+      },
+      {
+        "name": "HPE-Classic-Servers",
+        "description": "Classic Servers w/ Integrity, Pa-Risc, NonStop, Cloudline and NetServer",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Classic-Servers.zip",
+        "sizeBytes": 23473000,
+        "updated": "18-Nov-2020"
+      },
+      {
+        "name": "HPE-Classic-Tape",
+        "description": "Classic Tape products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Classic-Tape.zip",
+        "sizeBytes": 3693000,
+        "updated": "18-Nov-2020"
+      },
+      {
+        "name": "HPE-Classic-3D",
+        "description": "3D Isometric shapes for HP products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Classic-3D.zip",
+        "sizeBytes": 19368000,
+        "updated": "18-Aug-2014"
+      },
+      {
+        "name": "HPE-Classic-Desktops",
+        "description": "Workstations, Desktop PCs and Monitors",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Classic-Desktops.zip",
+        "sizeBytes": 11573000,
+        "updated": "12-Jan-2015"
+      },
+      {
+        "name": "HPE-Classic-Solutions",
+        "description": "Storage Servers and Solutions including StoreOnce, E5000 and Vertica",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/hp/HPE-Classic-Solutions.zip",
+        "sizeBytes": 6246000,
+        "updated": "23-Oct-2018"
+      }
+    ]
+  },
+  {
+    "vendor": "Huawei Technologies",
+    "page": "https://www.visiocafe.com/huawei.htm",
+    "packs": [
+      {
+        "name": "HUAWEI-Cabinets",
+        "description": "Cabinets with varying heights for storage devices, servers, etc.",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-Cabinets.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI NAS file engine for T-serial and N8500 storage"
+      },
+      {
+        "name": "HUAWEI-OceanStor-Dorado-Series",
+        "description": "Front and rear views of HUAWEI OceanStor Dorado 2100 and 5100 storage",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-OceanStor-Dorado-Series.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI OceanStor 2200 storage"
+      },
+      {
+        "name": "HUAWEI-OceanStor-2600-Series",
+        "description": "Front and rear views of HUAWEI OceanStor 2600 storage",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-OceanStor-2600-Series.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI OceanStor 2800 storage"
+      },
+      {
+        "name": "HUAWEI-OceanStor-5300-Series",
+        "description": "Front and rear views of HUAWEI OceanStor 5300 storage",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-OceanStor-5300-Series.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI OceanStor 5500 storage"
+      },
+      {
+        "name": "HUAWEI-OceanStor-5600-Series",
+        "description": "Front and rear views of HUAWEI OceanStor 5600 storage",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-OceanStor-5600-Series.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI OceanStor 5800 storage"
+      },
+      {
+        "name": "HUAWEI-OceanStor-6800+6900-Series",
+        "description": "Front and rear views of HUAWEI OceanStor 6800 and 6900 storage",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-OceanStor-6800+6900-Series.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI OceanStor 9000 storage"
+      },
+      {
+        "name": "HUAWEI-OceanStor-18000-Series",
+        "description": "Front and rear views of HUAWEI OceanStor 18000 storage",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-OceanStor-18000-Series.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI OceanStor S2200T storage"
+      },
+      {
+        "name": "HUAWEI-OceanStor-S2600T",
+        "description": "Front and rear views of HUAWEI OceanStor S2600T storage",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-OceanStor-S2600T.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI OceanStor S5500T storage"
+      },
+      {
+        "name": "HUAWEI-OceanStor-S5600T",
+        "description": "Front and rear views of HUAWEI OceanStor S5600T storage",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-OceanStor-S5600T.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI OceanStor S5800T storage"
+      },
+      {
+        "name": "HUAWEI-OceanStor-S6800T",
+        "description": "Front and rear views of HUAWEI OceanStor S6800T storage",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-OceanStor-S6800T.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI 2U Disk Enclosure storage"
+      },
+      {
+        "name": "HUAWEI-4U-Disk-Enclosure",
+        "description": "Front and rear views of HUAWEI 4U Disk Enclosure storage",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-4U-Disk-Enclosure.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI 5288 Servers"
+      },
+      {
+        "name": "HUAWEI-Server-E6000",
+        "description": "Front and rear views of HUAWEI E6000 Server",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-Server-E6000.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI E9000 Server"
+      },
+      {
+        "name": "HUAWEI-Server-Kunlun",
+        "description": "Front and rear views of HUAWEI Kunlun 9016 and 9032 Servers",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-Server-Kunlun.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI RH1288 Servers"
+      },
+      {
+        "name": "HUAWEI-Server-RH1288H-Series",
+        "description": "Front and rear views of HUAWEI RH1288H Servers",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-Server-RH1288H-Series.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI RH2285H Servers"
+      },
+      {
+        "name": "HUAWEI-Server-RH2288-Series",
+        "description": "Front and rear views of HUAWEI RH2288 Servers",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-Server-RH2288-Series.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI RH2288H Servers"
+      },
+      {
+        "name": "HUAWEI-Server-RH5885-Series",
+        "description": "Front and rear views of HUAWEI RH5885 Servers",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-Server-RH5885-Series.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI RH5885H Servers"
+      },
+      {
+        "name": "HUAWEI-Server-RH8100-Series",
+        "description": "Front and rear views of HUAWEI RH8100 Servers",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-Server-RH8100-Series.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI X6800 Servers"
+      },
+      {
+        "name": "HUAWEI-Server-X8000",
+        "description": "Front and rear views of HUAWEI X8000 Servers",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-Server-X8000.zip",
+        "sizeBytes": null,
+        "updated": "Front views of some SNS switches"
+      },
+      {
+        "name": "HUAWEI-Access Network",
+        "description": "Front and rear views of HUAWEI Access Network products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-Access Network.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI Enterprise Networking Product Icons"
+      },
+      {
+        "name": "HUAWEI-Router",
+        "description": "Front and rear views of HUAWEI Router Network products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-Router.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI Security Network products"
+      },
+      {
+        "name": "HUAWEI-Switch",
+        "description": "Front and rear views of HUAWEI Switch Network products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-Switch.zip",
+        "sizeBytes": null,
+        "updated": "Front and rear views of HUAWEI Transport Network products"
+      },
+      {
+        "name": "HUAWEI-WLAN",
+        "description": "Front and rear views of HUAWEI WLAN Network products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/huawei/HUAWEI-WLAN.zip",
+        "sizeBytes": null,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "IBM",
+    "page": "https://www.visiocafe.com/ibm.htm",
+    "packs": [
+      {
+        "name": "IBM-Common",
+        "description": "Racks & Accessories, UPS/PDUs, PCI Cards and common disk shapes",
+        "collection": "Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/ibm/IBM-Common.zip",
+        "sizeBytes": 11428000,
+        "updated": "16-Mar-2022"
+      },
+      {
+        "name": "IBM-Disk",
+        "description": "Disk Storage Physical Views (Disk, NAS, COSS, ESS, FlashSystem)",
+        "collection": "Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/ibm/IBM-Disk.zip",
+        "sizeBytes": 65229000,
+        "updated": "01-Jun-2022"
+      },
+      {
+        "name": "IBM-Network",
+        "description": "Networking Physical Views (RackSwitch, HPC, Ethernet, SVC and SAN Switches)",
+        "collection": "Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/ibm/IBM-Network.zip",
+        "sizeBytes": 32997000,
+        "updated": "16-Mar-2022"
+      },
+      {
+        "name": "IBM-Server-Blade",
+        "description": "Flex System and BladeCenter Chassis, Servers and I/O Modules",
+        "collection": "Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/ibm/IBM-Server-Blade.zip",
+        "sizeBytes": 6670000,
+        "updated": "07-Apr-2015"
+      },
+      {
+        "name": "IBM-Server-i",
+        "description": "System i Servers Physical Views",
+        "collection": "Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/ibm/IBM-Server-i.zip",
+        "sizeBytes": 3097000,
+        "updated": "07-Apr-2008"
+      },
+      {
+        "name": "IBM-Server-Power",
+        "description": "Power Servers Physical Views (POWER7, POWER8, POWER9 and POWER10)",
+        "collection": "Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/ibm/IBM-Server-Power.zip",
+        "sizeBytes": 28965000,
+        "updated": "21-Sep-2022"
+      },
+      {
+        "name": "IBM-Server-x",
+        "description": "System x Servers & iDataPlex Physical Views and System x Tape Devices",
+        "collection": "Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/ibm/IBM-Server-x.zip",
+        "sizeBytes": 9537000,
+        "updated": "10-Aug-2015"
+      },
+      {
+        "name": "IBM-Server-z",
+        "description": "System z Servers Physical Views",
+        "collection": "Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/ibm/IBM-Server-z.zip",
+        "sizeBytes": 12404000,
+        "updated": "21-Sep-2022"
+      },
+      {
+        "name": "IBM-Tape",
+        "description": "Tape Storage Physical Views (Libraries, Autoloaders)",
+        "collection": "Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/ibm/IBM-Tape.zip",
+        "sizeBytes": 9445000,
+        "updated": "21-Jun-2021"
+      },
+      {
+        "name": "IBM-Workstations",
+        "description": "IntelliStation 185, 275, 285, Desktop HMC and misc. Desktop shapes",
+        "collection": "Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/ibm/IBM-Workstations.zip",
+        "sizeBytes": 978000,
+        "updated": "17-Mar-2008"
+      },
+      {
+        "name": "IBM-Nov1999-MS",
+        "description": "Older IBM stencils * read the Microsoft EULA for this set.",
+        "collection": "Classic Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/ibm/IBM-Nov1999-MS.zip",
+        "sizeBytes": 3635000,
+        "updated": "03-Nov-99"
+      }
+    ]
+  },
+  {
+    "vendor": "IndigoVision",
+    "page": "https://www.visiocafe.com/indigovision.htm",
+    "packs": [
+      {
+        "name": "IndigoVision_14_1",
+        "description": "Visio Stencil for IndigoVision IP Video Security Solutions",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/indigovision/IndigoVision_14_1.zip",
+        "sizeBytes": 469000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "INFINIDAT",
+    "page": "https://www.visiocafe.com/infinidat.htm",
+    "packs": [
+      {
+        "name": "INFINIDAT_InfiniBox_FX3xx",
+        "description": "Visio stencil for the newest INFINIDAT InfiniBox products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/infinidat/INFINIDAT_InfiniBox_FX3xx.zip",
+        "sizeBytes": 7367000,
+        "updated": ""
+      },
+      {
+        "name": "INFINIDAT_InfiniBox_F2X00",
+        "description": "Visio stencil for INFINIDAT InfiniBox F2X00",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/infinidat/INFINIDAT_InfiniBox_F2X00.zip",
+        "sizeBytes": 1672000,
+        "updated": ""
+      },
+      {
+        "name": "INFINIDAT_InfiniBox_F4X00",
+        "description": "Visio stencil for INFINIDAT InfiniBox F4X00",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/infinidat/INFINIDAT_InfiniBox_F4X00.zip",
+        "sizeBytes": 1950000,
+        "updated": ""
+      },
+      {
+        "name": "INFINIDAT_InfiniBox_F6X00",
+        "description": "Visio stencil for INFINIDAT InfiniBox F6X00",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/infinidat/INFINIDAT_InfiniBox_F6X00.zip",
+        "sizeBytes": 2531000,
+        "updated": ""
+      },
+      {
+        "name": "INFINIDAT_InfiniBox_Patch-Panel",
+        "description": "Visio stencil for INFINIDAT Patch Panels",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/infinidat/INFINIDAT_InfiniBox_Patch-Panel.zip",
+        "sizeBytes": 399000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Intel",
+    "page": "https://www.visiocafe.com/intel.htm",
+    "packs": [
+      {
+        "name": "Intel-Server-H2000KP-TP-Family",
+        "description": "Front and rear views of Intel Server H2000KP-TP Family products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/intel/Intel-Server-H2000KP-TP-Family.zip",
+        "sizeBytes": 2375000,
+        "updated": ""
+      },
+      {
+        "name": "Intel-Server-R1000WT-Family",
+        "description": "Front and rear views of Intel Server R1000WT Family products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/intel/Intel-Server-R1000WT-Family.zip",
+        "sizeBytes": 482000,
+        "updated": ""
+      },
+      {
+        "name": "Intel-Server-R2000WT-Family",
+        "description": "Front and rear views of Intel Server R2000WT Family products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/intel/Intel-Server-R2000WT-Family.zip",
+        "sizeBytes": 1900000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Kaminario",
+    "page": "https://www.visiocafe.com/kaminario.htm",
+    "packs": [
+      {
+        "name": "Kaminario",
+        "description": "Kaminario's Enterprise Storage products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/kaminario/Kaminario.zip",
+        "sizeBytes": 1723000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "LANCOM Systems",
+    "page": "https://www.visiocafe.com/lancom.htm",
+    "packs": [
+      {
+        "name": "LANCOM_Systems_NetworkDevices_Dec-2020",
+        "description": "Visio Stencil for LANCOM Systems Network Devices December 2020",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/lancom/LANCOM_Systems_NetworkDevices_Dec-2020.zip",
+        "sizeBytes": 4763000,
+        "updated": ""
+      },
+      {
+        "name": "LANCOM_Systems_NetworkDevices_2020",
+        "description": "Visio Stencil for LANCOM Systems Network Devices 2020",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/lancom/LANCOM_Systems_NetworkDevices_2020.zip",
+        "sizeBytes": 19828000,
+        "updated": "08-Jul-2020"
+      },
+      {
+        "name": "LANCOM_Systems_NetworkDevices_2019",
+        "description": "Visio Stencil for LANCOM Systems Network Devices 2019",
+        "collection": "Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/lancom/LANCOM_Systems_NetworkDevices_2019.zip",
+        "sizeBytes": 3791000,
+        "updated": "27-Aug-2019"
+      },
+      {
+        "name": "LANCOM_Systems_NetworkDevices_2018",
+        "description": "Visio Stencil for LANCOM Systems Network Devices 2018",
+        "collection": "Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/lancom/LANCOM_Systems_NetworkDevices_2018.zip",
+        "sizeBytes": 2621000,
+        "updated": "17-Aug-2018"
+      },
+      {
+        "name": "LANCOM_Systems_NetworkDevices_2016",
+        "description": "Visio Stencil for LANCOM Systems Network Devices 2016",
+        "collection": "Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/lancom/LANCOM_Systems_NetworkDevices_2016.zip",
+        "sizeBytes": 4377000,
+        "updated": "10-Aug-2016"
+      },
+      {
+        "name": "LANCOM_Systems_NetworkDevices_2015",
+        "description": "Visio Stencil for LANCOM Systems Network Devices 2014",
+        "collection": "Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/lancom/LANCOM_Systems_NetworkDevices_2015.zip",
+        "sizeBytes": 11791000,
+        "updated": "18-Jun-2015"
+      }
+    ]
+  },
+  {
+    "vendor": "Lenovo",
+    "page": "https://www.visiocafe.com/lenovo.htm",
+    "packs": [
+      {
+        "name": "Lenovo-ThinkAgile",
+        "description": "2D views of Lenovo ThinkAgile System products including FX Series, HX Series, MX Series and VX Series",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/lenovo/Lenovo-ThinkAgile.zip",
+        "sizeBytes": 11440000,
+        "updated": ""
+      },
+      {
+        "name": "Lenovo-ThinkEdge",
+        "description": "2D views of Lenovo ThinkEdge Servers including SE100, SE350, SE350 V2, SE360 V2, SE450, SE455 V3 and SE455i V3",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/lenovo/Lenovo-ThinkEdge.zip",
+        "sizeBytes": 3320000,
+        "updated": ""
+      },
+      {
+        "name": "Lenovo-ThinkSystem-Servers",
+        "description": "2D views of Lenovo ThinkSystem Servers including NeXtScale, N1380, SC750 V4, SC777 V4, nx360, DW612S, HS350X V3, SD530, SD530 V3, SD535 V3, SD550 V3, SD630 V2, SD650 V2, SD650 V3, SD650-I V3, SD650-N V3, SD665 V3, SD665-N V3, SR250 V2, SR250 V3, SR530, SR630 V2, SR630 V3, SR630 V4, SR635, SR635 V3, SR645, SR645 V3, SR650 V2, SR650 V3, SR650 V4, SR650a V4, SR650i V4, SR655, SR655 V3, SR665, SR665 V3, SR670 V2, SR675 V3, SR675i V3, SR680a V3, SR680a V4, SR685a V3, SR780a V3, SR850 V2, SR850 V3, SR850 V4, SR860 V2, SR860 V3, SR860 V4, SR950, SR950 V3, ST45 V3, ST50 V2, ST50 V3, ST250 V2, ST250 V3, ST550, ST650 V2 and ST650 V3",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/lenovo/Lenovo-ThinkSystem-Servers.zip",
+        "sizeBytes": 45749000,
+        "updated": ""
+      },
+      {
+        "name": "Lenovo-ThinkSystem-Storage",
+        "description": "2D views of Lenovo ThinkSystem Storage including DE Series, DG Series, DM Series and DS Series",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/lenovo/Lenovo-ThinkSystem-Storage.zip",
+        "sizeBytes": 13713000,
+        "updated": ""
+      },
+      {
+        "name": "Lenovo-FlexSystem",
+        "description": "2D views of Lenovo FlexSystem products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/lenovo/Lenovo-FlexSystem.zip",
+        "sizeBytes": 1766000,
+        "updated": ""
+      },
+      {
+        "name": "Lenovo-Networking",
+        "description": "2D views of Lenovo RackSwitch products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/lenovo/Lenovo-Networking.zip",
+        "sizeBytes": 2180000,
+        "updated": ""
+      },
+      {
+        "name": "Lenovo-Storage",
+        "description": "2D views of Lenovo Storage products including DS-Series, S-Series, V-Series and SAN Switches/Directors",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/lenovo/Lenovo-Storage.zip",
+        "sizeBytes": 10260000,
+        "updated": ""
+      },
+      {
+        "name": "Lenovo-Systemx",
+        "description": "2D views of Lenovo System x products including System x3250 M6, x3500 M5, x3550 M5, x3650 M5, x3850 X6 and x3950 X6",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/lenovo/Lenovo-Systemx.zip",
+        "sizeBytes": 3285000,
+        "updated": ""
+      },
+      {
+        "name": "Lenovo-ThinkServer",
+        "description": "2D views of Lenovo ThinkServer Servers including RD350, RD450, RD550, RD650, SD350 and TD350",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/lenovo/Lenovo-ThinkServer.zip",
+        "sizeBytes": 2664000,
+        "updated": ""
+      },
+      {
+        "name": "Lenovo-Classic",
+        "description": "Older shapes of 2D views of Lenovo NeXtScale, System x, Converged HX, ThinkServer (v3) and ThinkSystem (v1) products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/lenovo/Lenovo-Classic.zip",
+        "sizeBytes": 8893000,
+        "updated": ""
+      },
+      {
+        "name": "ThinkServer_Classic",
+        "description": "Old (2012) shapes of 2D and 3D views of Lenovo ThinkServer products including RD230, RD240, RD330, RD430, RD530, RD630, TD230, TD330, TS130 and TS430",
+        "collection": "Classic Stencils",
+        "url": "https://www.visiocafe.com/downloads/lenovo/ThinkServer_Classic.zip",
+        "sizeBytes": 1197000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Mellanox",
+    "page": "https://www.visiocafe.com/mellanox.htm",
+    "packs": [
+      {
+        "name": "Mellanox_1U_Ethernet_Switches",
+        "description": "Physical views of Mellanox 1U Ethernet Switches",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/mellanox/Mellanox_1U_Ethernet_Switches.zip",
+        "sizeBytes": 41542000,
+        "updated": "12-Dec-2016"
+      },
+      {
+        "name": "Mellanox_1U_InfiniBand_Switches",
+        "description": "Physical views of Mellanox 1U InfiniBand Switches",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/mellanox/Mellanox_1U_InfiniBand_Switches.zip",
+        "sizeBytes": 59995000,
+        "updated": "12-Dec-2016"
+      },
+      {
+        "name": "Mellanox_Chassis_Switches",
+        "description": "Physical views of Mellanox Chassis Switches",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/mellanox/Mellanox_Chassis_Switches.zip",
+        "sizeBytes": 52332000,
+        "updated": "12-Dec-2016"
+      },
+      {
+        "name": "VSDfx-Legacy_Mellanox-IB_Switches",
+        "description": "Classic Mellanox IB Switches",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/mellanox/VSDfx-Legacy_Mellanox-IB_Switches.zip",
+        "sizeBytes": 2465000,
+        "updated": "04-Mar-2013"
+      }
+    ]
+  },
+  {
+    "vendor": "Minkels",
+    "page": "https://www.visiocafe.com/minkels.htm",
+    "packs": [
+      {
+        "name": "Minkels",
+        "description": "Minkels rack and cold corridor products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/minkels/Minkels.zip",
+        "sizeBytes": 307000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Mitel",
+    "page": "https://www.visiocafe.com/mitel.htm",
+    "packs": [
+      {
+        "name": "Mitel-Full",
+        "description": "Full set of Mitel's Stencils",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/mitel/Mitel-Full.zip",
+        "sizeBytes": 1055000,
+        "updated": "14-Feb-2008"
+      },
+      {
+        "name": "Mitel-Nov1999-MS",
+        "description": "Physical Views of older Mitel Products",
+        "collection": "Full Zip Set of Stencils",
+        "url": "https://www.visiocafe.com/downloads/mitel/Mitel-Nov1999-MS.zip",
+        "sizeBytes": 452000,
+        "updated": "3-Nov-1999"
+      }
+    ]
+  },
+  {
+    "vendor": "NetApp",
+    "page": "https://www.visiocafe.com/netapp.htm",
+    "packs": [
+      {
+        "name": "NetApp-Current",
+        "description": "Stencils of NetApp's currently sold products NetApp-Current-Index",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-Current_2026-06-30.zip",
+        "sizeBytes": 114359000,
+        "updated": "30-Jun-2026"
+      },
+      {
+        "name": "NetApp-3D",
+        "description": "3D Isometric Topology shapes for NetApp Products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-3D_2019-02-02.zip",
+        "sizeBytes": 325000,
+        "updated": "02-Feb-2019"
+      },
+      {
+        "name": "NetApp-AFF-Series",
+        "description": "Physical Views of NetApp All-flash FAS AFF A-Series and C-Series",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-AFF-Series_2024-11-11.zip",
+        "sizeBytes": 19389000,
+        "updated": "11-Nov-2024"
+      },
+      {
+        "name": "NetApp-AFX-Series",
+        "description": "Physical Views of NetApp Disaggregated AI Storage AFX Series",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-AFX-Series_2026-06-30.zip",
+        "sizeBytes": 2176000,
+        "updated": "30-Jun-2026"
+      },
+      {
+        "name": "NetApp-ASA-Series",
+        "description": "Physical Views of NetApp All-flash SAN Array ASA A-Series and C-Series",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-ASA-Series_2025-03-06.zip",
+        "sizeBytes": 8290000,
+        "updated": "06-Mar-2025"
+      },
+      {
+        "name": "NetApp-CableConnectors",
+        "description": "3D Isometric and 2D Cable connector shapes for NetApp Products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-CableConnectors_2019-02-02.zip",
+        "sizeBytes": 8084000,
+        "updated": "02-Feb-2019"
+      },
+      {
+        "name": "NetApp-Common",
+        "description": "Template pages, Cabinets, Disk Shelves, I/O cards, logos, title blocks, and connectors",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-Common_2022-08-01.zip",
+        "sizeBytes": 12053000,
+        "updated": "01-Aug-2022"
+      },
+      {
+        "name": "NetApp-E-Series",
+        "description": "Physical Views of NetApp E-Series and EF-Series Enterprise Storage Systems",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-E-Series_2026-04-03.zip",
+        "sizeBytes": 11692000,
+        "updated": "03-Apr-2026"
+      },
+      {
+        "name": "NetApp-FAS-Series",
+        "description": "Physical Views of NetApp FAS Series Enterprise Storage Systems",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-FAS-Series_2025-03-06.zip",
+        "sizeBytes": 8608000,
+        "updated": "06-Mar-2025"
+      },
+      {
+        "name": "NetApp-H-Series",
+        "description": "Physical Views of NetApp H-Series Compute and Storage Servers",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-H-Series_2019-10-14.zip",
+        "sizeBytes": 4642000,
+        "updated": "14-Oct-2019"
+      },
+      {
+        "name": "NetApp-Icons",
+        "description": "Presentation style Icons of NetApp products and Computer industry items",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-Icons_2019-02-02.zip",
+        "sizeBytes": 4203000,
+        "updated": "02-Feb-2019"
+      },
+      {
+        "name": "NetApp-Network",
+        "description": "Physical Views of Network equipment both SAN and LAN, including Cisco Nexus and Catalyst, Brocade switches, and Qlogic switches",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-Network_2026-06-30.zip",
+        "sizeBytes": 26163000,
+        "updated": "30-Jun-2026"
+      },
+      {
+        "name": "NetApp-SolidFire",
+        "description": "Physical Views of SolidFire SF Series storage hardware",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-SolidFire_2019-02-02.zip",
+        "sizeBytes": 1159000,
+        "updated": "02-Feb-2019"
+      },
+      {
+        "name": "NetApp-StorageGRID",
+        "description": "Physical Views of StorageGRID Series storage hardware",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-StorageGRID_2026-04-03.zip",
+        "sizeBytes": 7616000,
+        "updated": "03-Apr-2026"
+      },
+      {
+        "name": "NetApp-Classic",
+        "description": "Stencils of NetApp's NOT-currently sold products NetApp-Classic-Index",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-Classic_2019-02-02.zip",
+        "sizeBytes": 44051000,
+        "updated": "02-Feb-2019"
+      },
+      {
+        "name": "NetApp-Nov1999-MS",
+        "description": "Older NetApp stencils * read the Microsoft EULA for this set.",
+        "collection": "Classic Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-Nov1999-MS.zip",
+        "sizeBytes": 187000,
+        "updated": "03-Nov-99"
+      },
+      {
+        "name": "NetApp-Cisco-FlexPod",
+        "description": "NetApp, Cisco, and VMware FlexPod solution",
+        "collection": "Classic Stencil Archives",
+        "url": "https://www.visiocafe.com/downloads/netapp/NetApp-Cisco-FlexPod_2013-09-06.zip",
+        "sizeBytes": 18993000,
+        "updated": "06-Sep-2013"
+      }
+    ]
+  },
+  {
+    "vendor": "NexGen Storage",
+    "page": "https://www.visiocafe.com/nexgen.htm",
+    "packs": [
+      {
+        "name": "NexGen_Storage",
+        "description": "Visio shapes of NexGen Storage N5 Hybrid Flash Arrays",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/nexgen/NexGen_Storage.zip",
+        "sizeBytes": 5433000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Nexsan",
+    "page": "https://www.visiocafe.com/nexsan.htm",
+    "packs": [
+      {
+        "name": "Nexsan-E-Series+BEAST_2021",
+        "description": "Nexsan E-Series and BEAST high density storage 2021",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/nexsan/Nexsan-E-Series+BEAST_2021.zip",
+        "sizeBytes": 5857000,
+        "updated": ""
+      },
+      {
+        "name": "Unity Next Gen Hw",
+        "description": "Front and rear views of Nexsan Unity Next Gen products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/nexsan/Unity Next Gen Hw.zip",
+        "sizeBytes": 7837000,
+        "updated": ""
+      },
+      {
+        "name": "Nexsan-Assureon",
+        "description": "Front and rear views of Nexsan Assureon storage products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/nexsan/Nexsan-Assureon.zip",
+        "sizeBytes": 2431000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Nutanix",
+    "page": "https://www.visiocafe.com/nutanix.htm",
+    "packs": [
+      {
+        "name": "NTNX-stencil_G10_2026-03-17",
+        "description": "Full set of Nutanix G10 Series Stencils",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/nutanix/NTNX-stencil_G10_2026-03-17.zip",
+        "sizeBytes": 2692000,
+        "updated": ""
+      },
+      {
+        "name": "NTNX-stencil_G9_2025-05-14",
+        "description": "Full set of Nutanix G9 Series Stencils",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/nutanix/NTNX-stencil_G9_2025-05-14.zip",
+        "sizeBytes": 3331000,
+        "updated": ""
+      },
+      {
+        "name": "NTNX-stencil_G8_2022-03-10",
+        "description": "Full set of Nutanix G8 Series Stencils",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/nutanix/NTNX-stencil_G8_2022-03-10.zip",
+        "sizeBytes": 2288000,
+        "updated": ""
+      },
+      {
+        "name": "NTNX-stencil_2019-08-01",
+        "description": "Full set of Nutanix G6 and G7 Series Stencils",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/nutanix/NTNX-stencil_2019-08-01.zip",
+        "sizeBytes": 5708000,
+        "updated": ""
+      },
+      {
+        "name": "NTNX-stencil-Xpress_2016-06-08",
+        "description": "Set of Nutanix Xpress Stencils",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/nutanix/NTNX-stencil-Xpress_2016-06-08.zip",
+        "sizeBytes": 17921000,
+        "updated": ""
+      },
+      {
+        "name": "Drawing-nx3060g4_components_2015-11-23",
+        "description": "drawing and stencil for Nutanix NX-3060-G4 model",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/nutanix/Drawing-nx3060g4_components_2015-11-23.zip",
+        "sizeBytes": 11618000,
+        "updated": ""
+      },
+      {
+        "name": "Drawing-nx3175g4_components_2015-10-20",
+        "description": "drawing and stencil for Nutanix NX-3175-G4 model",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/nutanix/Drawing-nx3175g4_components_2015-10-20.zip",
+        "sizeBytes": 9753000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Oracle",
+    "page": "https://www.visiocafe.com/oracle.htm",
+    "packs": [
+      {
+        "name": "Oracle-Networking",
+        "description": "Oracle Networking Products (Infiniband and SAN Switches)",
+        "collection": "Oracle Stencils (Combined VSD Grafx & Oracle NA Team)",
+        "url": "https://www.visiocafe.com/downloads/oracle/Oracle-Networking.zip",
+        "sizeBytes": 5037000,
+        "updated": "22-Jun-2015"
+      },
+      {
+        "name": "Oracle-Peripherals",
+        "description": "Oracle Peripherals (Sun Ray 3 Clients and Monitors)",
+        "collection": "Oracle Stencils (Combined VSD Grafx & Oracle NA Team)",
+        "url": "https://www.visiocafe.com/downloads/oracle/Oracle-Peripherals.zip",
+        "sizeBytes": 195000,
+        "updated": "01-Oct-2012"
+      },
+      {
+        "name": "Oracle-Racks",
+        "description": "Oracle Rack Products",
+        "collection": "Oracle Stencils (Combined VSD Grafx & Oracle NA Team)",
+        "url": "https://www.visiocafe.com/downloads/oracle/Oracle-Racks.zip",
+        "sizeBytes": 378000,
+        "updated": "12-Nov-2015"
+      },
+      {
+        "name": "Oracle-Servers",
+        "description": "Oracle Server Products (Blade, SPARC, x86, Netra)",
+        "collection": "Oracle Stencils (Combined VSD Grafx & Oracle NA Team)",
+        "url": "https://www.visiocafe.com/downloads/oracle/Oracle-Servers.zip",
+        "sizeBytes": 35104000,
+        "updated": "30-Jan-2023"
+      },
+      {
+        "name": "Oracle-Storage",
+        "description": "Oracle Storage Products (Disk, Tape, NAS)",
+        "collection": "Oracle Stencils (Combined VSD Grafx & Oracle NA Team)",
+        "url": "https://www.visiocafe.com/downloads/oracle/Oracle-Storage.zip",
+        "sizeBytes": 16795000,
+        "updated": "14-Jan-2022"
+      },
+      {
+        "name": "Oracle-Systems",
+        "description": "Oracle Systems Shapes (Engineered Systems, Database Appliance, Exadata)",
+        "collection": "Oracle Stencils (Combined VSD Grafx & Oracle NA Team)",
+        "url": "https://www.visiocafe.com/downloads/oracle/Oracle-Systems.zip",
+        "sizeBytes": 34945000,
+        "updated": "14-Jan-2022"
+      },
+      {
+        "name": "Oracle-Templates",
+        "description": "Oracle Visio Drawing Templates",
+        "collection": "Oracle Stencils (Combined VSD Grafx & Oracle NA Team)",
+        "url": "https://www.visiocafe.com/downloads/oracle/Oracle-Templates.zip",
+        "sizeBytes": 605000,
+        "updated": "01-Oct-2012"
+      },
+      {
+        "name": "Oracle-Exadata-VST",
+        "description": "Oracle Exadata Visio Drawing Templates for X3-2 and X3-8 Rack Front Views",
+        "collection": "Oracle Stencils (Combined VSD Grafx & Oracle NA Team)",
+        "url": "https://www.visiocafe.com/downloads/oracle/Oracle-Exadata-VST.zip",
+        "sizeBytes": 12553000,
+        "updated": "15-May-2013"
+      },
+      {
+        "name": "Oracle-SuperCluster-VST",
+        "description": "Oracle SuperCluster T5-8 and M7 Visio Drawing Templates",
+        "collection": "Oracle Visio Drawing Templates",
+        "url": "https://www.visiocafe.com/downloads/oracle/Oracle-SuperCluster-VST.zip",
+        "sizeBytes": 3665000,
+        "updated": "14-Dec-2015"
+      }
+    ]
+  },
+  {
+    "vendor": "Penguin Computing",
+    "page": "https://www.visiocafe.com/penguin.htm",
+    "packs": [
+      {
+        "name": "Penguin-Computing",
+        "description": "Physical front and rear views of Penguin Computing rackmount Servers, Storage and Networking products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/penguin/Penguin-Computing.zip",
+        "sizeBytes": 10667000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Pluribus Networks",
+    "page": "https://www.visiocafe.com/pluribus.htm",
+    "packs": [
+      {
+        "name": "Pluribus_Networks",
+        "description": "Front and rear views of Pluribus network virtualization switches",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/pluribus/Pluribus_Networks.zip",
+        "sizeBytes": 1060000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Pure Storage",
+    "page": "https://www.visiocafe.com/purestorage.htm",
+    "packs": [
+      {
+        "name": "Purestorage",
+        "description": "Front and rear views of Pure Storage All-Flash storage arrays",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/purestorage/Purestorage.zip",
+        "sizeBytes": 24989000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "QNAP",
+    "page": "https://www.visiocafe.com/qnap.htm",
+    "packs": [
+      {
+        "name": "QNAP Visio Stencils",
+        "description": "QNAP Intelligent Storage, Smart Networking, and Smart Video solutions",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/qnap/QNAP-Visio-Stencils.zip",
+        "sizeBytes": 948000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Qumulo",
+    "page": "https://www.visiocafe.com/qumulo.htm",
+    "packs": [
+      {
+        "name": "Asus_RS500A-E12-RS12U",
+        "description": "Qumulo on Asus RS500A-E12-RS12U",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/qumulo/Asus_RS500A-E12-RS12U.zip",
+        "sizeBytes": 242000,
+        "updated": ""
+      },
+      {
+        "name": "Fujitsu_PRIMERGY_RX2540-M7",
+        "description": "Qumulo on Fujitsu PRIMERGY RX2540-M7",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/qumulo/Fujitsu_PRIMERGY_RX2540-M7.zip",
+        "sizeBytes": 284000,
+        "updated": ""
+      },
+      {
+        "name": "HPE_Alletra_4110",
+        "description": "Qumulo on HPE Alletra 4110",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/qumulo/HPE_Alletra_4110.zip",
+        "sizeBytes": 322000,
+        "updated": ""
+      },
+      {
+        "name": "HPE_Apollo_4200",
+        "description": "Qumulo on HPE Apollo 4200",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/qumulo/HPE_Apollo_4200.zip",
+        "sizeBytes": 226000,
+        "updated": ""
+      },
+      {
+        "name": "Supermicro_A_ASG-1014S-ACR12N4H",
+        "description": "Qumulo on Supermicro A+ ASG-1014S-ACR12N4H",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/qumulo/Supermicro_A_ASG-1014S-ACR12N4H.zip",
+        "sizeBytes": 426000,
+        "updated": ""
+      },
+      {
+        "name": "Supermicro_A_WIO_1114S-WN10RT",
+        "description": "Qumulo on Supermicro A+ WIO 1114S-WN10RT",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/qumulo/Supermicro_A_WIO_1114S-WN10RT.zip",
+        "sizeBytes": 317000,
+        "updated": ""
+      },
+      {
+        "name": "C-72T_C-168T_C-192T_C-432T",
+        "description": "C-72T, C-168T, C-192T and C-432T",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/qumulo/C-72T_C-168T_C-192T_C-432T.zip",
+        "sizeBytes": 1251000,
+        "updated": ""
+      },
+      {
+        "name": "K-144T_K-168T_K-432T",
+        "description": "K-144T, K-168T and K-432T",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/qumulo/K-144T_K-168T_K-432T.zip",
+        "sizeBytes": 1228000,
+        "updated": ""
+      },
+      {
+        "name": "P-23T_P-92T_P-184T_P-368T",
+        "description": "P-23T, P-92T, P-184T and P-368T",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/qumulo/P-23T_P-92T_P-184T_P-368T.zip",
+        "sizeBytes": 266000,
+        "updated": ""
+      },
+      {
+        "name": "QC24_QC40_QC104_QC208_QC260_QC360",
+        "description": "QC24, QC40, QC104, QC208, QC260 and QC360",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/qumulo/QC24_QC40_QC104_QC208_QC260_QC360.zip",
+        "sizeBytes": 1161000,
+        "updated": ""
+      },
+      {
+        "name": "Quiver_1U_Hybrid_Gen2",
+        "description": "Quiver 1U Hybrid Gen2",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/qumulo/Quiver_1U_Hybrid_Gen2.zip",
+        "sizeBytes": 608000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Reduxio",
+    "page": "https://www.visiocafe.com/reduxio.htm",
+    "packs": [
+      {
+        "name": "Reduxio",
+        "description": "Reduxio's Enterprise Hybrid Storage products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/reduxio/Reduxio.zip",
+        "sizeBytes": 363000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Seagate",
+    "page": "https://www.visiocafe.com/seagate.htm",
+    "packs": [
+      {
+        "name": "Seagate",
+        "description": "Front and rear views of OneStor storage solutions",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/seagate/Seagate.zip",
+        "sizeBytes": 3685000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "SGI",
+    "page": "https://www.visiocafe.com/sgi.htm",
+    "packs": [
+      {
+        "name": "SGI-Servers",
+        "description": "Front and rear views of SGI C2108/ISS3112/ISS3124 Rackable Servers",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/sgi/SGI-Servers.zip",
+        "sizeBytes": 946000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Thales",
+    "page": "https://www.visiocafe.com/thales.htm",
+    "packs": [
+      {
+        "name": "Thales-Full",
+        "description": "Full set of Thales' Stencils",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/thales/Thales-Full.zip",
+        "sizeBytes": 752000,
+        "updated": "16-Aug-07"
+      },
+      {
+        "name": "Thales-3D",
+        "description": "3D Isometric Topology shapes for Thales' Products",
+        "collection": "Current Stencils",
+        "url": "https://www.visiocafe.com/downloads/thales/Thales-3D.zip",
+        "sizeBytes": 226000,
+        "updated": "16-Aug-07"
+      }
+    ]
+  },
+  {
+    "vendor": "Tintri",
+    "page": "https://www.visiocafe.com/tintri.htm",
+    "packs": [
+      {
+        "name": "Tintri-VMstore",
+        "description": "2D and 3D views of Tintri EC6000, T5000, T1000, T800, T600 and T540 Series Storage products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/tintri/Tintri-VMstore.zip",
+        "sizeBytes": 6167000,
+        "updated": ""
+      },
+      {
+        "name": "Tintri-IntelliFlash",
+        "description": "Front and rear views of current Tintri IntelliFlash storage arrays",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/tintri/Tintri-IntelliFlash.zip",
+        "sizeBytes": 21715000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Violin Memory",
+    "page": "https://www.visiocafe.com/violin.htm",
+    "packs": [
+      {
+        "name": "Violin Memory",
+        "description": "2D and 3D views of the Violin Memory 6000 and 7000 series",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/violin/Violin_Memory.zip",
+        "sizeBytes": 6159000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "Virtual Instruments",
+    "page": "https://www.visiocafe.com/virtualinstruments.htm",
+    "packs": [
+      {
+        "name": "VI_Stencil",
+        "description": "Full set of Virtual Instrument's Stencils",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/vi/VI_Stencil.zip",
+        "sizeBytes": 184000,
+        "updated": "18-Oct-2011"
+      }
+    ]
+  },
+  {
+    "vendor": "Western Digital",
+    "page": "https://www.visiocafe.com/westerndigital.htm",
+    "packs": [
+      {
+        "name": "ActiveScale System",
+        "description": "Western Digital's ActiveScale System",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/westerndigital/ActiveScale System.zip",
+        "sizeBytes": 11243000,
+        "updated": ""
+      },
+      {
+        "name": "HGST-Storage_Enclosures",
+        "description": "HGST's Enterprise Storage products",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/westerndigital/HGST-Storage_Enclosures.zip",
+        "sizeBytes": 757000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "X-IO",
+    "page": "https://www.visiocafe.com/x-io.htm",
+    "packs": [
+      {
+        "name": "X-IO_ISE",
+        "description": "Front, rear and 3D views of X-IO ISE storage system",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/x-io/X-IO_ISE.zip",
+        "sizeBytes": 2598000,
+        "updated": ""
+      }
+    ]
+  },
+  {
+    "vendor": "YADRO",
+    "page": "https://www.visiocafe.com/yadro.htm",
+    "packs": [
+      {
+        "name": "YADRO X2-105 and X2-205",
+        "description": "Front and rear views of YADRO YADRO X2-105 and X2-205 Servers and Components",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/yadro/YADRO X2-105&X2-205.zip",
+        "sizeBytes": 1819000,
+        "updated": "18-Sep-2023"
+      },
+      {
+        "name": "YADRO X3-105 and X3-205",
+        "description": "Front and rear views of YADRO YADRO X3-105 and X3-205 Servers and Components",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/yadro/YADRO X3-105&X3-205.zip",
+        "sizeBytes": 2291000,
+        "updated": "18-Sep-2023"
+      },
+      {
+        "name": "YADRO VEGMAN Rx20 G2",
+        "description": "Front and rear views of YADRO VEGMAN Rx20 G2 Robust Servers and Components",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/yadro/YADRO VEGMAN Rx20 G2.zip",
+        "sizeBytes": 2949000,
+        "updated": "24-Apr-2023"
+      },
+      {
+        "name": "YADRO VEGMAN R120 G1",
+        "description": "Front and rear views of YADRO VEGMAN R120 G1 Robust Servers and Components",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/yadro/YADRO VEGMAN R120 G1.zip",
+        "sizeBytes": 1660000,
+        "updated": "03-Apr-2023"
+      },
+      {
+        "name": "YADRO VEGMAN Sx20",
+        "description": "Front and rear views of YADRO VEGMAN S220-S320 Scalable Enterprise Content Servers",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/yadro/YADRO VEGMAN Sx20.zip",
+        "sizeBytes": 2087000,
+        "updated": "03-Apr-2023"
+      },
+      {
+        "name": "TATLIN.UNIFIED Stencils",
+        "description": "Front and rear views of YADRO TATLIN.UNIFIED Storage Solutions",
+        "collection": "",
+        "url": "https://www.visiocafe.com/downloads/yadro/TATLIN.UNIFIED Stencils.zip",
+        "sizeBytes": 2949000,
+        "updated": "24-Aug-2020"
+      }
+    ]
+  }
+]

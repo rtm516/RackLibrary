@@ -1,0 +1,49 @@
+# RackLibrary
+
+Turn Visio stencils for networking and rack-mount equipment into SVG and PNG elevation images, entirely in the browser.
+
+- **Built-in catalog** of official stencil downloads (vendor sites and [VisioCafe](https://www.visiocafe.com/)).
+- **Upload your own** `.vss`, `.vssx`, `.vsd`, `.vsdx` files, or a `.zip` of them.
+- **Browse and search** every master shape. Front and rear views and rack height (U) are detected automatically.
+- **Export** single shapes as SVG or PNG, or a whole stencil, pack or library as a zip with a `manifest.json` (sizes, rack units, views). Use the real-world-scale option (pixels per inch) so every device is drawn at the same scale for rack elevations.
+- **No backend.** Conversion runs in a Web Worker using a WebAssembly build of [libvisio2svg](https://github.com/kakwa/libvisio2svg) (libvisio + librevenge + libemf2svg). Your library is kept in IndexedDB on your device.
+
+## How importing from the catalog works
+
+The page tries to download the official file directly. Most stencil hosts (VisioCafe, most vendor CDNs) don't send CORS headers, so browsers block that. In that case the import card offers a **Download file** link to the official URL. Save the file, then drop it anywhere on the page (or use **Choose downloaded file**). The file is matched to its catalog entry by name.
+
+If you run your own CORS proxy, you can set it under *Catalog → Advanced: CORS proxy* to make catalog imports one click. This is optional.
+
+Check each vendor's terms before redistributing artwork you export.
+
+## Development
+
+```bash
+npm install
+npm run build:wasm   # needs Docker; writes public/wasm/visio2svg.{js,wasm}
+npm run dev
+```
+
+`npm run build` produces a static site in `dist/`.
+
+### Updating the catalog
+
+- `src/catalog/vendors.json`: hand-curated official vendor downloads.
+- `src/catalog/visiocafe.json`: generated from the VisioCafe vendor pages with `npm run catalog:visiocafe` (Python 3).
+
+### The WebAssembly converter
+
+[`wasm/`](wasm) holds a Docker build (emscripten) that compiles libxml2, librevenge, libvisio and libemf2svg to static wasm libraries. It then links them with [`wasm/src/visio2svg_wasm.cpp`](wasm/src/visio2svg_wasm.cpp), a port of libvisio2svg's conversion step that:
+
+- parses each stencil once and keeps master order and duplicate names;
+- replaces embedded EMF blobs with vector SVG via libemf2svg, wrapping each blob and namespacing its ids so clip paths from different blobs don't collide;
+- skips WMF blobs, because libwmf needs font files on disk.
+
+Patches applied to libemf2svg ([`wasm/patches/`](wasm/patches)):
+
+- `libemf2svg-hairlines.patch` renders EMF cosmetic (zero-width) pens as non-scaling 1px strokes and drops the outline libemf2svg adds around every fill. Without it, stencils drawn at 1:10 come out with very heavy lines.
+- `libemf2svg-savedc.patch` makes SaveDC/RestoreDC preserve the coordinate mapping (window/viewport origin and extents, map mode) and pop the stack correctly. Without it, text and shapes drawn after a nested group are placed and sized with that group's mapping, so labels come out several times too small.
+
+## Licence
+
+GPL-2.0-or-later, because the bundled converter is derived from libvisio2svg and links libemf2svg (both GPLv2). libvisio and librevenge are MPL-2.0; libxml2 is MIT.

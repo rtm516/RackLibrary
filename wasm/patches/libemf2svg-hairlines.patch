@@ -1,0 +1,33 @@
+diff --git a/src/lib/emf2svg_utils.c b/src/lib/emf2svg_utils.c
+index 5aba05d..02188c9 100644
+--- a/src/lib/emf2svg_utils.c
++++ b/src/lib/emf2svg_utils.c
+@@ -463,16 +463,9 @@ void newPathStruct(drawingStates *states) {
+     }
+ }
+ void no_stroke(drawingStates *states, FILE *out) {
+-    if (states->currentDeviceContext.fill_mode != U_BS_NULL) {
+-        fprintf(out, "stroke-width=\"1px\" ");
+-        fprintf(out, "stroke=\"#%02X%02X%02X\" ",
+-                states->currentDeviceContext.fill_red,
+-                states->currentDeviceContext.fill_green,
+-                states->currentDeviceContext.fill_blue);
+-    } else {
+-        fprintf(out, "stroke=\"none\" ");
+-        fprintf(out, "stroke-width=\"0.0\" ");
+-    }
++    (void)states;
++    fprintf(out, "stroke=\"none\" ");
++    fprintf(out, "stroke-width=\"0.0\" ");
+ }
+ void point16_draw(drawingStates *states, U_POINT16 pt, FILE *out) {
+     POINT_D ptd = point_cal(states, (double)pt.x, (double)pt.y);
+@@ -1666,7 +1659,7 @@ void width_stroke(drawingStates *states, FILE *out, double width) {
+     // minimum size of a line seems to be 1px, even if smaller after resize
+     // keeping this behavior
+     if ((tmp_w / states->scaling) < 1.0) {
+-        fprintf(out, "stroke-width=\"1px\" ");
++        fprintf(out, "stroke-width=\"1\" vector-effect=\"non-scaling-stroke\" ");
+     } else {
+         fprintf(out, "stroke-width=\"%.4f\" ", tmp_w);
+     }

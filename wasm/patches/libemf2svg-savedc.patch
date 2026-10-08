@@ -1,0 +1,115 @@
+diff --git a/inc/emf2svg_private.h b/inc/emf2svg_private.h
+index 3409841..6e8346d 100644
+--- a/inc/emf2svg_private.h
++++ b/inc/emf2svg_private.h
+@@ -198,9 +198,25 @@ typedef struct emf_device_context {
+     int clipID;
+ } EMF_DEVICE_CONTEXT, *PEMF_DEVICE_CONTEXT;
+ 
++// Coordinate mapping state, which SaveDC/RestoreDC must also preserve
++typedef struct {
++    double viewPortOrgX;
++    double viewPortOrgY;
++    double viewPortExX;
++    double viewPortExY;
++    bool viewPortExSet;
++    double windowOrgX;
++    double windowOrgY;
++    double windowExX;
++    double windowExY;
++    bool windowExSet;
++    uint16_t MapMode;
++} EMF_MAPPING;
++
+ // Stack of EMF Device Contexts
+ typedef struct dc_stack {
+     EMF_DEVICE_CONTEXT DeviceContext;
++    EMF_MAPPING Mapping;
+     struct dc_stack *previous;
+ } EMF_DEVICE_CONTEXT_STACK;
+ 
+diff --git a/src/lib/emf2svg_utils.c b/src/lib/emf2svg_utils.c
+index 5aba05d..592de8a 100644
+--- a/src/lib/emf2svg_utils.c
++++ b/src/lib/emf2svg_utils.c
+@@ -824,27 +824,45 @@ void rectl_draw(drawingStates *states, FILE *out, U_RECTL rect) {
+     fprintf(out, "Z ");
+     addNewSegPath(states, SEG_END);
+ }
++// RestoreDC: a negative index is relative to the top of the stack (-1 is the
++// most recent SaveDC), a positive one is the absolute save number (1 is the
++// first). The restored entry and everything saved after it are popped, and the
++// coordinate mapping (window/viewport, map mode) is restored along with the
++// rest of the device context.
+ void restoreDeviceContext(drawingStates *states, int32_t index) {
+-    EMF_DEVICE_CONTEXT_STACK *stack_entry = states->DeviceContextStack;
+-    // we recover the 'abs(index)' element of the stack
+-    // we stop if the index was outside the DeviceContextStack
+-    int i = -1;
+-    for (; i > index && stack_entry != NULL; i--) {
+-        if (stack_entry->previous != NULL) {
+-            stack_entry = stack_entry->previous;
+-        } else {
+-            break;
+-        }
+-    }
+-    if (stack_entry == NULL || i != index) {
++    int32_t depth = 0;
++    for (EMF_DEVICE_CONTEXT_STACK *e = states->DeviceContextStack; e; e = e->previous)
++        depth++;
++    int32_t levels = index < 0 ? -index : depth - index + 1;
++    if (index == 0 || levels < 1 || levels > depth) {
+         states->Error = true;
+         return;
+     }
+-    // we copy it as the current device context
++    // pop the entries saved after the one being restored
++    for (int32_t i = 1; i < levels; i++) {
++        EMF_DEVICE_CONTEXT_STACK *top = states->DeviceContextStack;
++        states->DeviceContextStack = top->previous;
++        freeDeviceContext(&(top->DeviceContext));
++        free(top);
++    }
++    EMF_DEVICE_CONTEXT_STACK *stack_entry = states->DeviceContextStack;
++    states->DeviceContextStack = stack_entry->previous;
++    // the popped entry becomes the current device context
+     freeDeviceContext(&(states->currentDeviceContext));
+-    states->currentDeviceContext = (EMF_DEVICE_CONTEXT){0};
+-    copyDeviceContext(&(states->currentDeviceContext),
+-                      &(stack_entry->DeviceContext));
++    states->currentDeviceContext = stack_entry->DeviceContext;
++    EMF_MAPPING *m = &(stack_entry->Mapping);
++    states->viewPortOrgX = m->viewPortOrgX;
++    states->viewPortOrgY = m->viewPortOrgY;
++    states->viewPortExX = m->viewPortExX;
++    states->viewPortExY = m->viewPortExY;
++    states->viewPortExSet = m->viewPortExSet;
++    states->windowOrgX = m->windowOrgX;
++    states->windowOrgY = m->windowOrgY;
++    states->windowExX = m->windowExX;
++    states->windowExY = m->windowExY;
++    states->windowExSet = m->windowExSet;
++    states->MapMode = m->MapMode;
++    free(stack_entry);
+ }
+ void saveDeviceContext(drawingStates *states) {
+     // create the new device context in the stack
+@@ -852,6 +870,18 @@ void saveDeviceContext(drawingStates *states) {
+         (EMF_DEVICE_CONTEXT_STACK *)calloc(1, sizeof(EMF_DEVICE_CONTEXT_STACK));
+     copyDeviceContext(&(new_entry->DeviceContext),
+                       &(states->currentDeviceContext));
++    EMF_MAPPING *m = &(new_entry->Mapping);
++    m->viewPortOrgX = states->viewPortOrgX;
++    m->viewPortOrgY = states->viewPortOrgY;
++    m->viewPortExX = states->viewPortExX;
++    m->viewPortExY = states->viewPortExY;
++    m->viewPortExSet = states->viewPortExSet;
++    m->windowOrgX = states->windowOrgX;
++    m->windowOrgY = states->windowOrgY;
++    m->windowExX = states->windowExX;
++    m->windowExY = states->windowExY;
++    m->windowExSet = states->windowExSet;
++    m->MapMode = states->MapMode;
+     // put the new entry on the stack
+     new_entry->previous = states->DeviceContextStack;
+     states->DeviceContextStack = new_entry;
