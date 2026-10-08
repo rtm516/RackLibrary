@@ -9,13 +9,15 @@ import { readMasterMeta, type MasterMeta } from './vsdxMeta';
 import type { RawShape, RawStencil } from './types';
 import { toggleVariants } from './viewToggles';
 
+type VisioResult = {
+  ok: boolean;
+  error?: string;
+  shapes: { name: string; svg: string }[];
+  stats?: { emfConverted: number; emfFailed: number; wmfSkipped: number };
+};
+
 interface Visio2SvgModule {
-  convert(bytes: Uint8Array, stencil: boolean): {
-    ok: boolean;
-    error?: string;
-    shapes: { name: string; svg: string }[];
-    stats?: { emfConverted: number; emfFailed: number; wmfSkipped: number };
-  };
+  convert(bytes: Uint8Array, stencil: boolean): VisioResult;
 }
 
 export type WorkerRequest =
@@ -32,6 +34,7 @@ const acks = new Map<number, () => void>();
 
 const VISIO_EXT = /\.(vss|vssx|vssm|vsd|vsdx|vsdm|vst|vstx|vstm)$/i;
 const STENCIL_EXT = /\.(vss|vssx|vssm)$/i;
+const DRAWING_EXT = /\.(vsd|vsdx|vsdm)$/i;
 
 let modulePromise: Promise<Visio2SvgModule> | null = null;
 
@@ -121,24 +124,47 @@ function matchMetadata(shapes: { name: string; svg: string }[], meta: MasterMeta
   });
 }
 
+/** Names pages after their file, since they are usually just "Page-1", "Page-2", ... */
+function namePages(fileName: string, pages: { name: string; svg: string }[]) {
+  const stem = fileName.replace(/\.[^.]+$/, '');
+  return pages.map((p) => ({ ...p, name: pages.length === 1 ? stem : `${stem} - ${p.name}` }));
+}
+
+/**
+ * Picks the masters or the pages of a file. Stencils use their masters, falling
+ * back to the pages when there are none (some "stencils" are drawings saved as
+ * .vss). A drawing's own masters are usually helpers (MikroTik's have a stray
+ * "None"), but some vendors ship a stencil as a drawing (F5's "Show Document
+ * Stencil" files), so drawings use their masters only when there are more of
+ * them than pages.
+ */
+function convertMastersOrPages(mod: Visio2SvgModule, bytes: Uint8Array, isDrawing: boolean): { result: VisioResult; pages: boolean } {
+  const masters = mod.convert(bytes, true);
+  const hasMasters = masters.ok && masters.shapes.length > 0;
+  if (hasMasters && !isDrawing) return { result: masters, pages: false };
+  const pages = mod.convert(bytes, false);
+  const hasPages = pages.ok && pages.shapes.length > 0;
+  if (hasPages && (!hasMasters || pages.shapes.length >= masters.shapes.length)) return { result: pages, pages: true };
+  return { result: masters, pages: false };
+}
+
 function convertOne(mod: Visio2SvgModule, name: string, bytes: Uint8Array): RawStencil {
   const fileName = baseName(name);
   const warnings: string[] = [];
-  let result = mod.convert(bytes, true);
-  // Drawings have pages rather than masters, and some "stencils" are really
-  // drawings saved as .vss; fall back to the pages whenever there are no masters.
-  if (!result.ok || result.shapes.length === 0) {
-    const pages = mod.convert(bytes, false);
-    if (pages.ok && pages.shapes.length) {
-      result = pages;
-      if (STENCIL_EXT.test(fileName)) warnings.push('No master shapes found; imported the drawing pages instead');
-    }
-  }
+  const isDrawing = DRAWING_EXT.test(fileName);
+  const { result, pages } = convertMastersOrPages(mod, bytes, isDrawing);
   if (!result.ok) return { fileName, shapes: [], warnings, error: result.error ?? 'Conversion failed' };
 
   const s = result.stats;
   if (s?.emfFailed) warnings.push(`${s.emfFailed} embedded EMF image(s) could not be converted`);
   if (s?.wmfSkipped) warnings.push(`${s.wmfSkipped} embedded WMF image(s) are not supported and were left out`);
+
+  if (pages) {
+    if (STENCIL_EXT.test(fileName)) warnings.push('No master shapes found; imported the drawing pages instead');
+    // Drawings from one folder (e.g. MikroTik's one .vsdx per device) share a stencil.
+    const group = isDrawing ? name.slice(0, name.length - fileName.length) : undefined;
+    return { fileName, shapes: namePages(fileName, result.shapes), warnings, group };
+  }
 
   let meta: MasterMeta[] = [];
   let parts: Record<string, Uint8Array> | null = null;
@@ -151,7 +177,7 @@ function convertOne(mod: Visio2SvgModule, name: string, bytes: Uint8Array): RawS
     }
   }
   const shapes = matchMetadata(result.shapes, meta);
-  if (!parts || !result.ok) return { fileName, shapes, warnings };
+  if (!parts) return { fileName, shapes, warnings };
   try {
     return { fileName, shapes: withViewVariants(mod, parts, meta, shapes), warnings };
   } catch {

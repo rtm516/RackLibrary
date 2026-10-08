@@ -40,7 +40,7 @@ export const prettyName = (fileName: string) =>
  * Bump when conversion output changes, so older imports can be flagged for
  * re-import. At most once per commit: compare with the committed value first.
  */
-export const CONVERTER_VERSION = 4;
+export const CONVERTER_VERSION = 5;
 
 const uuid = () => crypto.randomUUID();
 
@@ -114,11 +114,16 @@ export async function importFile(src: ImportSource, onProgress: (p: ImportProgre
     }
   };
 
+  // Drawings grouped into one stencil per folder (see RawStencil.group), by stencil file name.
+  const groups = new Map<string, Stencil>();
+  const stencilFileName = (rs: RawStencil) => (rs.group === undefined ? rs.fileName : `${rs.group}(drawings)`);
+
   const processStencil = async (rs: RawStencil, done: number, total: number) => {
     // Whatever happens to the new version, the old one is no longer "pending":
     // it is either replaced below or kept because the new one failed.
-    const old = previous.get(rs.fileName) ?? [];
-    previous.delete(rs.fileName);
+    const key = stencilFileName(rs);
+    const old = previous.get(key) ?? [];
+    previous.delete(key);
     try {
       if (!(await storeStencil(rs, done, total))) return;
       await dropOld(old);
@@ -131,7 +136,7 @@ export async function importFile(src: ImportSource, onProgress: (p: ImportProgre
     }
   };
 
-  /** Normalizes and saves one stencil into the pack; returns false if nothing was stored. */
+  /** Normalizes and saves one stencil (or adds a drawing to its group) in the pack; returns false if nothing was stored. */
   const storeStencil = async (rs: RawStencil, done: number, total: number): Promise<boolean> => {
     // done counts this stencil; progress runs from the previous file to this one.
     const base = (done - 1) / total;
@@ -140,15 +145,19 @@ export async function importFile(src: ImportSource, onProgress: (p: ImportProgre
       errors.push(`${rs.fileName}: ${rs.error}`);
       return false;
     }
-    const stencil: Stencil = {
+    const grouped = rs.group !== undefined;
+    const folder = rs.group?.split('/').filter(Boolean).pop();
+    const stencil: Stencil = (grouped && groups.get(stencilFileName(rs))) || {
       id: uuid(),
       packId: pack.id,
-      name: prettyName(rs.fileName),
-      fileName: rs.fileName,
+      name: grouped ? (folder ? prettyName(folder) : pack.name) : prettyName(rs.fileName),
+      fileName: stencilFileName(rs),
       shapeCount: 0,
-      warnings: [...rs.warnings],
+      warnings: [],
     };
-    report(`Processing ${stencil.name}`, 0);
+    const isNew = stencil.shapeCount === 0;
+    const label = grouped ? prettyName(rs.fileName) : stencil.name;
+    report(`Processing ${label}`, 0);
     let failed = 0;
     const reasons = new Set<string>();
     // Normalize everything first so sizes can be harmonized across the stencil.
@@ -169,7 +178,7 @@ export async function importFile(src: ImportSource, onProgress: (p: ImportProgre
     let thumbs = 0;
     const records = await mapLimit(ok, 4, async ({ raw: rawShape, n }, index): Promise<ShapeRecord> => {
       const thumb = await makeThumbnail(n.svg, n.vbWidth, n.vbHeight).catch(() => undefined);
-      report(`Processing ${stencil.name}`, ++thumbs / Math.max(1, ok.length));
+      report(`Processing ${label}`, ++thumbs / Math.max(1, ok.length));
       return {
         svg: n.svg,
         thumb,
@@ -177,8 +186,8 @@ export async function importFile(src: ImportSource, onProgress: (p: ImportProgre
           id: uuid(),
           packId: pack.id,
           stencilId: stencil.id,
-          index,
-          name: rawShape.name || `Shape ${index + 1}`,
+          index: stencil.shapeCount + index,
+          name: rawShape.name || `Shape ${stencil.shapeCount + index + 1}`,
           prompt: rawShape.prompt,
           vbWidth: n.vbWidth,
           vbHeight: n.vbHeight,
@@ -188,19 +197,25 @@ export async function importFile(src: ImportSource, onProgress: (p: ImportProgre
           rackUnits: n.rackUnits,
           view: n.view,
           hidden: rawShape.hidden || undefined,
+          fileName: grouped ? rs.fileName : undefined,
         },
       };
     });
     const why = reasons.size ? `: ${[...reasons].join('; ')}` : '';
-    if (failed) stencil.warnings.push(`${failed} shape(s) could not be rendered${why}`);
-    stencil.shapeCount = records.length;
     if (!records.length) {
       errors.push(`${rs.fileName}: ${failed ? `nothing renderable${why}` : 'no shapes found'}`);
       return false;
     }
+    const warnings = failed ? [...rs.warnings, `${failed} shape(s) could not be rendered${why}`] : rs.warnings;
+    // A grouped stencil holds several files, so say which one each warning is about.
+    stencil.warnings.push(...warnings.map((w) => (grouped ? `${rs.fileName}: ${w}` : w)));
+    stencil.shapeCount += records.length;
     await saveStencil(stencil, records);
-    stencils.push(stencil);
-    pack.stencilCount++;
+    if (isNew) {
+      stencils.push(stencil);
+      pack.stencilCount++;
+      if (grouped) groups.set(stencil.fileName, stencil);
+    }
     pack.shapeCount += records.length;
     return true;
   };
@@ -227,6 +242,6 @@ export async function importFile(src: ImportSource, onProgress: (p: ImportProgre
   pack.converterVersion = CONVERTER_VERSION;
   await savePack(pack);
 
-  const warnings = stencils.flatMap((s) => s.warnings.map((w) => `${s.fileName}: ${w}`));
+  const warnings = stencils.flatMap((s) => s.warnings.map((w) => `${s.name}: ${w}`));
   return { pack, stencils, errors, warnings, updated: !!existing };
 }

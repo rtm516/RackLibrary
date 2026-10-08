@@ -124,7 +124,7 @@ export function ShapeDetail({ shape, list, library, options, onOptionsChange, on
             )}
             <dt>Source file</dt>
             <dd>
-              {stencil?.fileName}
+              {shape.fileName ?? stencil?.fileName}
               {pack?.sourceUrl ? (
                 <>
                   {' '}

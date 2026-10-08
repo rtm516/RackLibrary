@@ -48,6 +48,8 @@ export interface Shape {
   rackUnits?: number;
   view: ShapeView;
   hidden?: boolean;
+  /** The file the shape came from, when its stencil groups several drawings. */
+  fileName?: string;
 }
 
 /** Raw result for one master, as produced by the converter worker. */
@@ -68,6 +70,8 @@ export interface RawStencil {
   shapes: RawShape[];
   warnings: string[];
   error?: string;
+  /** For drawings: the folder they came from. Drawings in the same folder are stored as one stencil. */
+  group?: string;
 }
 
 export interface CatalogPack {
