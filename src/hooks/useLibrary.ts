@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { cleanupOrphans, listPacks, listShapes, listStencils } from '../lib/db';
+import { UPLOADS_VENDOR } from '../lib/importer';
 import type { Pack, Shape, Stencil } from '../lib/types';
 
 export interface Library {
@@ -27,7 +28,9 @@ export function useLibrary(): Library {
       // A pack without stencils is an import that is still running (or never finished).
       const live = packs.filter((p) => p.stencilCount > 0);
       const liveIds = new Set(live.map((p) => p.id));
-      live.sort((a, b) => a.vendor.localeCompare(b.vendor) || a.name.localeCompare(b.name));
+      // Vendors alphabetically, with the user's own uploads last.
+      const isUpload = (p: Pack) => (p.vendor === UPLOADS_VENDOR ? 1 : 0);
+      live.sort((a, b) => isUpload(a) - isUpload(b) || a.vendor.localeCompare(b.vendor) || a.name.localeCompare(b.name));
       const packOrder = new Map(live.map((p, i) => [p.id, i]));
       const liveStencils = stencils
         .filter((s) => liveIds.has(s.packId))

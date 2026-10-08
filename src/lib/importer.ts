@@ -42,6 +42,9 @@ export const prettyName = (fileName: string) =>
  */
 export const CONVERTER_VERSION = 5;
 
+/** Vendor name for packs uploaded by the user rather than imported from the catalog. */
+export const UPLOADS_VENDOR = 'My uploads';
+
 const uuid = () => crypto.randomUUID();
 
 /** Masters that only explain how to use the stencil, e.g. F5's "Stencil Instructions - Drop on page…". */
@@ -90,7 +93,7 @@ export async function importFile(src: ImportSource, onProgress: (p: ImportProgre
     : {
         id: uuid(),
         name: src.name ?? prettyName(src.fileName),
-        vendor: src.vendor ?? 'My uploads',
+        vendor: src.vendor ?? UPLOADS_VENDOR,
         fileName: src.fileName,
         catalogId: src.catalogId,
         sourceUrl: src.sourceUrl,
