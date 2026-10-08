@@ -79,6 +79,22 @@ function collectVisioFiles(name: string, bytes: Uint8Array, out: VisioFile[], de
   if (isOle(bytes) || VISIO_EXT.test(name)) out.push({ name, bytes });
 }
 
+/**
+ * Many downloads ship each stencil twice, as .vss and .vssx (often in separate
+ * folders or with differently styled names, e.g. "Security - Cisco Firepower.vssx"
+ * and "security-cisco-firepower.vss"). Keep only the .vssx/.vssm copy: it has
+ * real sizes and view options.
+ */
+function dropLegacyDuplicates(files: VisioFile[]): VisioFile[] {
+  const key = (f: VisioFile) => {
+    const m = /^(.*)\.(vs[sdt])[xm]?$/i.exec(baseName(f.name));
+    return m ? `${m[1].toLowerCase().replace(/[^a-z0-9]+/g, '')}.${m[2].toLowerCase()}` : f.name;
+  };
+  const isLegacy = (f: VisioFile) => /\.vs[sdt]$/i.test(f.name);
+  const modern = new Set(files.filter((f) => !isLegacy(f)).map(key));
+  return files.filter((f) => !isLegacy(f) || !modern.has(key(f)));
+}
+
 function matchMetadata(shapes: { name: string; svg: string }[], meta: MasterMeta[]): RawShape[] {
   // libvisio names pages after the master; consume metadata by name, in order.
   const byName = new Map<string, MasterMeta[]>();
@@ -203,7 +219,7 @@ self.onmessage = async (e: MessageEvent<WorkerRequest>) => {
     collectVisioFiles(fileName, new Uint8Array(data), found);
     if (!found.length) throw new Error('No Visio stencils (.vss, .vssx, .vsd, .vsdx) found in this file');
 
-    const files: (VisioFile | null)[] = found.sort((a, b) => a.name.localeCompare(b.name));
+    const files: (VisioFile | null)[] = dropLegacyDuplicates(found).sort((a, b) => a.name.localeCompare(b.name));
     for (let i = 0; i < files.length; i++) {
       const file = files[i]!;
       files[i] = null; // let the decompressed bytes go once converted

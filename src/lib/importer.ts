@@ -40,7 +40,7 @@ export const prettyName = (fileName: string) =>
  * Bump when conversion output changes, so older imports can be flagged for
  * re-import. At most once per commit: compare with the committed value first.
  */
-export const CONVERTER_VERSION = 3;
+export const CONVERTER_VERSION = 4;
 
 const uuid = () => crypto.randomUUID();
 

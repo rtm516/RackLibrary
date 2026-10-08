@@ -11,7 +11,7 @@
   {
     "vendor": "Allied Telesis",
     "name": "AR4050S-5G",
-    "description": "AR4050S-5G router (.vssx)",
+    "description": "AR4050S-5G router",
     "url": "https://www.alliedtelesis.com/wp-content/uploads/2026/05/AR4050S-5G-vssx.zip",
     "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
     "sizeBytes": 80099,
@@ -92,7 +92,7 @@
   {
     "vendor": "Allied Telesis",
     "name": "x220 Series",
-    "description": "x220 switches (.vssx)",
+    "description": "x220 switches",
     "url": "https://www.alliedtelesis.com/wp-content/uploads/2021/06/x220_series-vssx.zip",
     "homepage": "https://www.alliedtelesis.com/gb/en/?s=visio+stencils",
     "sizeBytes": 455728,
@@ -416,7 +416,7 @@
   {
     "vendor": "Cisco",
     "name": "Catalyst 9000 Switches",
-    "description": "Catalyst 9200/9300/9400/9500/9600 switch front/rear shapes (.vss + .vssx)",
+    "description": "Catalyst 9200/9300/9400/9500/9600 switch front/rear shapes",
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches-catalyst-9000.zip",
     "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
     "sizeBytes": 67836200,
@@ -470,19 +470,10 @@
   {
     "vendor": "Cisco",
     "name": "Firepower",
-    "description": "Cisco Firepower appliances (Security-Cisco Firepower)",
+    "description": "Firepower 1000, 2100, 4100 and 9300 appliances",
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/security-firepower.zip",
     "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
     "sizeBytes": 5143956,
-    "cors": false
-  },
-  {
-    "vendor": "Cisco",
-    "name": "Firepower 4100/9300",
-    "description": "Firepower 4100 and 9300 chassis",
-    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/security-cisco-firepower.zip",
-    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
-    "sizeBytes": 1505971,
     "cors": false
   },
   {
@@ -524,7 +515,7 @@
   {
     "vendor": "Cisco",
     "name": "Meraki",
-    "description": "Cisco Meraki MX/MS/MR etc. (single .vss)",
+    "description": "Cisco Meraki MX/MS/MR etc.",
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/security-cisco-meraki.zip",
     "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
     "sizeBytes": 7269370,
@@ -1036,26 +1027,8 @@
   },
   {
     "vendor": "F5",
-    "name": "BIG-IP and VIPRION",
-    "description": "BIG-IP and VIPRION platforms (.vsd)",
-    "url": "https://cdn.studio.f5.com/files/k6fem79d/production/7ec820669dd320ef5a5b60209162fc94d00aec6a.vsd",
-    "homepage": "https://www.f5.com/resources/visio-stencils",
-    "sizeBytes": 19974656,
-    "cors": false
-  },
-  {
-    "vendor": "F5",
-    "name": "BIG-IP iSeries",
-    "description": "BIG-IP iSeries platforms (.vsd drawing file, not a stencil)",
-    "url": "https://cdn.studio.f5.com/files/k6fem79d/production/9d158c975bbd6055a66fadd64d8a35774b7f7fb6.vsd",
-    "homepage": "https://www.f5.com/resources/visio-stencils",
-    "sizeBytes": 20856832,
-    "cors": false
-  },
-  {
-    "vendor": "F5",
-    "name": "rSeries and VELOS",
-    "description": "F5 rSeries appliances and VELOS chassis (F5 Stencils v2.3)",
+    "name": "F5 Stencils v2.3",
+    "description": "BIG-IP (including iSeries), VIPRION, VELOS and rSeries platforms",
     "url": "https://cdn.studio.f5.com/files/k6fem79d/production/8a40f3dd8430053be9523ae24fa7549de70afb07.vssx",
     "homepage": "https://www.f5.com/resources/visio-stencils",
     "sizeBytes": 25084008,
@@ -1145,7 +1118,7 @@
   {
     "vendor": "Juniper Networks",
     "name": "EX Series",
-    "description": "EX switches (.vss + .vssx + index PDF)",
+    "description": "EX switches",
     "url": "https://www.juniper.net/content/dam/www/assets/images/us/en/company/image-library/juniper-ex-series-icons.zip",
     "homepage": "https://www.juniper.net/us/en/products/icons-and-stencils.html",
     "sizeBytes": 81161904,
@@ -1154,7 +1127,7 @@
   {
     "vendor": "Juniper Networks",
     "name": "General Networking Icons",
-    "description": "Generic Juniper topology icons (.vss + .vssx)",
+    "description": "Generic Juniper topology icons",
     "url": "https://www.juniper.net/content/dam/www/assets/images/us/en/company/image-library/juniper-generic-visio.zip",
     "homepage": "https://www.juniper.net/us/en/products/icons-and-stencils.html",
     "sizeBytes": 319304,
@@ -1172,7 +1145,7 @@
   {
     "vendor": "Juniper Networks",
     "name": "MX Series",
-    "description": "MX routers (.vss)",
+    "description": "MX routers",
     "url": "https://www.juniper.net/content/dam/www/assets/images/us/en/company/image-library/juniper-mx-series-icons.zip",
     "homepage": "https://www.juniper.net/us/en/products/icons-and-stencils.html",
     "sizeBytes": 69964792,
@@ -1199,7 +1172,7 @@
   {
     "vendor": "Juniper Networks",
     "name": "QFX Series",
-    "description": "QFX data center switches (.vss + .vssx)",
+    "description": "QFX data center switches",
     "url": "https://www.juniper.net/content/dam/www/assets/images/us/en/company/image-library/juniper-qfx-series-icons.zip",
     "homepage": "https://www.juniper.net/us/en/products/icons-and-stencils.html",
     "sizeBytes": 102701093,
@@ -1226,7 +1199,7 @@
   {
     "vendor": "MikroTik",
     "name": "MikroTik Visio and SVG files",
-    "description": "Per-device drawings for CCR, CRS, CSS, routers, wireless, LTE, ROSE (68 .vsdx + 68 .svg; drawings, not .vss stencils)",
+    "description": "Per-device drawings for CCR, CRS, CSS, routers, wireless, LTE and ROSE",
     "url": "https://box.mikrotik.com/d/4f29ebec5bbf4d5ab88d/files/?p=%2FVisio%20and%20SVG%20files%20for%20homepage%20Compressed.zip&dl=1",
     "homepage": "https://box.mikrotik.com/d/4f29ebec5bbf4d5ab88d/",
     "sizeBytes": 284761991,
@@ -1271,7 +1244,7 @@
   {
     "vendor": "Opengear",
     "name": "OM2248",
-    "description": "Operations Manager OM2248 (the OM/ folder has 22 per-model .vssx, e.g. OM1204/OM1208/OM2216/OM2224/OM2232/OM2248 variants)",
+    "description": "Operations Manager OM2248",
     "url": "https://ftp.opengear.com/download/stencils/OM/OM2248.vssx",
     "homepage": "https://ftp.opengear.com/download/stencils/OM/",
     "sizeBytes": 134651,
@@ -1280,16 +1253,7 @@
   {
     "vendor": "Opengear",
     "name": "Opengear (legacy families)",
-    "description": "Console servers and older Opengear product families",
-    "url": "https://ftp.opengear.com/download/stencils/other_families/Opengear.vss",
-    "homepage": "https://ftp.opengear.com/download/stencils/",
-    "sizeBytes": 1037312,
-    "cors": false
-  },
-  {
-    "vendor": "Opengear",
-    "name": "Opengear Visio (alt set)",
-    "description": "Second Opengear legacy-family stencil",
+    "description": "ACM, CM and IM console server families",
     "url": "https://ftp.opengear.com/download/stencils/other_families/OpengearVisio.vss",
     "homepage": "https://ftp.opengear.com/download/stencils/",
     "sizeBytes": 1332224,
@@ -1297,16 +1261,7 @@
   },
   {
     "vendor": "Palo Alto Networks",
-    "name": "PAN Hardware Stencils (VSS)",
-    "description": "Same set, legacy .vss",
-    "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/corporate/panw-vss.vss",
-    "homepage": "https://www.paloaltonetworks.com/company/press-kit",
-    "sizeBytes": 47565312,
-    "cors": false
-  },
-  {
-    "vendor": "Palo Alto Networks",
-    "name": "PAN Hardware Stencils (VSSX)",
+    "name": "PAN Hardware Stencils",
     "description": "Palo Alto Networks physical firewall appliances",
     "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/corporate/panw-vssx.vssx",
     "homepage": "https://www.paloaltonetworks.com/company/press-kit",
@@ -1316,7 +1271,7 @@
   {
     "vendor": "Panduit",
     "name": "Panduit Stand-Alone Shape Catalog",
-    "description": "143 .vss: FlexFusion/Net-Access/Net-SERV cabinets, containment, racks, cable management, patch panels, PDUs, pathways",
+    "description": "FlexFusion/Net-Access/Net-SERV cabinets, containment, racks, cable management, patch panels, PDUs, pathways",
     "url": "https://www.panduit.com/content/dam/panduit/en/website/support/tools1/visio/documents/visio-stand-alone-shape-catalog.zip",
     "homepage": "https://www.panduit.com/latam/en/support/tools/visio.html",
     "sizeBytes": 170279770,
@@ -1451,7 +1406,7 @@
   {
     "vendor": "SonicWall",
     "name": "SonicWall Devices",
-    "description": "Firewalls, Email Security, Capture appliance, switches, APs (single .vssx v2.0.8)",
+    "description": "Firewalls, Email Security, Capture appliance, switches, APs",
     "url": "https://assets-cms.sonicwall.com/v3/assets/blt281ecbfc2563bf9b/bltb2bcb84de07d7612/SonicWall-Stencils-Devices.zip",
     "homepage": "https://www.sonicwall.com/support/knowledge-base/where-can-i-download-sonicwall-stencils/kA1VN0000000EJC0A2",
     "sizeBytes": 20824869,
@@ -1460,7 +1415,7 @@
   {
     "vendor": "TP-Link",
     "name": "TP-Link Visio Stencil",
-    "description": "TP-Link/Omada switches, routers, APs (single .vss)",
+    "description": "TP-Link/Omada switches, routers, APs",
     "url": "https://static.tp-link.com/TP-Link_Visio_Stencil.zip",
     "homepage": "https://www.tp-link.com/us/support/faq/1520/",
     "sizeBytes": 3996552,
@@ -1532,7 +1487,7 @@
   {
     "vendor": "Tripp Lite (Eaton)",
     "name": "Single-Phase PDUs",
-    "description": "Single-phase rack PDUs (.vssx)",
+    "description": "Single-phase rack PDUs",
     "url": "https://assets.tripplite.com/visio-stencil/tripp_lite_single-phase_power_distribution_units_pdus.zip",
     "homepage": "https://tripplite.eaton.com/support/visio-stencils",
     "sizeBytes": 8460801,
@@ -1559,7 +1514,7 @@
   {
     "vendor": "Tripp Lite (Eaton)",
     "name": "SmartRack Enclosures",
-    "description": "Server rack enclosures (.vss + .vssx)",
+    "description": "Server rack enclosures",
     "url": "https://assets.tripplite.com/visio-stencil/tripp-lite-smartrack-enclosures.zip",
     "homepage": "https://tripplite.eaton.com/support/visio-stencils",
     "sizeBytes": 74975702,
