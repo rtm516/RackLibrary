@@ -186,29 +186,42 @@ function convertOne(mod: Visio2SvgModule, name: string, bytes: Uint8Array): RawS
   }
 }
 
+const MASTERS_XML = 'visio/masters/masters.xml';
+
+/**
+ * Repackages a .vssx so masters.xml lists only the masters at `keep` (indexes
+ * in document order, as readMasterMeta returns them), so libvisio converts just those.
+ */
+function withMasters(parts: Record<string, Uint8Array>, keep: Set<number>): Uint8Array {
+  let i = 0;
+  const xml = new TextDecoder().decode(parts[MASTERS_XML]).replace(/<Master\b[\s\S]*?<\/Master>/g, (m) => (keep.has(i++) ? m : ''));
+  return zipSync({ ...parts, [MASTERS_XML]: new TextEncoder().encode(xml) }, { level: 0 });
+}
+
 /**
  * Adds "<name> (Back)"-style shapes for masters whose other side is hidden
  * behind a shape option (see viewToggles.ts). Each option label needs one
- * extra conversion of the package with those masters switched over.
+ * extra conversion, of just those masters with the option switched on.
  */
 function withViewVariants(mod: Visio2SvgModule, parts: Record<string, Uint8Array>, meta: MasterMeta[], shapes: RawShape[]): RawShape[] {
   const decoder = new TextDecoder();
   const encoder = new TextEncoder();
-  const byLabel = new Map<string, { overrides: Record<string, Uint8Array>; masters: MasterMeta[] }>();
-  for (const m of meta) {
-    if (!m.path || !parts[m.path]) continue;
+  const byLabel = new Map<string, { overrides: Record<string, Uint8Array>; masters: MasterMeta[]; indexes: Set<number> }>();
+  meta.forEach((m, index) => {
+    if (!m.path || !parts[m.path]) return;
     for (const variant of toggleVariants(decoder.decode(parts[m.path]))) {
-      if (!byLabel.has(variant.label)) byLabel.set(variant.label, { overrides: {}, masters: [] });
+      if (!byLabel.has(variant.label)) byLabel.set(variant.label, { overrides: {}, masters: [], indexes: new Set() });
       const entry = byLabel.get(variant.label)!;
       entry.overrides[m.path] = encoder.encode(variant.xml);
       entry.masters.push(m);
+      entry.indexes.add(index);
     }
-  }
+  });
   if (!byLabel.size) return shapes;
 
   const extra = new Map<string, RawShape[]>(); // original master name -> its variants
-  for (const [label, { overrides, masters }] of byLabel) {
-    const converted = mod.convert(zipSync({ ...parts, ...overrides }, { level: 0 }), true);
+  for (const [label, { overrides, masters, indexes }] of byLabel) {
+    const converted = mod.convert(withMasters({ ...parts, ...overrides }, indexes), true);
     if (!converted.ok) continue;
     const used = new Set<number>();
     for (const m of masters) {
