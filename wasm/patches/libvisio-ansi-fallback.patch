@@ -1,0 +1,29 @@
+--- a/src/lib/VSDContentCollector.cpp
++++ b/src/lib/VSDContentCollector.cpp
+@@ -3806,6 +3806,26 @@
+         }
+       }
+     }
++    else
++    {
++      // ICU builds without converter data (e.g. Emscripten's) can't open the
++      // code page converters, which would drop all 8-bit text. Fall back to
++      // Windows-1252, which is Latin-1 apart from 0x80-0x9F.
++      static const UChar32 cp1252[32] =
++      {
++        0x20AC, 0xFFFD, 0x201A, 0x0192, 0x201E, 0x2026, 0x2020, 0x2021,
++        0x02C6, 0x2030, 0x0160, 0x2039, 0x0152, 0xFFFD, 0x017D, 0xFFFD,
++        0xFFFD, 0x2018, 0x2019, 0x201C, 0x201D, 0x2022, 0x2013, 0x2014,
++        0x02DC, 0x2122, 0x0161, 0x203A, 0x0153, 0xFFFD, 0x017E, 0x0178
++      };
++      for (unsigned char character : characters)
++      {
++        if (!character)
++          continue;
++        ucs4Character = character >= 0x80 && character < 0xA0 ? cp1252[character - 0x80] : character;
++        appendUCS4(text, 0x1e == ucs4Character ? 0xfffc : ucs4Character);
++      }
++    }
+     if (conv)
+       ucnv_close(conv);
+   }

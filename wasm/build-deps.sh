@@ -51,6 +51,9 @@ cd ..
 # --- libvisio --------------------------------------------------------------
 curl -fsSL "https://dev-www.libreoffice.org/src/libvisio/libvisio-${LIBVISIO_VERSION}.tar.xz" | tar xJ
 cd "libvisio-${LIBVISIO_VERSION}"
+for p in /build/patches/libvisio-*.patch; do
+  patch -p1 -l < "$p"
+done
 ICU_CFLAGS=" " ICU_LIBS="-sUSE_ICU=1" \
 emconfigure ./configure --prefix="$PREFIX" \
   --disable-shared --enable-static --disable-werror --disable-tests --without-docs \

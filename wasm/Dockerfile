@@ -15,6 +15,7 @@ WORKDIR /build
 # Pre-build the emscripten ports we depend on so their headers land in the sysroot.
 RUN embuilder build zlib libpng freetype icu boost_headers
 
+COPY patches/libvisio-*.patch /build/patches/
 COPY build-deps.sh /build/build-deps.sh
 RUN bash /build/build-deps.sh
 
