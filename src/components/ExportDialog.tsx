@@ -49,7 +49,7 @@ export function ExportDialog({ label, shapes, library, options: o, onOptionsChan
 
   return (
     <>
-      <div className={scrim} onClick={() => !running && onClose()} />
+      <div className={`${scrim} z-40`} onClick={() => !running && onClose()} />
       <div
         className="fixed top-1/2 left-1/2 z-41 max-h-[calc(100vh-32px)] w-[min(560px,calc(100vw-32px))] -translate-1/2 animate-fade overflow-y-auto rounded-xl border border-line bg-surface shadow-pop"
         role="dialog"

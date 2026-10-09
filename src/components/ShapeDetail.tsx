@@ -70,7 +70,7 @@ export function ShapeDetail({ shape, list, library, options, onOptionsChange, on
 
   return (
     <>
-      <div className={scrim} onClick={onClose} />
+      <div className={`${scrim} z-40`} onClick={onClose} />
       <aside
         className="fixed inset-y-0 right-0 z-41 flex w-[min(760px,100vw)] animate-slide-in flex-col border-l border-line bg-surface shadow-pop"
         role="dialog"

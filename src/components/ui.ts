@@ -33,8 +33,8 @@ export const chips = 'inline-flex overflow-hidden rounded-md border border-line 
 export const chip =
   'h-[30px] cursor-pointer border-r border-line px-2.5 text-fg-muted last:border-r-0 aria-pressed:bg-accent-soft aria-pressed:font-semibold aria-pressed:text-accent';
 
-/** Modal backdrop. */
-export const scrim = 'fixed inset-0 z-40 animate-fade bg-[rgb(10_14_20/0.45)]';
+/** Modal backdrop. Callers set the z-index. */
+export const scrim = 'fixed inset-0 animate-fade bg-[rgb(10_14_20/0.45)]';
 
 /** Label + controls rows in the export forms. */
 export const formRow = 'flex flex-wrap items-center gap-x-3 gap-y-2';
