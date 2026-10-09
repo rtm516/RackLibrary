@@ -40,15 +40,20 @@ export const prettyName = (fileName: string) =>
  * Bump when conversion output changes, so older imports can be flagged for
  * re-import. At most once per commit: compare with the committed value first.
  */
-export const CONVERTER_VERSION = 5;
+export const CONVERTER_VERSION = 6;
 
 /** Vendor name for packs uploaded by the user rather than imported from the catalog. */
 export const UPLOADS_VENDOR = 'My uploads';
 
 const uuid = () => crypto.randomUUID();
 
-/** Masters that only explain how to use the stencil, e.g. F5's "Stencil Instructions - Drop on page…". */
-const isInstructions = (s: RawShape) => /\binstructions?\b/i.test(`${s.name} ${s.prompt ?? ''}`);
+/**
+ * Masters that are notes about the stencil rather than equipment: instructions
+ * (F5's "Stencil Instructions - Drop on page…"), readmes, and VisioCafe's
+ * revision history, named after its date and zip ("24-Jul-2026 HPE-Aruba-Networking.zip").
+ */
+const isStencilNotes = (s: RawShape) =>
+  /\b(instructions?|read ?me)\b/i.test(`${s.name} ${s.prompt ?? ''}`) || /^\s*\d{1,2}-[a-z]{3}-\d{2}(\d{2})?\b/i.test(s.name);
 
 async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T, i: number) => Promise<R>): Promise<R[]> {
   const out = new Array<R>(items.length);
@@ -168,7 +173,7 @@ export async function importFile(src: ImportSource, onProgress: (p: ImportProgre
     for (let i = 0; i < rs.shapes.length; i++) {
       // Measuring runs on the main thread; yield now and then to keep the UI responsive.
       if (i % 25 === 24) await new Promise((r) => setTimeout(r));
-      if (isInstructions(rs.shapes[i])) continue;
+      if (isStencilNotes(rs.shapes[i])) continue;
       try {
         ok.push({ raw: rs.shapes[i], n: normalizeShape(rs.shapes[i]) });
       } catch (err) {
