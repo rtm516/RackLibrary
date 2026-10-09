@@ -157,7 +157,7 @@ function convertOne(mod: Visio2SvgModule, name: string, bytes: Uint8Array): RawS
 
   const s = result.stats;
   if (s?.emfFailed) warnings.push(`${s.emfFailed} embedded EMF image(s) could not be converted`);
-  if (s?.wmfSkipped) warnings.push(`${s.wmfSkipped} embedded WMF image(s) are not supported and were left out`);
+  if (s?.wmfSkipped) warnings.push(`${s.wmfSkipped} embedded WMF image(s) without an EMF copy are not supported and were left out`);
 
   if (pages) {
     if (STENCIL_EXT.test(fileName)) warnings.push('No master shapes found; imported the drawing pages instead');

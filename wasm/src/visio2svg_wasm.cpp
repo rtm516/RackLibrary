@@ -4,7 +4,8 @@
 // Pierre-Francois Carpentier. Differences from upstream:
 //   - single parse pass (page titles are captured by the SVG generator itself)
 //   - results keep document order and duplicate names
-//   - no WMF support (libwmf needs font files on disk)
+//   - WMF pictures are only converted when they embed an EMF copy (libwmf
+//     needs font files on disk)
 //   - output is returned to JavaScript via embind instead of written to disk
 
 #include <emscripten/bind.h>
@@ -18,6 +19,7 @@
 #include <libxml/parser.h>
 #include <libxml/tree.h>
 
+#include <cstdint>
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
@@ -118,15 +120,50 @@ double attrDouble(xmlNode *node, const char *name) {
     return d;
 }
 
-// Replace an <image> holding an EMF blob with the vector SVG emf2svg produces.
-bool replaceEmfImage(xmlNode *image, const char *href, Stats &stats) {
+uint32_t readU32(const std::vector<unsigned char> &b, size_t off) {
+    return b[off] | (b[off + 1] << 8) | (b[off + 2] << 16) | ((uint32_t)b[off + 3] << 24);
+}
+
+uint16_t readU16(const std::vector<unsigned char> &b, size_t off) { return b[off] | (b[off + 1] << 8); }
+
+// Windows writes an EMF copy of a picture into the WMF it saves, split across
+// META_ESCAPE MFCOMMENT records tagged "WMFC". Returns that EMF, or nothing if
+// the WMF doesn't carry a complete one.
+std::vector<unsigned char> emfFromWmf(const std::vector<unsigned char> &wmf) {
+    std::vector<unsigned char> emf;
+    size_t off = wmf.size() >= 4 && readU32(wmf, 0) == 0x9AC6CDD7 ? 22 : 0; // placeable header
+    if (off + 4 > wmf.size())
+        return emf;
+    off += (size_t)readU16(wmf, off + 2) * 2; // header size in words
+    uint32_t total = 0;
+    while (off + 6 <= wmf.size()) {
+        size_t size = (size_t)readU32(wmf, off) * 2;
+        if (size < 6 || off + size > wmf.size())
+            break;
+        // RecordSize(4) Function(2) EscapeFunction(2) ByteCount(2) "WMFC"(4) CommentType(4)
+        // Version(4) Checksum(2) Flags(4) RecordCount(4) CurrentRecordSize(4)
+        // RemainingBytes(4) EnhancedMetafileDataSize(4) data
+        if (size >= 44 && readU16(wmf, off + 4) == 0x0626 && readU16(wmf, off + 6) == 0x000F &&
+            readU32(wmf, off + 10) == 0x43464D57) {
+            uint32_t current = readU32(wmf, off + 32);
+            total = readU32(wmf, off + 40);
+            if (44 + (size_t)current > size)
+                return {};
+            emf.insert(emf.end(), wmf.begin() + off + 44, wmf.begin() + off + 44 + current);
+        }
+        off += size;
+    }
+    if (emf.empty() || emf.size() != total)
+        return {};
+    return emf;
+}
+
+// Replace an <image> with the vector SVG emf2svg produces for an EMF.
+bool replaceWithEmf(xmlNode *image, const std::vector<unsigned char> &emf, Stats &stats) {
     double x = attrDouble(image, "x");
     double y = attrDouble(image, "y");
     double width = attrDouble(image, "width");
     double height = attrDouble(image, "height");
-
-    std::vector<unsigned char> emf =
-        base64Decode(href + sizeof(EMF_PREFIX) - 1, strlen(href) - (sizeof(EMF_PREFIX) - 1));
     if (emf.empty())
         return false;
 
@@ -216,11 +253,15 @@ void convertImages(xmlNode *node, Stats &stats) {
         xmlNode *next = cur->next;
         if (cur->type == XML_ELEMENT_NODE && !xmlStrcmp(cur->name, (const xmlChar *)"image")) {
             xmlChar *href = xmlGetProp(cur, (const xmlChar *)"href");
+            const char *h = (const char *)href;
             if (href && !xmlStrncmp(href, (const xmlChar *)EMF_PREFIX, sizeof(EMF_PREFIX) - 1)) {
-                if (!replaceEmfImage(cur, (const char *)href, stats))
+                std::vector<unsigned char> emf = base64Decode(h + sizeof(EMF_PREFIX) - 1, strlen(h) - (sizeof(EMF_PREFIX) - 1));
+                if (!replaceWithEmf(cur, emf, stats))
                     stats.emfFailed++;
             } else if (href && !xmlStrncmp(href, (const xmlChar *)WMF_PREFIX, sizeof(WMF_PREFIX) - 1)) {
-                stats.wmfSkipped++;
+                std::vector<unsigned char> wmf = base64Decode(h + sizeof(WMF_PREFIX) - 1, strlen(h) - (sizeof(WMF_PREFIX) - 1));
+                if (!replaceWithEmf(cur, emfFromWmf(wmf), stats))
+                    stats.wmfSkipped++;
             }
             if (href)
                 xmlFree(href);

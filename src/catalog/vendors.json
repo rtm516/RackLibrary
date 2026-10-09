@@ -334,6 +334,33 @@
   },
   {
     "vendor": "Cisco",
+    "name": "Catalyst 2960-CX Switches",
+    "description": "Catalyst 2960-CX compact switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches-catalyst_2960cx-030615.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 230979,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Catalyst 3560 Switches",
+    "description": "Catalyst 3560 switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd801292b7.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 3031547,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Catalyst 3560-CX Switches",
+    "description": "Catalyst 3560-CX compact switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches-catalyst-3560cx-released-030615.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 670551,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
     "name": "Catalyst 3650 Switches",
     "description": "Catalyst 3650 switches",
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches_catalyst3650.zip",
@@ -361,11 +388,29 @@
   },
   {
     "vendor": "Cisco",
+    "name": "Catalyst 4500 Switches",
+    "description": "Catalyst 4500 chassis and modules",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd800d1d37.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 4414267,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
     "name": "Catalyst 4500-X Switches",
     "description": "Catalyst 4500-X fixed aggregation switches",
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches_catalyst_4500-X.zip",
     "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
     "sizeBytes": 2397177,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Catalyst 4900 Switches",
+    "description": "Catalyst 4900 switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd8036f8ed.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 2211166,
     "cors": false
   },
   {
@@ -424,6 +469,24 @@
   },
   {
     "vendor": "Cisco",
+    "name": "Catalyst Digital Building Switches",
+    "description": "Catalyst Digital Building series switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches-catalyst-digital-building-series.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 2825684,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "cBR-8 Routers",
+    "description": "cBR-8 converged broadband router",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers-cbr-8.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 5627159,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
     "name": "Cisco 1900 Routers",
     "description": "ISR G2 1900 routers",
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Routers-Cisco_1900_11-09.zip",
@@ -451,11 +514,65 @@
   },
   {
     "vendor": "Cisco",
+    "name": "Cisco 800 Routers",
+    "description": "Cisco 800 series routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd80094941.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 775232,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
     "name": "Cisco 8000 Routers",
     "description": "Cisco 8000 series SP routers",
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers-cisco8000.zip",
     "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
     "sizeBytes": 30923561,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Connected Grid Routers",
+    "description": "Connected Grid routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Cisco_Connected_Grid_Router.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 642133,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Connected Grid Switches",
+    "description": "Connected Grid switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Cisco_Connected_Grid_Switch.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 514911,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "CRS Routers",
+    "description": "Carrier Routing System (CRS) chassis and cards",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Routers-Cisco_CRS_032511.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 7426338,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Digital Media System",
+    "description": "Digital Media System players and encoders",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd805f8d4e.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 3996385,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "ENCS 5100",
+    "description": "Enterprise Network Compute System 5100",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/enterprise-network-compute-system-encs-5100-series.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 190051,
     "cors": false
   },
   {
@@ -478,11 +595,146 @@
   },
   {
     "vendor": "Cisco",
+    "name": "HWIC Interface Modules",
+    "description": "High-speed WAN interface cards (HWICs)",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Interfaces_and_Modules_-_HWICs-1-14-08.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 41357,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "IAD 2400",
+    "description": "IAD 2400 integrated access devices",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd800940c5.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 513828,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Industrial Ethernet 1000",
+    "description": "IE 1000 industrial switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches-industrial-ethernet-1000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 213940,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Industrial Ethernet 2000",
+    "description": "IE 2000 industrial switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Switches-industrial-ethernet-2000-010915.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 5747596,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Industrial Ethernet 3000",
+    "description": "IE 3000 industrial switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Switches-IE_3000_05-09.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 1804087,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Industrial Ethernet 3010",
+    "description": "IE 3010 rack-mount industrial switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches-industrial-ethernet-3010-010915.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 719219,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Industrial Ethernet 3x00 Rugged",
+    "description": "IE 3x00 rugged industrial switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches-ie-3x00-rugged.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 13526564,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Industrial Ethernet 4000",
+    "description": "IE 4000 industrial switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches-industrial-ethernet-4000-010915.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 3345439,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Industrial Ethernet 4010",
+    "description": "IE 4010 rack-mount industrial switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches-industrial-ethernet-4010.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 562811,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
     "name": "Industrial Ethernet 5000",
     "description": "IE 5000 rack-mount industrial switches",
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches-ie-5000.zip",
     "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
     "sizeBytes": 1127613,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Industrial Ethernet 9000",
+    "description": "IE 9000 rack-mount industrial switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches-industrial-ethernet-9000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 4626369,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "IP Phone 7800 and 8800",
+    "description": "Unified IP Phone 7800 and 8800 series",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/unified-ip-phone-7800-and-8800-series.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 1598764,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "IR 1101 Routers",
+    "description": "IR 1101 industrial routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers-ir-1101.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 114095,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "IR 1800 Routers",
+    "description": "IR 1800 industrial routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers-ir-1800.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 2490607,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "ISA 3000",
+    "description": "ISA 3000 industrial security appliance",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/security-isa.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 358225,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "ISE",
+    "description": "Identity Services Engine appliances",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/security_cisco_ise.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 753546,
     "cors": false
   },
   {
@@ -505,6 +757,42 @@
   },
   {
     "vendor": "Cisco",
+    "name": "ISR 900 Routers",
+    "description": "ISR 900 branch routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers-isr-900.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 94170,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "ISR G2 800 Routers",
+    "description": "ISR G2 800 series branch routers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers-isr-g2-800bb-021215.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 587277,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "IW 3700 Wireless",
+    "description": "IW 3700 industrial wireless access points",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/wireless-iw-3700.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 1171171,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Line Card Modules",
+    "description": "Router and switch line cards",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd800940c6.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 1332807,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
     "name": "MDS 9000 Storage Networking",
     "description": "MDS 9000 Fibre Channel switches/directors",
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd800d1dc0.zip",
@@ -514,11 +802,65 @@
   },
   {
     "vendor": "Cisco",
+    "name": "ME Series Switches",
+    "description": "Metro Ethernet (ME) switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd8040ece5.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 1492515,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
     "name": "Meraki",
     "description": "Cisco Meraki MX/MS/MR etc.",
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/security-cisco-meraki.zip",
     "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
     "sizeBytes": 7269370,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "NCS 1000 Optical",
+    "description": "Network Convergence System 1000 optical platforms",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/optical-networking-ncs-1000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 8942537,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "NCS 2000 Optical",
+    "description": "Network Convergence System 2000 optical platforms",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/optical_networking_ncs2000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 8303170,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "NCS 4000 Optical",
+    "description": "Network Convergence System 4000 optical platforms",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/optical_networking_ncs_4000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 43009643,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "NCS 4200 Optical",
+    "description": "Network Convergence System 4200 optical platforms",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/optical-networking-ncs-4200.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 6982593,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "NCS 520 Optical",
+    "description": "Network Convergence System 520",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/optical-networking-ncs-520.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 311886,
     "cors": false
   },
   {
@@ -537,6 +879,42 @@
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers-ncs-5500.zip",
     "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
     "sizeBytes": 45445327,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "NCS 560 Routers",
+    "description": "Network Convergence System 560",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers--cisco-ncs-560.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 3277624,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "NCS 6000 Routers",
+    "description": "Network Convergence System 6000",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/router-ncs-6000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 5171563,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Network Modules",
+    "description": "Router network modules",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd800940cc.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 1332959,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Nexus 1000 Switches",
+    "description": "Nexus 1000 series",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/switches_cisco_nexus_1000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 1087648,
     "cors": false
   },
   {
@@ -568,6 +946,15 @@
   },
   {
     "vendor": "Cisco",
+    "name": "Nexus 6000 Switches",
+    "description": "Nexus 6000 switches",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Switches-Cisco_Nexus_6000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 2078364,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
     "name": "Nexus 7000 Switches",
     "description": "Nexus 7000/7700 chassis and modules",
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Switches_Cisco_Nexus_7000.zip",
@@ -586,11 +973,47 @@
   },
   {
     "vendor": "Cisco",
+    "name": "ONS 15216 Optical",
+    "description": "ONS 15216 optical filters and amplifiers",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd800a758d.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 4367630,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "ONS 15454 Optical",
+    "description": "ONS 15454 optical transport",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd800a7596.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 13653634,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Port Adapter Modules",
+    "description": "Port adapters",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd8009b2d2.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 690759,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
     "name": "Power Distribution Units",
     "description": "Cisco rack PDUs",
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/cisco_power_distribution_units.zip",
     "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
     "sizeBytes": 238168,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Provider Connectivity Assurance Sensors",
+    "description": "Provider Connectivity Assurance (formerly Accedian Skylight) sensors",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/provider-connectivity-assurance.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 4859437,
     "cors": false
   },
   {
@@ -604,11 +1027,38 @@
   },
   {
     "vendor": "Cisco",
+    "name": "RF Gateway Cable",
+    "description": "RF Gateway series",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Cable_products-RF_Gateway_series_01-09.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 253704,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "RF Switch Cable",
+    "description": "RF switch",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd800ddd36.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 392638,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
     "name": "RPS 2300",
     "description": "Redundant Power System 2300",
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Power_System_2300-06-08.zip",
     "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
     "sizeBytes": 127563,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "SAFE Security Architecture Toolkit",
+    "description": "SAFE security architecture icons",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/safe-visio-toolkit.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 20268713,
     "cors": false
   },
   {
@@ -658,6 +1108,24 @@
   },
   {
     "vendor": "Cisco",
+    "name": "Services and Application Modules for IP",
+    "description": "Service and application modules for IP",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/Services_and_Applications_Module_for_IP.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 17397,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Shared Port Adapters (SPA)",
+    "description": "Shared port adapters",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd803136b0.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 2221953,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
     "name": "Small Business 200-500 Switches",
     "description": "Cisco Small Business 200/300/500 series switches",
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/cisco_small_business_300_500_series_switches_06_1_12.zip",
@@ -667,11 +1135,119 @@
   },
   {
     "vendor": "Cisco",
+    "name": "Stealthwatch",
+    "description": "Stealthwatch icons",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/security-stealthwatch.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 217174,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "TelePresence",
+    "description": "TelePresence systems",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd805a6d04.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 6748907,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "uBR10012 Cable",
+    "description": "uBR10012 universal broadband router",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd8009b9c8.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 436499,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
     "name": "UCS / HyperFlex",
     "description": "Unified Computing System servers, fabric interconnects, HyperFlex",
     "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/unified-computing-system-hyperflex-systems.zip",
     "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
     "sizeBytes": 151745922,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Unified Communications 500",
+    "description": "Unified Communications 500 series",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd80684e09.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 47785,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Unified IP Phones",
+    "description": "Unified IP phones",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd8009b2d3.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 968044,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "vEdge 5000 Routers",
+    "description": "vEdge 5000 SD-WAN router",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/routers-cisco-vedge-5000.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 704017,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "VG 224 Analog Phone Gateway",
+    "description": "VG 224 analog phone gateway",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd800fcd3b.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 86173,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "VG 248 Analog Phone Gateway",
+    "description": "VG 248 analog phone gateway",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd80094949.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 63825,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "VG Series Gateways",
+    "description": "VG series voice gateways",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/vg-series-gateways.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 2139970,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "VIC Modules",
+    "description": "Voice interface cards (VICs)",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd80094964.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 119969,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "Web and Email Security",
+    "description": "Web and Email Security appliances",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/security-web-and-email.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 8211342,
+    "cors": false
+  },
+  {
+    "vendor": "Cisco",
+    "name": "WIC Modules",
+    "description": "WAN interface cards (WICs)",
+    "url": "https://www.cisco.com/c/dam/assets/prod/visio/visio/product_visio_icon0900aecd800940d1.zip",
+    "homepage": "https://www.cisco.com/c/en/us/products/visio-stencil-listing.html",
+    "sizeBytes": 96543,
     "cors": false
   },
   {

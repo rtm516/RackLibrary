@@ -40,7 +40,7 @@ export const prettyName = (fileName: string) =>
  * Bump when conversion output changes, so older imports can be flagged for
  * re-import. At most once per commit: compare with the committed value first.
  */
-export const CONVERTER_VERSION = 7;
+export const CONVERTER_VERSION = 8;
 
 /** Vendor name for packs uploaded by the user rather than imported from the catalog. */
 export const UPLOADS_VENDOR = 'My uploads';

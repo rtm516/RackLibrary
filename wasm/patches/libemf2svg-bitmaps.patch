@@ -15,9 +15,9 @@ diff -ru a/inc/emf2svg_private.h b/inc/emf2svg_private.h
      double cur_x;
      double cur_y;
 diff -ru a/src/lib/emf2svg_rec_bitmap.c b/src/lib/emf2svg_rec_bitmap.c
---- a/src/lib/emf2svg_rec_bitmap.c	2026-10-08 23:34:44.578276300 +0100
-+++ b/src/lib/emf2svg_rec_bitmap.c	2026-10-08 23:44:06.783015500 +0100
-@@ -8,10 +8,53 @@
+--- a/src/lib/emf2svg_rec_bitmap.c
++++ b/src/lib/emf2svg_rec_bitmap.c
+@@ -8,10 +8,85 @@
  #include "emf2svg_img_utils.h"
  #include "emf2svg_private.h"
  #include "emf2svg_print.h"
@@ -68,16 +68,70 @@ diff -ru a/src/lib/emf2svg_rec_bitmap.c b/src/lib/emf2svg_rec_bitmap.c
 +    return (w > 0 && h > 0) ? (w * h) / area : 0.0;
 +}
 +
++// Opens the <image> for a bitmap drawn into a destination rectangle. A negative
++// destination width or height mirrors the bitmap, as GDI does; SVG images can't
++// have a negative size, so the image goes at the rectangle's top-left corner and
++// is flipped with a transform, inside a group holding the clip so the clip isn't
++// flipped too. Returns whether that group was opened (close it after the image).
++static bool image_begin(drawingStates *states, FILE *out, POINT_D position, POINT_D size, bool clip) {
++    bool flipX = size.x < 0, flipY = size.y < 0;
++    if (flipX) {
++        position.x += size.x;
++        size.x = -size.x;
++    }
++    if (flipY) {
++        position.y += size.y;
++        size.y = -size.y;
++    }
++    bool group = flipX || flipY;
++    if (group) {
++        fprintf(out, "<g ");
++        if (clip)
++            clipset_draw(states, out);
++        fprintf(out, ">");
++    }
++    fprintf(out, "<image width=\"%.4f\" height=\"%.4f\" x=\"%.4f\" y=\"%.4f\" ",
++            size.x, size.y, position.x, position.y);
++    if (group)
++        fprintf(out, "transform=\"matrix(%d 0 0 %d %.4f %.4f)\" ", flipX ? -1 : 1, flipY ? -1 : 1,
++                flipX ? 2 * position.x + size.x : 0.0, flipY ? 2 * position.y + size.y : 0.0);
++    else if (clip)
++        clipset_draw(states, out);
++    return group;
++}
++
  void U_EMRALPHABLEND_draw(const char *contents, FILE *out,
                            drawingStates *states) {
      FLAG_PARTIAL;
-@@ -116,13 +159,16 @@
+@@ -40,16 +115,16 @@
+         point_cal(states, (double)pEmr->cDest.x, (double)pEmr->cDest.y);
+     POINT_D position =
          point_cal(states, (double)pEmr->Dest.x, (double)pEmr->Dest.y);
-     fprintf(out, "<image width=\"%.4f\" height=\"%.4f\" x=\"%.4f\" y=\"%.4f\" ",
-             size.x, size.y, position.x, position.y);
+-    fprintf(out, "<image width=\"%.4f\" height=\"%.4f\" x=\"%.4f\" y=\"%.4f\" ",
+-            size.x, size.y, position.x, position.y);
++    bool flipped = image_begin(states, out, position, size, true);
+ 
+     float alpha = (float)pEmr->Blend.Global / 255.0;
+     fprintf(out, " fill-opacity=\"%.4f\" ", alpha);
 -    clipset_draw(states, out);
-+    if (!states->hasEmfPlus && clip_coverage(states, position, size) >= 0.05)
-+        clipset_draw(states, out);
+ 
+     dib_img_writer(contents, out, states, BmiSrc, BmpSrc,
+                    (size_t)pEmr->cbBitsSrc, false);
+     fprintf(out, "/>\n");
++    if (flipped)
++        fprintf(out, "</g>\n");
+ }
+ void U_EMRBITBLT_draw(const char *contents, FILE *out, drawingStates *states) {
+     FLAG_PARTIAL;
+@@ -114,16 +189,19 @@
+         point_cal(states, (double)pEmr->cDest.x, (double)pEmr->cDest.y);
+     POINT_D position =
+         point_cal(states, (double)pEmr->Dest.x, (double)pEmr->Dest.y);
+-    fprintf(out, "<image width=\"%.4f\" height=\"%.4f\" x=\"%.4f\" y=\"%.4f\" ",
+-            size.x, size.y, position.x, position.y);
+-    clipset_draw(states, out);
++    bool flipped = image_begin(states, out, position, size,
++                               !states->hasEmfPlus && clip_coverage(states, position, size) >= 0.05);
  
      // float alpha = (float)pEmr->Blend.Global / 255.0;
      // fprintf(out, " fill-opacity=\"%.4f\" ", alpha);
@@ -87,39 +141,52 @@ diff -ru a/src/lib/emf2svg_rec_bitmap.c b/src/lib/emf2svg_rec_bitmap.c
                     (size_t)pEmr->cbBitsSrc, false);
 +    states->ropTransparentKey = 0;
      fprintf(out, "/>\n");
++    if (flipped)
++        fprintf(out, "</g>\n");
  }
  void U_EMRMASKBLT_draw(const char *contents, FILE *out, drawingStates *states) {
-@@ -175,10 +221,13 @@
+     FLAG_IGNORED;
+@@ -173,13 +251,16 @@
+         point_cal(states, (double)pEmr->cDest.x, (double)pEmr->cDest.y);
+     POINT_D position =
          point_cal(states, (double)pEmr->Dest.x, (double)pEmr->Dest.y);
-     fprintf(out, "<image width=\"%.4f\" height=\"%.4f\" x=\"%.4f\" y=\"%.4f\" ",
-             size.x, size.y, position.x, position.y);
+-    fprintf(out, "<image width=\"%.4f\" height=\"%.4f\" x=\"%.4f\" y=\"%.4f\" ",
+-            size.x, size.y, position.x, position.y);
 -    clipset_draw(states, out);
-+    if (!states->hasEmfPlus && clip_coverage(states, position, size) >= 0.05)
-+        clipset_draw(states, out);
++    bool flipped = image_begin(states, out, position, size,
++                               !states->hasEmfPlus && clip_coverage(states, position, size) >= 0.05);
  
 +    states->ropTransparentKey = rop_transparent_key(pEmr->dwRop);
      dib_img_writer(contents, out, states, BmiSrc, BmpSrc,
                     (size_t)pEmr->cbBitsSrc, false);
 +    states->ropTransparentKey = 0;
      fprintf(out, "/>\n");
++    if (flipped)
++        fprintf(out, "</g>\n");
  }
  void U_EMRSTRETCHDIBITS_draw(const char *contents, FILE *out,
-@@ -210,10 +259,13 @@
+                              drawingStates *states) {
+@@ -208,13 +289,16 @@
+         point_cal(states, (double)pEmr->cDest.x, (double)pEmr->cDest.y);
+     POINT_D position =
          point_cal(states, (double)pEmr->Dest.x, (double)pEmr->Dest.y);
-     fprintf(out, "<image width=\"%.4f\" height=\"%.4f\" x=\"%.4f\" y=\"%.4f\" ",
-             size.x, size.y, position.x, position.y);
+-    fprintf(out, "<image width=\"%.4f\" height=\"%.4f\" x=\"%.4f\" y=\"%.4f\" ",
+-            size.x, size.y, position.x, position.y);
 -    clipset_draw(states, out);
-+    if (!states->hasEmfPlus && clip_coverage(states, position, size) >= 0.05)
-+        clipset_draw(states, out);
++    bool flipped = image_begin(states, out, position, size,
++                               !states->hasEmfPlus && clip_coverage(states, position, size) >= 0.05);
  
 +    states->ropTransparentKey = rop_transparent_key(pEmr->dwRop);
      dib_img_writer(contents, out, states, BmiSrc, BmpSrc,
                     (size_t)pEmr->cbBitsSrc, false);
 +    states->ropTransparentKey = 0;
      fprintf(out, "/>\n");
++    if (flipped)
++        fprintf(out, "</g>\n");
  }
  void U_EMRTRANSPARENTBLT_draw(const char *contents, FILE *out,
-@@ -324,6 +376,15 @@
+                               drawingStates *states) {
+@@ -324,6 +408,15 @@
      DIB_to_RGBA(in, ct, numCt, &rgba_px, width, height, colortype, numCt,
                  invert);
  
